@@ -10,6 +10,6 @@
   "pandoc": "C:\\Users\\chris\\AppData\\Local\\Pandoc\\pandoc.exe",
   "pdflatex": null,
   "outputFolder": null,
-  "extraArguments": "",
+  "extraArguments": "--include-in-header=./structure.tex\n--bibliography=./'My Library.bib'\n--citeproc",
   "exportFrom": "html"
 }

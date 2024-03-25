@@ -11,11 +11,43 @@
             "id": "3d79cf4d79eafc1c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Main.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23e45d7c54463e0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sections/Introduction.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0e7416d2a37fed75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sections/Introduction.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -89,6 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "sections/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "sections/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +160,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "sections/Introduction.md"
+              }
             }
           },
           {
@@ -165,8 +201,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3d79cf4d79eafc1c",
+  "active": "0e7416d2a37fed75",
   "lastOpenFiles": [
+    "sections/State of the Art in Hardware Security Flaws.md",
+    "Main.md",
+    "sections/Introduction.md",
+    "structure.tex",
+    "My Library.bib",
+    "sections",
     "Welcome.md",
     "BachelorProject/Hardware Flaws And Their Impact On Software Security.md",
     "2023-09-28.md",
@@ -193,17 +235,10 @@
     "Network.md",
     "Processing Element.md",
     "Packet.md",
-    "Uni/Autumn2023/Networks/Untitled Kanban.md",
     "img",
     "Uni/Autumn2023/Networks",
     "Uni",
     "Uni/Autumn2023",
-    "Threads.md",
-    "Von Neumann's Architecture.md",
-    "2023-09-24.md",
-    "Archive",
-    "References",
-    "Studies/2023-Autumn",
-    "Studies"
+    "Archive"
   ]
 }
