@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "f088b01b88dfb5ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d11d74b7dc1297a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d79cf4d79eafc1c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "79214dffcffa569a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab01d19d14f2b6b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87a36aa1d25f1de5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "14e97d469a20c637",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "139cbe22e0b42d17",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "f751331e27fadaf8",
+            "type": "leaf",
+            "state": {
+              "type": "tagfolder-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "70b3473bec488ec6",
+    "type": "split",
+    "children": [
+      {
+        "id": "e23c1220bb059052",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e58fb6998ea2d867",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fc5df194dce4ed23",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e3c9fb98253b59bd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9fff475298d00b9e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "eac87819914648e1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "21d1615312aba7fa",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "3d79cf4d79eafc1c",
+  "lastOpenFiles": [
+    "Welcome.md",
+    "BachelorProject/Hardware Flaws And Their Impact On Software Security.md",
+    "2023-09-28.md",
+    "BachelorProject",
+    "Autumn2023",
+    "2023-12-19.md",
+    "Parallelism.md",
+    "Architectures.md",
+    "Computer Networks.md",
+    "Performance.md",
+    "Go-Back-N ARQ.md",
+    "Selective-Repeat ARQ.md",
+    "Stop-and-Wait ARQ.md",
+    "Summary.md",
+    "Process.md",
+    "Packets.md",
+    "Packets.canvas",
+    "ARQ Protocols.md",
+    "Artificial Intelligence.md",
+    "Concurrent Programs.md",
+    "Concurrent Systems.md",
+    "OSI Model.canvas",
+    "OSI Model.md",
+    "Network.md",
+    "Processing Element.md",
+    "Packet.md",
+    "Uni/Autumn2023/Networks/Untitled Kanban.md",
+    "img",
+    "Uni/Autumn2023/Networks",
+    "Uni",
+    "Uni/Autumn2023",
+    "Threads.md",
+    "Von Neumann's Architecture.md",
+    "2023-09-24.md",
+    "Archive",
+    "References",
+    "Studies/2023-Autumn",
+    "Studies"
+  ]
+}
