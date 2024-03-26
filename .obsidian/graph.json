@@ -6,36 +6,7 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "tag:#course ",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "tag:#def  ",
-      "color": {
-        "a": 1,
-        "rgb": 5431511
-      }
-    },
-    {
-      "query": "tag:#summary  ",
-      "color": {
-        "a": 1,
-        "rgb": 8438404
-      }
-    },
-    {
-      "query": "tag:#notes  ",
-      "color": {
-        "a": 1,
-        "rgb": 14725970
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0.1,
@@ -46,6 +17,6 @@
   "repelStrength": 13.9583333333333,
   "linkStrength": 0.489583333333333,
   "linkDistance": 187,
-  "scale": 0.2318602632250326,
-  "close": false
+  "scale": 0.895771391386027,
+  "close": true
 }
