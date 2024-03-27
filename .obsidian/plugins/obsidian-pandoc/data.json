@@ -7,9 +7,9 @@
   "displayYAMLFrontmatter": false,
   "linkStrippingBehaviour": "text",
   "highDPIDiagrams": true,
-  "pandoc": "C:\\Users\\chris\\AppData\\Local\\Pandoc\\pandoc.exe",
+  "pandoc": "/usr/bin/pandoc",
   "pdflatex": null,
   "outputFolder": null,
-  "extraArguments": "--include-in-header=./structure.tex\n--bibliography=./'My Library.bib'\n--citeproc",
+  "extraArguments": "--include-in-header=structure.tex\n--bibliography=library.bib\n--citeproc",
   "exportFrom": "html"
 }
