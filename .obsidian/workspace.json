@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "6d11d74b7dc1297a",
+        "id": "f6716057a2ef607c",
         "type": "tabs",
         "children": [
           {
-            "id": "23e45d7c54463e0e",
+            "id": "7a10e23ed15b1a43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sections/Introduction.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0e7416d2a37fed75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sections/Introduction.md",
+                "file": "sections/State of the Art in Hardware Security Flaws.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sections/Introduction.md",
+                "file": "sections/State of the Art in Hardware Security Flaws.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sections/Introduction.md",
+                "file": "sections/State of the Art in Hardware Security Flaws.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sections/Introduction.md"
+                "file": "sections/State of the Art in Hardware Security Flaws.md"
               }
             }
           },
@@ -188,9 +174,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0e7416d2a37fed75",
+  "active": "87a36aa1d25f1de5",
   "lastOpenFiles": [
-    "Main.md",
+    "images/emuMMCpartition.jpg",
+    "images/tegrapayload.jpg",
+    "images/payloadinjected.png",
+    "images/rcmok.png",
+    "images",
+    "Citations.md",
+    "sections/State of the Art in Hardware Security Flaws.md",
+    "DRM and Content Protection.md",
+    "sections/Introduction.md",
+    "sections/Abstract.md",
     "main.synctex(busy)",
     "pdflatex42663.fls",
     "main.synctex.gz",
@@ -200,10 +195,7 @@
     "pdflatex21871.fls",
     "main.log",
     "main.fls",
-    "pdflatex21864.fls",
     "library.md",
-    "sections/Introduction.md",
-    "sections/State of the Art in Hardware Security Flaws.md",
     "Welcome.md",
     "BachelorProject/Hardware Flaws And Their Impact On Software Security.md",
     "2023-09-28.md",
@@ -224,8 +216,6 @@
     "Concurrent Programs.md",
     "Concurrent Systems.md",
     "OSI Model.canvas",
-    "OSI Model.md",
-    "Network.md",
-    "Processing Element.md"
+    "OSI Model.md"
   ]
 }
