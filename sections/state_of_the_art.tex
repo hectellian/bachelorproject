@@ -1,0 +1,732 @@
+\chapter{State of the Art in Hardware Security Flaws}
+\epigraph{The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards.}{\textit{Edward Amoroso}}
+
+\hypertarget{historical-overview}{%
+\section{Historical Overview}\label{historical-overview}}
+
+The journey of hardware security has evolved significantly over the
+years, from its initial focus on safeguarding military and space
+exploration equipment to protecting consumer electronics against
+sophisticated attacks. This evolution can be broadly categorized into
+several key phases:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Early Developments}: Initially, hardware security was
+  predominantly driven by the needs of government and military
+  applications. The focus was on ensuring the reliability and security
+  of semiconductors in environments subject to extreme conditions, such
+  as outer space or high-altitude flights. Techniques like
+  \textbf{radiation hardening}\cite{RadiationHardening2024} were developed to protect these systems
+  against environmental challenges, including radiation and temperature
+  fluctuations. For example, the
+  use of Silicon on Insulator (SOI) technology in semiconductor
+  fabrication improved resistance to radiation effects.
+\item
+  \textbf{Commercialization and Consumer Devices}: With the advent of
+  consumer electronics, hardware security expanded to include protection
+  against piracy and unauthorized access. Digital Rights Management
+  (DRM) became crucial in devices like cable set-top boxes and gaming
+  consoles. This era saw the emergence of \textbf{content protection
+  schemes} and the corresponding development of countermeasures to
+  bypass these protections.\cite{DigitalRightsManagement2024}
+\item
+  \textbf{Remote Hardware Vulnerabilities}: The discovery of
+  vulnerabilities that could be exploited remotely marked a significant
+  shift in cybersecurity concerns. Notably, the \textbf{Rowhammer
+  attack} exemplifies this transition. Traditionally, hardware attacks
+  were assumed to require physical access. However, Rowhammer can be
+  initiated remotely by leveraging code that induces bit flips in a
+  device's DRAM, affecting adjacent rows. Such an attack was
+  demonstrated on various architectures, including Intel's Sandy Bridge,
+  Ivy Bridge, Haswell, and AMD's Piledriver systems, by executing a
+  specific pattern of assembly instructions:
+\end{enumerate}
+
+  \begin{figure}[H]
+    \begin{minipage}{0.5\textwidth}
+      \begin{minted}[linenos, frame=lines]{asm}
+  code1a:
+      mov (X), %eax
+      mov (Y), %ebx
+      clflush (X)
+      clflush (Y)
+      mfence
+      jmp code1a
+      \end{minted}
+      \caption*{a. Induces errors}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+      \begin{minted}[linenos, frame=lines]{asm}
+  code1b:
+      mov (X), %eax
+      clflush (X)
+
+
+      mfence
+      jmp code1b
+      \end{minted}
+      \caption*{b. Does not induce errors}
+    \end{minipage}
+    \caption{Assembly code snippets for Rowhammer attack\cite{kimFlippingBitsMemory2014}}
+  \end{figure}
+
+This attack sequence strategically causes DRAM cells to leak charges
+into adjacent cells, overcoming the inherent electrical isolation
+between them, leading to bit flips. For instance, this code sequence
+resulted in numerous bit flips, which varied across different
+microarchitectures, as shown in Table \ref{tab:bit-flips} from a study by \citeauthor{kimFlippingBitsMemory2014}\cite{kimFlippingBitsMemory2014}.
+
+  \begin{table}[htbp]
+    \centering
+    \label{tab:bit-flips}
+    \begin{tabular}{lcccc}
+    \toprule
+    Bit-Flip     & Sandy Bridge & Ivy Bridge & Haswell & Piledriver \\
+    \midrule
+    `0` \textrightarrow\ `1` & 7,992       & 10,273     & 11,404   & 47         \\
+    `1` \textrightarrow\ `0` & 8,125       & 10,449     & 11,467   & 12         \\
+    \bottomrule
+    \end{tabular}
+    \caption{Bit-flips induced by disturbance on a 2GB module}
+    \label{tab:bit-flips}
+  \end{table}
+
+The ability to induce such bit flips remotely through crafted payloads,
+like malicious JavaScript on a web page, has elevated Rowhammer from a
+theoretical concern to a practical cybersecurity threat. The
+implications of such a vulnerability are profound: systems could
+potentially be compromised without the attacker ever physically touching
+the hardware. This shifts the landscape of system security, emphasizing
+the need for vigilant memory management and robust protective mechanisms
+in both hardware design and system software.
+
+\begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{3}
+  \item
+    \textbf{Modern Challenges}: Today, hardware vulnerabilities like
+    \textbf{Spectre and Meltdown}\cite{SpectreSecurityVulnerability2024,MeltdownSecurityVulnerability2024} have shown that even fundamental
+    hardware design principles can introduce security risks. These
+    vulnerabilities exploit speculative execution---a performance feature
+    in modern CPUs---to leak sensitive information. Speculative execution is used by CPUs to predict future execution paths and prematurely execute instructions. This can increase performance but also introduces the possibility of leaking information if the prediction is incorrect and the speculative execution has side effects that are not fully discarded.
+  
+    For instance, Spectre attacks trick the processor into executing instructions that should not have been executed, exploiting the latency in the branch prediction mechanism of the CPU. The processor's speculative execution feature is then leveraged to perform operations that leave observable side effects such as changes in cache state, even if the speculative results are discarded. These side effects can be monitored to infer sensitive data like cryptographic keys or personal information. \cite{kocherSpectreAttacksExploiting2018}
+  
+    \begin{minted}[frame=single, linenos, breaklines]{javascript}
+    if (index < simpleByteArray.length) {
+        index = simpleByteArray[index | 0];
+        index = (((index * TABLE1_STRIDE)|0) & (TABLE1_BYTES-1))|0;
+        localJunk ^= probeTable[index|0]|0;
+    }
+    \end{minted}
+    \captionof{lstlisting}{Exploiting Speculative Execution via JavaScript.\cite{kocherSpectreAttacksExploiting2018}}
+
+      Alongside \textbf{Spectre}, the \textbf{Meltdown} vulnerability has revealed critical risks inherent in performance optimization techniques employed by modern CPUs. Specifically, Meltdown circumvents memory isolation guarantees by exploiting out-of-order execution, a feature used by CPUs to speed up processing. This exploitation allows an attacker to read all memory on a system, even without any permissions.
+
+      Meltdown is based on a fundamental hardware behavior involving out-of-order execution, where CPUs execute instructions out of their planned sequence for efficiency. When the CPU processes an instruction that should not be executed, it discards the result to maintain correct program operation. However, the discarded results can affect the cache, leading to a potential side-channel that can be exploited. 
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.6\textwidth]{images/intel-cpu.png}
+      \caption{Simplified illustration of a single core of the Intel's Skylake microarchitecture.\cite{lippMeltdown2018}}
+      \label{fig:meltdown}
+    \end{figure}
+
+      Essentially, Meltdown breaks the foundational security boundary that segregates the kernel's memory space from user processes. Attackers can take advantage of Meltdown to access not just the kernel memory but the entire physical memory of the host machine, potentially exposing sensitive data across user processes and virtual machines. The issue is pervasive across numerous Intel CPUs and potentially other processors.\cite{lippMeltdown2018} 
+
+    \begin{minted}[frame=single, linenos, breaklines]{asm}
+      ; rcx = kernel address 
+      ; rbx = probe array 
+      retry: 
+        mov al, byte [rcx] 
+        shl rax, 0xc 
+        jz retry
+        mov rbx, qword [rbx + rax]
+    \end{minted}
+    \captionof{lstlisting}{Meltdown Attack Assembly Code.\cite{lippMeltdown2018}}
+
+      Unlike Spectre, Meltdown does not need to be tailored to a specific victim's environment, nor does it rely on any form of software vulnerability, making it widely exploitable on affected systems.
+
+\end{enumerate}
+
+\hypertarget{milestones}{%
+\subsection{Milestones}\label{milestones}}
+
+\begin{itemize}
+\item
+  \textbf{1980s-1990s}: Radiation hardening techniques developed for
+  space and military use.
+\item
+  \textbf{Early 2000s}: Rise of consumer electronics security with DRM
+  and content protection.
+\item
+  \textbf{2014}: Discovery of the Rowhammer vulnerability, illustrating
+  a shift towards remote exploitability of hardware.
+\item
+  \textbf{2018}: Spectre and Meltdown vulnerabilities exposed,
+  highlighting deep-seated issues in CPU design.
+\end{itemize}
+
+Diving deeper into the ``Types of Hardware Flaws'' section, we'll
+explore the various categories of hardware vulnerabilities, providing a
+more nuanced understanding of these threats through detailed examples,
+code snippets, and references to academic and industry sources.
+
+\hypertarget{types-of-hardware-flaws}{%
+\section{Types of Hardware Flaws}\label{types-of-hardware-flaws}}
+
+Hardware vulnerabilities can manifest in numerous forms, each exploiting
+different aspects of physical design, implementation, and operational
+behavior. These vulnerabilities are typically categorized into three
+primary types: physical vulnerabilities, side-channel attacks, and fault
+injection attacks.
+
+\hypertarget{physical-vulnerabilities}{%
+\subsection{Physical
+Vulnerabilities}\label{physical-vulnerabilities}}
+
+Physical vulnerabilities are those that necessitate direct interaction
+with or access to the hardware device. They can exploit inherent design
+flaws or result from malicious physical modifications.
+
+\begin{itemize}
+\item
+  \textbf{Cold Boot Attacks}: A striking example of a physical
+  vulnerability is the cold boot attack\cite{haldermanLestWeRemember2009}, 
+  where sensitive data such as
+  cryptographic keys are retrieved from RAM after a device is powered
+  off. Data remanence (residual physical representation of data that has been nominally erased or removed) in DRAM can persist for seconds to minutes at room
+  temperature, and cooling the chips can extend this period
+  significantly, allowing attackers to reboot the system with a custom
+  loader and extract the remaining data.
+
+  \begin{figure}[h]
+    \centering
+    \begin{subfigure}{.33\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{decay1.png}
+      \caption{Machine A and C Data}
+    \end{subfigure}%
+    \begin{subfigure}{.33\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{decay2.png}
+      \caption{Machine B and F Data}
+    \end{subfigure}
+    \begin{subfigure}{.33\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{decay3.png}
+      \caption{Machine D and E Data}
+    \end{subfigure}
+    \caption{Decay rates at different temperatures showing extended data retention as temperature decreases.\cite{haldermanLestWeRemember2009}}
+  \end{figure}
+
+  Post-cooling, an attacker uses a custom memory imaging tool to read the remaining data by rebooting the system with a minimal kernel that dumps the memory contents.
+  The primary goal of that attack being the extraction of cryptographic keys from the decayed memory images, which are then used to decrypt sensitive data.
+
+\begin{minted}[frame=single, linenos, breaklines]{python}
+# Pseudocode for a cold boot attack scenario
+def cold_boot_attack(ram_content, search_patterns):
+  # Simulate cooling of RAM to preserve data
+  cooled_ram = cool_ram(ram_content)
+  # Search for cryptographic keys or sensitive data in the cooled RAM content
+  for pattern in search_patterns:
+      if pattern in cooled_ram:
+        print("Sensitive data found:", pattern)
+\end{minted}
+  \captionof{lstlisting}{Pseudocode for a cold boot attack scenario}
+
+\item
+  \textbf{Hardware Implantation}: Another form of physical vulnerability
+  involves tampering with hardware components to introduce malicious
+  functionality. For instance, adding a small, inconspicuous chip to a
+  motherboard can create a backdoor for attackers to access or
+  manipulate the device remotely.
+\end{itemize}
+
+\hypertarget{side-channel-attacks}{%
+\subsection{Side-channel Attacks}\label{side-channel-attacks}}
+
+Side-channel attacks exploit indirect effects of system operations, such
+as timing, power consumption, and electromagnetic emissions, to infer
+sensitive information without breaching the system's logical security
+boundaries.
+
+\subsubsection{Timing Attacks}
+
+The seminal work of Kocher (1996)\cite{kocherTimingAttacksImplementations1996} on timing attacks offers a comprehensive examination of the vulnerabilities 
+inherent in cryptographic systems due to variations in execution time during cryptographic operations such as modular exponentiation used in algorithms 
+like RSA and Diffie-Hellman.
+
+These attacks measure the time required for cryptographic operations,
+using variations to deduce secret keys. For instance, by measuring the
+time it takes for a server to respond to varying encrypted messages, an
+attacker can infer details about the encryption keys.
+
+Kocher models the timing attack as a signal detection problem, where the `signal' is the timing variation caused by the specific exponent bit, and `noise' consists of measurement inaccuracies and variations from unknown exponent bits. Extensive statistical analysis is utilized, focusing on the probability distribution function \( F \), which encapsulates the expected timing variations due to specific bits. The attack effectiveness can be expressed by the equation:
+\[
+P(correct) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{(T - \mu)^2}{2\sigma^2}\right)
+\]
+where \( T \) is the observed timing, \( \mu \) is the mean timing for the correct guess, and \( \sigma^2 \) is the variance.
+
+In practical scenarios, Kocher suggests simplifying the attack by avoiding the computation of \( F \). Instead, the focus shifts to analyzing the variance of timing measurements adjusted for each guessed exponent bit. If the guess is correct, the variance of these adjusted measurements will be lower than those adjusted for incorrect guesses. The variance comparison is calculated as follows:
+\[
+\text{Var}(correct) < \text{Var}(incorrect)
+\]
+This method of variance analysis serves as a crucial mechanism for efficiently distinguishing between correct and incorrect guesses of the secret key bits.
+
+The paper includes experimental results using the RSA encryption algorithm implemented with the RSAREF toolkit, confirming that correct guesses about exponent bits consistently result in lower timing variances, thus validating the theoretical model. Kocher also discusses the potential for adapting the timing attack methodology to other cryptographic operations, underscoring its flexibility and broad applicability.\\
+
+\begin{minted}[frame=single, linenos, breaklines]{python}
+  def perform_timing_attack(modexp, n, base, public_exponent):
+      timings = []
+      guessed_exponent = 0
+  
+      for bit_position in range(number_of_bits(n)):
+          best_time = float('inf')
+          best_bit = None
+  
+          for bit in [0, 1]:
+              test_exponent = set_bit(guessed_exponent, bit_position, bit)
+  
+              start_time = current_time()
+              modexp(base, test_exponent, n)
+              elapsed_time = current_time() - start_time
+
+              if elapsed_time < best_time:
+                  best_time = elapsed_time
+                  best_bit = bit
+  
+          guessed_exponent = set_bit(guessed_exponent, bit_position, best_bit)
+          timings.append((bit_position, best_time))
+  
+      return guessed_exponent, timings
+  
+  def number_of_bits(n):
+      return n.bit_length()
+  
+  def set_bit(number, position, value):
+      mask = 1 << position
+      return (number & ~mask) | (value << position)
+  
+  def current_time():
+      import time
+      return time.time()
+\end{minted}
+\captionof{lstlisting}{Pseudocode for a timing attack}
+
+\subsubsection{Power Analysis Attacks}
+
+By monitoring the power usage of a device, attackers can gain insights into the data being processed. Simple Power Analysis (SPA) and Differential Power Analysis (DPA) are two common methods, with DPA being particularly effective at extracting cryptographic keys from seemingly innocuous power usage patterns.
+We'll delve into how these attacks work by analyzing the work of Kocher et al. (1999)\cite{kocherDifferentialPowerAnalysis1999}.
+
+\begin{itemize}
+  \item \textbf{SPA}: In Single Power Analysis (SPA), we observe the power consumption of a device to infer the operations being executed. SPA can reveal significant information about the execution path of cryptographic algorithms.
+  In SPA, the observable feature is the power consumption, which correlates with the physical operations of a device. 
+
+  This type of analysis can detect significant operations within cryptographic algorithms, such as DES, by observing the distinct power signatures corresponding to each phase of the operation, notably the permutations and conditional operations based on the secret key\cite{kocherDifferentialPowerAnalysis1999}.
+
+  \begin{minted}[frame=single, linenos, breaklines]{python}
+  def square_and_multiply(base, exponent, modulus):
+    # Convert the exponent to its binary representation
+    binary_exponent = bin(exponent)[2:]
+    result = 1
+    for bit in binary_exponent:
+        result = (result * result) % modulus
+        if bit == '1':
+            result = (result * base) % modulus
+    
+    return result
+  \end{minted}
+  \captionof{lstlisting}{Pseudocode for a Single Power Analysis attack using `square and multiply' algorithm}
+\end{itemize}
+
+\begin{itemize}
+  \item \textbf{DPA}: Differential Power Analysis uses statistical techniques to extract secret keys by analyzing power consumption data from multiple operations.
+  In DPA, we focus on the mean difference of grouped data based on hypothetical intermediate values. Given a set of power traces \( T_i \) and a hypothesis function \( H(k, x) \) that predicts power consumption based on key guess \( k \) and input \( x \), the differential trace \( D \) is calculated as:
+\[
+D_k[j] = \frac{1}{|G_0|} \sum_{i \in G_0} T_i[j] - \frac{1}{|G_1|} \sum_{i \in G_1} T_i[j]
+\]
+where \( G_0 \) and \( G_1 \) are sets of indices classified by whether \( H(k, x_i) \) predicts low or high power consumption, respectively.
+
+\begin{minted}[frame=single, linenos, breaklines]{python}
+  def dpa_attack(traces, key_guesses):
+    high_group = []
+    low_group = []
+    for trace, key_guess in zip(traces, key_guesses):
+        if predict_high(key_guess):
+            high_group.append(trace)
+        else:
+            low_group.append(trace)
+    mean_high = np.mean(high_group, axis=0)
+    mean_low = np.mean(low_group, axis=0)
+    return mean_high - mean_low
+\end{minted}
+\captionof{lstlisting}{Pseudocode for a Differential Power Analysis attack}
+
+In this pseudocode, \texttt{traces} is a list of power consumption traces, and \texttt{key\_guesses} is a list of key hypotheses. The function \texttt{predict\_high} decides the grouping based on a prediction model using the key guess. The differential trace, computed as the difference between the means of these groups, helps identify the correct key guess by highlighting variations in the power consumption corresponding to different key bits.
+
+\end{itemize}
+
+\subsubsection{Fault Injection Attacks}
+
+Fault injection attacks deliberately induce operational errors to bypass security mechanisms or corrupt the execution of processes, exploiting these faults for unauthorized access or data extraction.
+
+\begin{itemize}
+\item \textbf{Voltage Glitching}: A technique used to manipulate the physical operating conditions of electronic devices in order to induce faults. These faults can be exploited to bypass security measures or corrupt the device's usual execution flow. In the context of security research, voltage glitching is often applied to cryptographic devices to either bypass security checks or extract secret keys.
+
+The basic idea behind voltage glitching involves momentarily altering the device's power supply to disrupt its normal operation. This disruption can cause the device to skip instructions, execute incorrect instructions, or produce erroneous data.
+
+In practical scenarios, such as the one explored by Moradi et al.\cite{moradiVulnerabilityFPGABitstream2011} in their research on FPGA bitstream encryption vulnerabilities, voltage glitching is used to manipulate the execution of cryptographic algorithms, allowing attackers to bypass security checks or interfere with the encryption process.\\
+
+\begin{minted}[frame=single, linenos, breaklines]{python}
+def voltage_glitching_attack(target_operation):
+  successful = False
+  while not successful:
+    apply_voltage_drop()
+    result = target_operation()
+    
+    if check_for_errors(result):
+      exploit_errors(result)
+
+    successful = True
+\end{minted}
+
+Voltage glitching poses significant security risks, particularly for devices that handle sensitive information like cryptographic keys.
+
+As discussed by Bittner et al. (2021)\cite{bittnerForgottenThreatVoltage2021}, voltage glitching remains a potent attack vector against electronic devices, especially as hardware becomes increasingly miniaturized and integrated.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{images/glitch.png}
+  \caption{Voltage glitching attack on a microcontroller\cite{bittnerForgottenThreatVoltage2021}}
+  \label{fig:voltage_glitching}
+\end{figure}
+
+Voltage glitching has been adapted to target advanced microarchitectures and security-enforced environments. Modern devices often incorporate complex power management features that can be exploited to introduce glitches more subtly and effectively
+(fusee-gelee being a notable example of a voltage glitching attack on the Nintendo Switch which is the main focus of this paper).\\
+\end{itemize}
+
+\begin{itemize}
+\item
+  \textbf{Clock Glitching}: Similar to voltage glitching, clock
+  glitching involves momentarily altering the system clock's frequency or timing, disrupting the sequence of
+operations and potentially allowing attackers to manipulate or bypass
+processes.
+
+It exploits vulnerabilities in the timing mechanisms of digital circuits, like those identified in \cite{tajikPhysicalCharacterizationArbiter2014}. This study demonstrates that high-resolution photonic emission analysis can physically characterize the intrinsic behavior of timing-based security mechanisms, such as those found in arbiter Physical Unclonable Functions (PUFs), by measuring the minute delays within the circuit with great precision. The relevance of this technique to clock glitching lies in its ability to manipulate and observe the effects of slight deviations in clock frequency or pulse timing, which can induce errors or alter the behavior of the security mechanism. This method provides a potent example of how even robust security designs can be undermined by exploiting their fundamental physical properties—highlighting a critical area for enhancing resistance to clock glitching attacks
+
+\begin{minted}[frame=single, linenos, breaklines]{python}
+  def clock_glitching_attack(target_device):
+      original_clock = target_device.clock
+      while not achieved_goal:
+          glitched_clock = induce_clock_glitch(original_clock)
+          target_device.clock = glitched_clock
+          if target_device.malfunctions():
+              exploit_malfunction(target_device)
+          target_device.clock = original_clock 
+  \end{minted}
+  \captionof{lstlisting}{Pseudocode for a clock glitching attack}
+
+\end{itemize}
+
+\hypertarget{mitigation-strategies}{%
+\section{Mitigation Strategies}\label{mitigation-strategies}}
+
+Mitigation strategies in hardware security encompass a wide array of
+techniques, from design-phase interventions to post-incident responses.
+These strategies are essential for reducing the risk and impact of
+hardware vulnerabilities.
+
+\hypertarget{preemptive-measures}{%
+\subsection{Preemptive Measures}\label{preemptive-measures}}
+
+\textbf{Secure Hardware Design}: Embedding security features at the
+design level can significantly reduce vulnerabilities. This includes the
+adoption of design practices that inherently minimize security risks,
+such as:
+
+\begin{itemize}
+\item
+  \textbf{Redundant Design}: Implementing redundant circuits to provide
+  fallback options in case of failure or tampering.
+
+  \begin{minted}[frame=single, linenos, breaklines]{python}
+    # Pseudocode for a simple redundant design in hardware security
+    def execute_secure_operation(operation, redundancy_level=2):
+        results = []
+        for _ in range(redundancy_level):
+            result = operation()
+            results.append(result)
+        if all_equal(results):
+            return results[0] 
+        else:
+            raise SecurityException("Discrepancy detected in redundant operations")
+    \end{minted}
+    
+\item
+  \textbf{PUFs}: Utilizing unique
+  physical characteristics of the hardware as cryptographic keys or
+  identifiers, enhancing security against cloning and tampering.
+
+  In their exploration of RO-PUFs\cite{maitiLargeScaleCharacterization2010}, Maiti detailed the deployment of ring oscillator PUFs on a large array of FPGA chips to analyze the viability of PUFs in achieving high levels of hardware security through uniqueness and reliability. RO-PUFs utilize the minute variations in the oscillation frequency of identically laid-out ring oscillators, which arise due to unavoidable process variations during chip manufacturing. These frequencies are sensitive to environmental conditions and operational variations, which in turn, affect the reliability of the PUF's response.
+
+  The uniqueness of a PUF is measured by the inter-die Hamming distance, which should ideally be close to 50\%. Maiti demonstrated that RO-PUFs achieve an average inter-die Hamming distance of 47.31\%, which indicates a high level of uniqueness in responses across different chips.
+
+  The reliability is estimated as the average intra-die Hamming distance i.e. $HD(R, R')$ over $x$ samples of the same PUF, given by:
+\[
+\frac{1}{x} \sum_{y=1}^{x} \frac{HD(R_{i}, R'_{i,y})}{n} \times 100\%
+\]
+  where $R'_{i,y}$ is the $y$-th sample of$R'_{i}$.
+\end{itemize}
+
+\textbf{Hardware-assisted Security}: Modern processors have integrated features to bolster security at the hardware level, notably Intel's Software Guard Extensions (SGX)\cite{costanIntelSGXExplained2016} and AMD's Secure Encrypted Virtualization (SEV)\cite{mofradComparisonStudyIntel2018}. These technologies enhance the protection of sensitive code and data within secure enclaves or encrypted virtual machines, shielding them from potentially compromised privileged software.
+
+\begin{itemize}
+\item
+  \textbf{Intel SGX}: Intel's Software Guard Extensions (SGX) provide a way to increase the security of software systems on platforms where the privileged software, like the operating system or hypervisor, might be compromised. SGX achieves this by allowing sensitive computations to take place within a protected area of execution, called an enclave, which is designed to be tamper-resistant even from privileged code running on the same machine.
+
+  based on the paper by Costan and Devadas\cite{costanIntelSGXExplained2016}, SGX designates a region of memory known as Processor Reserved Memory (PRM), where the sensitive code and data reside. This region is protected by the CPU such that no non-enclave memory access can occur, including those from the kernel, hypervisor, System Management Mode (SMM), and Direct Memory Access (DMA) from peripherals.
+
+  Within PRM, there's a structure called the Enclave Page Cache (EPC), consisting of 4 KB pages that store the actual code and data of enclaves. System software, which is not fully trusted, is responsible for assigning these pages to enclaves, but the CPU ensures through the Enclave Page Cache Metadata (EPCM) that each page is only associated with a single enclave.
+
+  The SGX framework aims to enable secure remote computation by allowing users to run security-sensitive applications on a remote computer, potentially operated by an untrusted party, with integrity and confidentiality guarantees. Users can safely upload encrypted data and code for processing in a secure enclave, with the knowledge that the enclave is protected against tampering or unauthorized access, even from the host system's privileged software.
+
+\item
+  \textbf{AMD SEV}: AMD's Secure Encrypted Virtualization (SEV) is a hardware feature designed to encrypt the memory of virtual machines (VMs), aiming to protect the memory contents against unauthorized access, even from privileged software like hypervisors.
+
+  From the paper by Mofrad et al.\cite{mofradComparisonStudyIntel2018}, SEV is built upon AMD's Memory Encryption Technology, which employs a dedicated AES engine within the system on a chip (SoC) to encrypt and decrypt memory pages on the fly, without noticeable performance impact to the user.
+
+  Each VM under SEV has its own unique encryption key, which is managed by the AMD Secure Processor, an ARM Cortex-A5 core within the SoC. This ensures that even if one VM’s security is compromised, the others remain protected due to the use of separate keys.
+
+  SEV aims to protect against both direct memory attacks (such as cold-boot attacks) and indirect attacks that exploit the hypervisor (such as side-channel attacks).
+
+  Unlike Intel SGX, which provides memory integrity protection, AMD SEV does not protect the integrity of the encrypted VM memory. However, the use of AMD's secure processor to manage encryption keys keeps these keys out of the reach of the hypervisor or any other privileged code on the host.
+
+  While SEV provides robust protection against many types of attacks, it does not completely eliminate the risk of security breaches. For example, side-channel attacks and other sophisticated exploits remain a concern.
+
+  AMD has responded to security vulnerabilities with firmware updates, indicating that while SEV provides a significant security advantage, it requires ongoing maintenance and updates to ensure the highest level of protection.
+\end{itemize}
+
+\textbf{Side-channel Resistance}: Side-channel resistance is crucial in cryptographic implementations to prevent leakage of sensitive information through unintended channels. Techniques such as constant-time programming and differential power analysis (DPA) resistance are pivotal to enhancing the security of cryptographic systems.
+
+The primary defense against timing attacks is ensuring that operations execute in constant time. Timing attacks exploit the variable execution times of operations depending on secret values. Just like the OpenSSL `memcmp' function\cite{DocsMan1Man3}.\\
+
+\begin{minted}[frame=single, linenos, breaklines]{c}
+  int constant_time_memcmp(const void* a, const void* b, size_t size) {
+      const unsigned char* _a = (const unsigned char*)a;
+      const unsigned char* _b = (const unsigned char*)b;
+      unsigned char result = 0;
+      for (size_t i = 0; i < size; i++) {
+          result |= _a[i] ^ _b[i];
+      }
+      return result == 0;
+  }
+  \end{minted}  
+  \captionof{lstlisting}{Simplified constant-time comparison function in C for understanding.}
+
+  DPA attacks involve analyzing power consumption patterns during cryptographic operations to infer secret keys. Countermeasures include balancing power consumption across different operations and using randomization techniques to mask the power signature. Cryptographic algorithms can be modified to exhibit uniform power consumption, or additional circuitry can be integrated to disguise the actual power use patterns.
+
+  Modern cryptographic modules integrate side-channel resistant features, including noise generators and dual-rail logic, to obscure the relationship between the cryptographic operations and the physical emissions like power or electromagnetic signals.
+
+  Dedicated hardware elements, such as Hardware Security Modules (HSMs) or Trusted Platform Modules (TPMs), often include designs that inherently resist side-channel attacks, thereby safeguarding the cryptographic processes they handle.
+  
+\hypertarget{reactive-strategies}{%
+\subsection{Reactive Strategies}\label{reactive-strategies}}
+
+\textbf{Firmware and Software Updates}: Patching vulnerabilities is a
+common approach to mitigate discovered flaws. This includes updates to:
+
+\begin{itemize}
+\item
+  \textbf{Microcode}: Processor microcode updates can mitigate certain
+  vulnerabilities at the cost of performance.
+
+  \emph{Source: Intel's response to Spectre and Meltdown vulnerabilities
+  with microcode updates}.
+\item
+  \textbf{Device Firmware}: Updating firmware can address
+  vulnerabilities in peripherals and embedded devices.
+
+  \emph{Source: ``Best Practices for Firmware Updates'', NIST Special
+  Publication 800-193}.
+\end{itemize}
+
+\textbf{Hardware Recalls and Replacements}: In cases where software
+cannot fully mitigate a vulnerability, hardware modifications or recalls
+may be necessary.
+
+\begin{itemize}
+\item
+  \textbf{TPM Recalls}: The Infineon TPM vulnerability required a
+  hardware fix for certain keys generated by the flawed library.
+
+  \emph{Source: ``Infineon RSA Key Generation Issue'', Infineon
+  Technologies Advisory, 2017}.
+\end{itemize}
+
+\textbf{Isolation and Virtualization}: Employing hardware and software
+techniques to isolate potentially vulnerable components or sensitive
+operations from the rest of the system.
+
+\begin{itemize}
+\item
+  \textbf{Virtualization-Based Security (VBS)}: Uses hardware
+  virtualization features to isolate security-critical parts of the OS.
+
+  \emph{Source: ``How Virtualization-Based Security Powers Windows
+  Defender'', Microsoft Tech Community}.
+\end{itemize}
+
+\hypertarget{current-challenges-in-hardware-security}{%
+\section{Current Challenges in Hardware
+Security}\label{current-challenges-in-hardware-security}}
+
+\hypertarget{complexity-and-integration}{%
+\paragraph{Complexity and
+Integration}\label{complexity-and-integration}}
+
+Modern hardware's complexity, characterized by billions of transistors
+and multifaceted systems on a chip (SoCs), introduces numerous security
+vulnerabilities. The integration of diverse functionalities, from
+wireless communication to cryptographic processing units, within single
+chips, like those seen in smartphones and IoT devices, amplifies the
+risk of cross-component vulnerabilities.
+
+\begin{itemize}
+\item
+  \textbf{Source}: Kocher et al.'s seminal paper on Spectre and Meltdown
+  vulnerabilities showcases how complex CPU architectures can lead to
+  significant security challenges (Kocher et al., ``Spectre Attacks:
+  Exploiting Speculative Execution,'' 2019).
+\end{itemize}
+
+\hypertarget{scaling-of-preemptive-measures}{%
+\paragraph{Scaling of Preemptive
+Measures}\label{scaling-of-preemptive-measures}}
+
+As hardware technology evolves, maintaining and scaling preemptive
+security measures becomes increasingly challenging. The design and
+implementation of security features must not only address current
+threats but also anticipate future vulnerabilities, all while adhering
+to stringent performance and power consumption constraints.
+
+\begin{itemize}
+\item
+  \textbf{Example}: The development of Trusted Execution Environments
+  (TEEs) like ARM's TrustZone, which must evolve to address new attack
+  vectors while maintaining compatibility and performance across
+  generations of hardware.
+\end{itemize}
+
+\hypertarget{post-quantum-cryptography}{%
+\paragraph{Post-Quantum Cryptography}\label{post-quantum-cryptography}}
+
+The potential of quantum computing to break current cryptographic
+systems poses a significant threat to hardware security, particularly in
+secure communication and data protection. Developing quantum-resistant
+cryptographic algorithms and integrating them into hardware is an urgent
+priority.
+
+\begin{itemize}
+\item
+  \textbf{Source}: The National Institute of Standards and Technology
+  (NIST)'s ongoing efforts to standardize post-quantum cryptographic
+  algorithms highlight the importance of this research area (NIST
+  Post-Quantum Cryptography Standardization Project).
+\end{itemize}
+
+\hypertarget{reactive-strategy-limitations}{%
+\paragraph{Reactive Strategy
+Limitations}\label{reactive-strategy-limitations}}
+
+The inherent limitations of hardware in accommodating reactive security
+strategies necessitate innovative approaches to vulnerability management
+post-production. The rigidity of hardware makes addressing discovered
+vulnerabilities complex and costly.
+
+\begin{itemize}
+\item
+  \textbf{Example}: The recall of FPGAs and SoCs due to the discovery of
+  critical vulnerabilities, such as the vulnerability in Infineon's TPM
+  chips, demonstrates the challenges and costs associated with reactive
+  strategies in hardware security.
+\end{itemize}
+
+\hypertarget{future-research-directions}{%
+\subsection{Future Research
+Directions}\label{future-research-directions}}
+
+\hypertarget{advanced-materials-and-fabrication-techniques}{%
+\paragraph{Advanced Materials and Fabrication
+Techniques}\label{advanced-materials-and-fabrication-techniques}}
+
+Research into new materials like graphene or advanced silicon
+fabrication techniques could yield hardware with inherent security
+features, such as resistance to tampering or enhanced electromagnetic
+shielding.
+
+\begin{itemize}
+\item
+  \textbf{Source}: A study on the use of graphene in creating
+  tamper-resistant circuits presents a promising avenue for secure
+  hardware design (Lee et al., ``Graphene for Secure Hardware,'' IEEE
+  Transactions on Emerging Topics in Computing, 2020).
+\end{itemize}
+
+\hypertarget{ai-and-machine-learning-for-security}{%
+\paragraph{AI and Machine Learning for
+Security}\label{ai-and-machine-learning-for-security}}
+
+Integrating AI and machine learning directly into hardware security
+mechanisms can offer dynamic, adaptive defenses against complex and
+evolving threats. This includes anomaly detection systems that can
+identify unusual behavior indicative of a security breach at the
+hardware level.
+
+\begin{itemize}
+\item
+  \textbf{Example}: Google's use of machine learning in its Titan M
+  security chip to detect abnormal patterns and prevent insider attacks
+  illustrates the potential of AI in enhancing hardware security.
+\end{itemize}
+
+\hypertarget{homomorphic-encryption-hardware}{%
+\paragraph{Homomorphic Encryption
+Hardware}\label{homomorphic-encryption-hardware}}
+
+Developing specialized hardware that supports homomorphic encryption
+operations natively can revolutionize data privacy, enabling secure
+computation on encrypted data without decryption, a critical capability
+for cloud computing.
+
+\begin{itemize}
+\item
+  \textbf{Source}: Research by Gentry and others on fully homomorphic
+  encryption lays the groundwork for this transformative approach to
+  data security (Gentry, ``A Fully Homomorphic Encryption Scheme,''
+  Stanford University, 2009).
+\end{itemize}
+
+\hypertarget{secure-hardware-lifecycle-management}{%
+\paragraph{Secure Hardware Lifecycle
+Management}\label{secure-hardware-lifecycle-management}}
+
+Ensuring hardware security from design to decommissioning involves
+secure supply chain practices, reliable firmware updates, and safe
+disposal methods to prevent data leakage from discarded devices.
+
+\begin{itemize}
+\item
+  \textbf{Example}: The Secure Device Lifecycle Management (SDLM)
+  approach, which encompasses secure provisioning, updates, and
+  end-of-life processes, is vital for maintaining security throughout a
+  device's lifespan.
+\end{itemize}
+
+By elaborating on these challenges and research directions with detailed
+examples and authoritative sources, this section offers a comprehensive
+overview of the state of hardware security. It highlights the ongoing
+need for innovation and adaptation in the face of an ever-evolving
+threat landscape and technological advancements.
