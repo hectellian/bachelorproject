@@ -4,11 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "f6716057a2ef607c",
+        "id": "6d11d74b7dc1297a",
         "type": "tabs",
         "children": [
           {
-            "id": "7a10e23ed15b1a43",
+            "id": "3d79cf4d79eafc1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sections/State of the Art in Hardware Security Flaws.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1f4b9a2549d3c3a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ZI_template.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d77d775bd970671f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -174,31 +201,29 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "87a36aa1d25f1de5",
+  "active": "d77d775bd970671f",
   "lastOpenFiles": [
-    "images/emuMMCpartition.jpg",
-    "images/tegrapayload.jpg",
-    "images/payloadinjected.png",
-    "images/rcmok.png",
-    "images",
-    "Citations.md",
+    "ZI_template.md",
     "sections/State of the Art in Hardware Security Flaws.md",
-    "DRM and Content Protection.md",
+    "Quotes.md",
+    "Main.md",
+    "kimFlippingBitsMemory2014.md",
+    "@kimFlippingBitsMemory2014.md",
     "sections/Introduction.md",
-    "sections/Abstract.md",
-    "main.synctex(busy)",
-    "pdflatex42663.fls",
-    "main.synctex.gz",
-    "main.pdf",
-    "pdflatex42649.fls",
-    "pdflatex21895.fls",
-    "pdflatex21871.fls",
-    "main.log",
-    "main.fls",
-    "library.md",
+    "images/tegrapayload.jpg",
+    "images/rcmok.png",
+    "images/payloadinjected.png",
+    "images/emuMMCpartition.jpg",
+    "images",
+    "library.bib",
+    "structure.tex",
+    "My Library.bib",
+    "sections",
     "Welcome.md",
     "BachelorProject/Hardware Flaws And Their Impact On Software Security.md",
     "2023-09-28.md",
+    "BachelorProject",
+    "Autumn2023",
     "2023-12-19.md",
     "Parallelism.md",
     "Architectures.md",
@@ -216,6 +241,8 @@
     "Concurrent Programs.md",
     "Concurrent Systems.md",
     "OSI Model.canvas",
-    "OSI Model.md"
+    "img",
+    "Uni/Autumn2023/Networks",
+    "Uni"
   ]
 }

@@ -4,21 +4,30 @@ The journey of hardware security has evolved significantly over the years, from 
 
 1. **Early Developments**: Initially, hardware security was predominantly driven by the needs of government and military applications. The focus was on ensuring the reliability and security of semiconductors in environments subject to extreme conditions, such as outer space or high-altitude flights. Techniques like **radiation hardening** were developed to protect these systems against environmental challenges, including radiation and temperature fluctuations [[Radiation Hardening Source]] . For example, the use of Silicon on Insulator (SOI) technology in semiconductor fabrication improved resistance to radiation effects.
 
-2. **Commercialization and Consumer Devices**: With the advent of consumer electronics, hardware security expanded to include protection against piracy and unauthorized access. Digital Rights Management (DRM) became crucial in devices like cable set-top boxes and gaming consoles. This era saw the emergence of **content protection schemes** and the corresponding development of countermeasures to bypass these protections. [[DRM and Content Protection]]
+1. **Commercialization and Consumer Devices**: With the advent of consumer electronics, hardware security expanded to include protection against piracy and unauthorized access. Digital Rights Management (DRM) became crucial in devices like cable set-top boxes and gaming consoles. This era saw the emergence of **content protection schemes** and the corresponding development of countermeasures to bypass these protections. [[DRM and Content Protection]]
 
-3. **Remote Hardware Vulnerabilities**: A significant shift occurred with the discovery of vulnerabilities that could be exploited remotely, such as the **Rowhammer attack**. This attack involves repeatedly accessing a row of DRAM to induce bit flips in adjacent rows, demonstrating that physical access to the device was no longer a prerequisite for successful hardware exploitation. [[Rowhammer attack]]
+```mermaid
+graph TD;
 
-```c
-// Pseudocode illustrating the basic concept of a Rowhammer attack
-while (true) {
-	// Repeatedly access a specific memory location
-	read(memory_location);
-	// Optionally, access other locations to intensify the effect
-	for (int i = 0; i < N; i++) {
-		read(other_locations[i]);
-	}
-}
+    CS[Content Server] --> |Encrypted Content & Keys| DRM[DRM Management System];
+
+    DRM --> |Decryption Key| CD[Consumer Device];
 ```
+
+1. **Remote Hardware Vulnerabilities**: The discovery of vulnerabilities that could be exploited remotely marked a significant shift in cybersecurity concerns. Notably, the **Rowhammer attack** exemplifies this transition. Traditionally, hardware attacks were assumed to require physical access. However, Rowhammer can be initiated remotely by leveraging code that induces bit flips in a device's DRAM, affecting adjacent rows. Such an attack was demonstrated on various architectures, including Intel's Sandy Bridge, Ivy Bridge, Haswell, and AMD's Piledriver systems, by executing a specific pattern of assembly instructions:
+
+```assembly
+Code 1a: Induces errors
+mov (X), %eax       ; Move data at memory location X into register %eax
+clflush (X)         ; Flush the cache line containing memory
+location X
+mfence              ; Memory fence to ensure the ordering of memory operations
+jmp code1a          ; Jump back to the first instruction
+```
+
+This attack sequence strategically causes DRAM cells to leak charges into adjacent cells, overcoming the inherent electrical isolation between them, leading to bit flips. For instance, this code sequence resulted in numerous bit flips, which varied across different microarchitectures, as shown in Table 2 from the research.
+
+The ability to induce such bit flips remotely through crafted payloads, like malicious JavaScript on a web page, has elevated Rowhammer from a theoretical concern to a practical cybersecurity threat. The implications of such a vulnerability are profound: systems could potentially be compromised without the attacker ever physically touching the hardware. This shifts the landscape of system security, emphasizing the need for vigilant memory management and robust protective mechanisms in both hardware design and system software. 
 
 4. **Modern Challenges**: Today, hardware vulnerabilities like **Spectre and Meltdown** have shown that even fundamental hardware design principles can introduce security risks. These vulnerabilities exploit speculative execution—a performance feature in modern CPUs—to leak sensitive information. [[Spectre and Meltdown Source]]
 

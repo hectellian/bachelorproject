@@ -10,6 +10,6 @@
   "pandoc": "/usr/bin/pandoc",
   "pdflatex": null,
   "outputFolder": null,
-  "extraArguments": "--include-in-header=structure.tex\n--bibliography=library.bib\n--citeproc",
+  "extraArguments": "",
   "exportFrom": "html"
 }

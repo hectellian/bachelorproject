@@ -1,0 +1,32 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [
+    {
+      "name": "Pandoc",
+      "format": "pandoc",
+      "brackets": true
+    },
+    {
+      "name": "Bibliography",
+      "format": "formatted-bibliography",
+      "cslStyle": "ieee"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "Create Literature Notes",
+      "outputPathTemplate": "citations/{{citekey}}.md",
+      "imageOutputPathTemplate": "images/{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "ZI_template.md",
+      "cslStyle": "association-for-computing-machinery"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": false,
+  "whichNotesToOpenAfterImport": "first-imported-note"
+}
