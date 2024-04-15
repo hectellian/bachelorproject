@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+
+  \PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{DPA}\PYG{p}{\PYGZcb{}:} \PYG{n}{Differential} \PYG{n}{Power} \PYG{n}{Analysis} \PYG{n}{uses} \PYG{n}{statistical} \PYG{n}{techniques} \PYG{n}{to} \PYG{n}{extract} \PYG{n}{secret} \PYG{n}{keys} \PYG{n}{by} \PYG{n}{analyzing} \PYG{n}{power} \PYG{n}{consumption} \PYG{n}{data} \PYG{k+kn}{from} \PYG{n+nn}{multiple} \PYG{n}{operations}\PYG{o}{.}
+  \PYG{n}{In} \PYG{n}{DPA}\PYG{p}{,} \PYG{n}{we} \PYG{n}{focus} \PYG{n}{on} \PYG{n}{the} \PYG{n}{mean} \PYG{n}{difference} \PYG{n}{of} \PYG{n}{grouped} \PYG{n}{data} \PYG{n}{based} \PYG{n}{on} \PYG{n}{hypothetical} \PYG{n}{intermediate} \PYG{n}{values}\PYG{o}{.} \PYG{n}{Given} \PYG{n}{a} \PYG{n+nb}{set} \PYG{n}{of} \PYG{n}{power} \PYG{n}{traces} \PYGZbs{}\PYG{p}{(} \PYG{n}{T\PYGZus{}i} \PYGZbs{}\PYG{p}{)} \PYG{o+ow}{and} \PYG{n}{a} \PYG{n}{hypothesis} \PYG{n}{function} \PYGZbs{}\PYG{p}{(} \PYG{n}{H}\PYG{p}{(}\PYG{n}{k}\PYG{p}{,} \PYG{n}{x}\PYG{p}{)} \PYGZbs{}\PYG{p}{)} \PYG{n}{that} \PYG{n}{predicts} \PYG{n}{power} \PYG{n}{consumption} \PYG{n}{based} \PYG{n}{on} \PYG{n}{key} \PYG{n}{guess} \PYGZbs{}\PYG{p}{(} \PYG{n}{k} \PYGZbs{}\PYG{p}{)} \PYG{o+ow}{and} \PYG{n+nb}{input} \PYGZbs{}\PYG{p}{(} \PYG{n}{x} \PYGZbs{}\PYG{p}{),} \PYG{n}{the} \PYG{n}{differential} \PYG{n}{trace} \PYGZbs{}\PYG{p}{(} \PYG{n}{D} \PYGZbs{}\PYG{p}{)} \PYG{o+ow}{is} \PYG{n}{calculated} \PYG{k}{as}\PYG{p}{:}
+\PYGZbs{}\PYG{p}{[}
+\PYG{n}{D\PYGZus{}k}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]} \PYG{o}{=} \PYGZbs{}\PYG{n}{frac}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{o}{|}\PYG{n}{G\PYGZus{}0}\PYG{o}{|}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{sum\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{n}{i} \PYGZbs{}\PYG{o+ow}{in} \PYG{n}{G\PYGZus{}0}\PYG{p}{\PYGZcb{}} \PYG{n}{T\PYGZus{}i}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYGZbs{}\PYG{n}{frac}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{o}{|}\PYG{n}{G\PYGZus{}1}\PYG{o}{|}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{sum\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{n}{i} \PYGZbs{}\PYG{o+ow}{in} \PYG{n}{G\PYGZus{}1}\PYG{p}{\PYGZcb{}} \PYG{n}{T\PYGZus{}i}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}
+\PYGZbs{}\PYG{p}{]}
+\PYG{n}{where} \PYGZbs{}\PYG{p}{(} \PYG{n}{G\PYGZus{}0} \PYGZbs{}\PYG{p}{)} \PYG{o+ow}{and} \PYGZbs{}\PYG{p}{(} \PYG{n}{G\PYGZus{}1} \PYGZbs{}\PYG{p}{)} \PYG{n}{are} \PYG{n}{sets} \PYG{n}{of} \PYG{n}{indices} \PYG{n}{classified} \PYG{n}{by} \PYG{n}{whether} \PYGZbs{}\PYG{p}{(} \PYG{n}{H}\PYG{p}{(}\PYG{n}{k}\PYG{p}{,} \PYG{n}{x\PYGZus{}i}\PYG{p}{)} \PYGZbs{}\PYG{p}{)} \PYG{n}{predicts} \PYG{n}{low} \PYG{o+ow}{or} \PYG{n}{high} \PYG{n}{power} \PYG{n}{consumption}\PYG{p}{,} \PYG{n}{respectively}\PYG{o}{.}
+
+
+\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+
+\PYGZbs{}\PYG{n}{subsubsection}\PYG{p}{\PYGZob{}}\PYG{n}{Fault} \PYG{n}{Injection} \PYG{n}{Attacks}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{Fault} \PYG{n}{injection} \PYG{n}{attacks} \PYG{n}{deliberately} \PYG{n}{induce} \PYG{n}{operational} \PYG{n}{errors} \PYG{n}{to} \PYG{n}{bypass} \PYG{n}{security} \PYG{n}{mechanisms} \PYG{o+ow}{or} \PYG{n}{corrupt} \PYG{n}{the} \PYG{n}{execution} \PYG{n}{of} \PYG{n}{processes}\PYG{p}{,} \PYG{n}{exploiting} \PYG{n}{these} \PYG{n}{faults} \PYG{k}{for} \PYG{n}{unauthorized} \PYG{n}{access} \PYG{o+ow}{or} \PYG{n}{data} \PYG{n}{extraction}\PYG{o}{.}
+
+\PYG{o}{\PYGZhy{}} \PYG{o}{**}\PYG{n}{Voltage} \PYG{n}{Glitching}\PYG{o}{**}\PYG{p}{:} \PYG{n}{This} \PYG{n}{technique} \PYG{n}{involves} \PYG{n}{creating} \PYG{n}{brief}\PYG{p}{,} \PYG{n}{controlled} \PYG{n}{fluctuations} \PYG{o+ow}{in} \PYG{n}{the} \PYG{n}{device}\PYG{l+s+s1}{\PYGZsq{}s power supply to induce computational errors. For example, a precisely timed voltage drop can cause a microprocessor to skip certain instructions, potentially bypassing security checks.}
+
+\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{minted}\PYG{p}{\PYGZcb{}[}\PYG{n}{frame}\PYG{o}{=}\PYG{n}{single}\PYG{p}{,} \PYG{n}{linenos}\PYG{p}{,} \PYG{n}{breaklines}\PYG{p}{]\PYGZob{}}\PYG{n}{python}\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{\PYGZsh{} Pseudocode for a voltage glitching attack scenario}
+\PYG{k}{def} \PYG{n+nf}{voltage\PYGZus{}glitching\PYGZus{}attack}\PYG{p}{(}\PYG{n}{target\PYGZus{}operation}\PYG{p}{):}
+    \PYG{k}{while} \PYG{o+ow}{not} \PYG{n}{successful}\PYG{p}{:}
+        \PYG{n}{apply\PYGZus{}voltage\PYGZus{}drop}\PYG{p}{()}  \PYG{c+c1}{\PYGZsh{} Induce a brief voltage drop at a critical moment}
+        \PYG{n}{result} \PYG{o}{=} \PYG{n}{target\PYGZus{}operation}\PYG{p}{()}
+        \PYG{k}{if} \PYG{n}{check\PYGZus{}for\PYGZus{}errors}\PYG{p}{(}\PYG{n}{result}\PYG{p}{):}
+            \PYG{n}{exploit\PYGZus{}errors}\PYG{p}{(}\PYG{n}{result}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Leverage errors to bypass security}
+\end{Verbatim}

@@ -1,0 +1,95 @@
+\documentclass{template}
+\usepackage{graphicx,parskip,appendix,float, subcaption}
+\usepackage{fancyhdr, lastpage}
+\usepackage[ruled] {algorithm2e}
+\usepackage{url,amsmath,amssymb,fancybox,listings,pdfpages,caption,multicol,datetime,rotating, booktabs, minted, epigraph}
+%\usepackage[usenames,dvipsnames]{color}
+\usepackage[pagebackref=false,pdffitwindow=true]{hyperref}
+\usepackage{csquotes}
+\usepackage[style=numeric,backend=biber]{biblatex}
+\graphicspath{{./images}}
+\addbibresource{library.bib}
+
+%NOTE: The hyperref usepackage should be the last \usepackage!!
+%NOTE: When pagebackref=true an error will appear at the end of compiling. press `q' to ignore
+%NOTE: Referencing Algorithms does not work if this usepackage is before the hyperref include.!!
+%NOTE: This is a comment, ignored when the document is compiled
+%NOTE: The following document configuration settings generally do not need to be modified
+%NOTE: More packages may need to be added to provide additional functionality
+
+\hypersetup{
+    pdftitle    = {Report Title},
+    pdfauthor   = {Author Name},
+    pdfsubject  = {Subject Area},
+    pdfkeywords = {Comma separated list of keywords},
+    colorlinks  = true, anchorcolor = blue, filecolor = blue, urlcolor = blue,
+    linkcolor   = blue,    %NOTE: change (blue) to (colIdentifier) to have links within the document in Black
+    citecolor   = blue,    %NOTE: change (blue) to (colIdentifier) to have citation links within the document in Black
+}
+
+\definecolor{colBackGrnd}{rgb}{1,1,0.8}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{0,.5,0}
+\definecolor{colString}{rgb}{0,0,1}
+\definecolor{colWhite}{rgb}{1,1,1}
+
+\newcommand{\MyHookSign}{\hbox{\ensuremath\hookleftarrow}}
+
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Proposition}[Theorem]{Proposition}
+\newtheorem{Lemma}[Theorem]{Lemma}
+\newtheorem{Proof}[Theorem]{Proof}
+\newtheorem{Remark}[Theorem]{Remark}
+\newtheorem{Claim}[Theorem]{Claim}
+\newtheorem{Example}[Theorem]{Example}
+\newtheorem{Definition}[Theorem]{Definition}
+
+%NOTE: Setup for including program listings
+\lstset{%
+    float=H,
+    basicstyle=\ttfamily\footnotesize,
+    identifierstyle=\color{colIdentifier},
+    keywordstyle=\color{colIdentifier}, %
+    stringstyle=\color{colIdentifier},
+    commentstyle=\color{colIdentifier}, %
+    columns=flexible,
+    tabsize=2,
+    frame=single,
+    extendedchars=true, %
+    showspaces=false,
+    showstringspaces=false,
+    numbers=left, %
+    numberstyle=\footnotesize,
+    breaklines=true,
+    prebreak={\space\MyHookSign},
+    language=Java,
+    backgroundcolor=\color{colBackGrnd},
+    breakautoindent=true, %
+    captionpos=b%
+} %\hypersetup{colorlinks=true, citecolor=\color{colIdentifier}}
+
+\sloppy
+\begin{document}
+
+\DeclareGraphicsExtensions{.jpg,.png,.gif,.pdf}
+
+\title{\huge{Hardware Security Flaws and their Impact on Software Security}}
+\author{Anthony Philippe Christoforou}
+\degreetitle{Computer Science} % Replace with appropriate degree
+\rpttype{BSc}    % Replace MSc with BSc for Honours Degree Year projects.
+\principaladviser{Prof. Eduardo Solana}
+
+\include{sections/abstract}
+\lstlistoflistings  
+
+
+\include{sections/introduction}
+\include{sections/state_of_the_art}
+
+\footnotesize  %NOTE: reduced the size of the text for the bibliography
+%NOTE: set the style for the bibliography and display the references used within the document
+\printbibliography
+\normalsize
+\appendix
+\end{document} %NOTE: END of document, nothing after this point

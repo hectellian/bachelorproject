@@ -1,0 +1,34 @@
+\contentsline {chapter}{Abstract}{ii}{chapter*.1}%
+\contentsline {chapter}{Disclaimer}{iii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Thesis Statement}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Detailed Breakdown of Objectives}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Supporting Concepts and Tools}{4}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Scope}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Limitations}{5}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Rationale for Scope}{5}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Implications of Scope}{5}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Structure}{6}{section.1.4}%
+\contentsline {chapter}{\numberline {2}State of the Art in Hardware Security Flaws}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Historical Overview}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Milestones}{11}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Types of Hardware Flaws}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Physical Vulnerabilities}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Side-channel Attacks}{12}{subsection.2.2.2}%
+\contentsline {subsubsection}{Timing Attacks}{13}{section*.11}%
+\contentsline {subsubsection}{Power Analysis Attacks}{15}{section*.12}%
+\contentsline {subsubsection}{Fault Injection Attacks}{16}{section*.13}%
+\contentsline {section}{\numberline {2.3}Mitigation Strategies}{18}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Preemptive Measures}{18}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Reactive Strategies}{21}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Current Challenges in Hardware Security}{22}{section.2.4}%
+\contentsline {paragraph}{Complexity and Integration}{22}{section*.15}%
+\contentsline {paragraph}{Scaling of Preemptive Measures}{22}{section*.16}%
+\contentsline {paragraph}{Post-Quantum Cryptography}{23}{section*.17}%
+\contentsline {paragraph}{Reactive Strategy Limitations}{23}{section*.18}%
+\contentsline {subsection}{\numberline {2.4.1}Future Research Directions}{23}{subsection.2.4.1}%
+\contentsline {paragraph}{Advanced Materials and Fabrication Techniques}{23}{section*.19}%
+\contentsline {paragraph}{AI and Machine Learning for Security}{23}{section*.20}%
+\contentsline {paragraph}{Homomorphic Encryption Hardware}{23}{section*.21}%
+\contentsline {paragraph}{Secure Hardware Lifecycle Management}{24}{section*.22}%

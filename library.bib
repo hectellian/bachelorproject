@@ -11,6 +11,38 @@
   pagetotal = {526}
 }
 
+@online{bittnerForgottenThreatVoltage2021,
+  title = {The {{Forgotten Threat}} of {{Voltage Glitching}}: {{A Case Study}} on {{Nvidia Tegra X2 SoCs}}},
+  shorttitle = {The {{Forgotten Threat}} of {{Voltage Glitching}}},
+  author = {Bittner, Otto and Krachenfels, Thilo and Galauner, Andreas and Seifert, Jean-Pierre},
+  date = {2021-08-16},
+  eprint = {2108.06131},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2108.06131},
+  urldate = {2024-04-15},
+  abstract = {Voltage fault injection (FI) is a well-known attack technique that can be used to force faulty behavior in processors during their operation. Glitching the supply voltage can cause data value corruption, skip security checks, or enable protected code paths. At the same time, modern systems on a chip (SoCs) are used in security-critical applications, such as self-driving cars and autonomous machines. Since these embedded devices are often physically accessible by attackers, vendors must consider device tampering in their threat models. However, while the threat of voltage FI is known since the early 2000s, it seems as if vendors still forget to integrate countermeasures. This work shows how the entire boot security of an Nvidia SoC, used in Tesla's autopilot and Mercedes-Benz's infotainment system, can be circumvented using voltage FI. We uncover a hidden bootloader that is only available to the manufacturer for testing purposes and disabled by fuses in shipped products. We demonstrate how to re-enable this bootloader using FI to gain code execution with the highest privileges, enabling us to extract the bootloader's firmware and decryption keys used in later boot stages. Using a hardware implant, an adversary might misuse the hidden bootloader to bypass trusted code execution even during the system's regular operation.},
+  pubstate = {preprint},
+  keywords = {Computer Science - Cryptography and Security},
+  file = {C\:\\Users\\chris\\Zotero\\storage\\FASQWYH4\\Bittner et al. - 2021 - The Forgotten Threat of Voltage Glitching A Case .pdf;C\:\\Users\\chris\\Zotero\\storage\\2VGNE92W\\2108.html}
+}
+
+@inproceedings{brierCorrelationPowerAnalysis2004,
+  title = {Correlation {{Power Analysis}} with a {{Leakage Model}}},
+  booktitle = {Cryptographic {{Hardware}} and {{Embedded Systems}} - {{CHES}} 2004},
+  author = {Brier, Eric and Clavier, Christophe and Olivier, Francis},
+  editor = {Joye, Marc and Quisquater, Jean-Jacques},
+  date = {2004},
+  pages = {16--29},
+  publisher = {Springer},
+  location = {Berlin, Heidelberg},
+  doi = {10.1007/978-3-540-28632-5_2},
+  abstract = {A classical model is used for the power consumption of cryptographic devices. It is based on the Hamming distance of the data handled with regard to an unknown but constant reference state. Once validated experimentally it allows an optimal attack to be derived called Correlation Power Analysis. It also explains the defects of former approaches such as Differential Power Analysis.},
+  isbn = {978-3-540-28632-5},
+  langid = {english},
+  file = {C:\Users\chris\Zotero\storage\VHIHPWI5\Brier et al. - 2004 - Correlation Power Analysis with a Leakage Model.pdf}
+}
+
 @online{burkeIntelUnleashesComprehensive,
   title = {Intel {{Unleashes}} '{{Comprehensive}}' {{Threat Mitigation Response To Spectre And Meltdown Security Vulnerabilities}} | {{CRN}}},
   author = {Burke, Steven},
@@ -81,6 +113,18 @@
   langid = {american},
   organization = {Cycuity},
   file = {C:\Users\chris\Zotero\storage\8NVIKFBS\history-of-hardware-security.html}
+}
+
+@inreference{DigitalRightsManagement2024,
+  title = {Digital Rights Management},
+  booktitle = {Wikipedia},
+  date = {2024-03-25T12:40:16Z},
+  url = {https://en.wikipedia.org/w/index.php?title=Digital_rights_management&oldid=1215486134},
+  urldate = {2024-04-15},
+  abstract = {Digital rights management (DRM) is the management of legal access to digital content. Various tools or technological protection measures (TPM), such as access control technologies, can restrict the use of proprietary hardware and copyrighted works. DRM technologies govern the use, modification and distribution of copyrighted works (e.g. software, multimedia content) and of systems that enforce these policies within devices. DRM technologies include licensing agreements and encryption.Laws in many countries criminalize the circumvention of DRM, communication about such circumvention, and the creation and distribution of tools used for such circumvention. Such laws are part of the United States' Digital Millennium Copyright Act (DMCA), and the European Union's Information Society Directive – with the French DADVSI an example of a member state of the European Union implementing that directive.Copyright holders argue that DRM technologies are necessary to protect intellectual property, just as physical locks prevent personal property from theft. For examples, they can help the copyright holders for maintaining artistic controls, and supporting licenses' modalities such as rentals. Industrial users (i.e. industries) have expanded the use of DRM technologies to various hardware products, such as Keurig's coffeemakers, Philips' light bulbs, mobile device power chargers, and John Deere's tractors. For instance, tractor companies try to prevent farmers from making repairs via DRM.DRM is controversial. There is an absence of evidence about the DRM capability in preventing copyright infringement, some complaints by legitimate customers for caused inconveniences, and a suspicion of stifling innovation and competition. Furthermore, works can become permanently inaccessible if the DRM scheme changes or if a required service is discontinued. DRM technologies have been criticized for restricting individuals from copying or using the content legally, such as by fair use or by making backup copies. DRM is in common use by the entertainment industry (e.g., audio and video publishers). Many online stores such as OverDrive use DRM technologies, as do cable and satellite service operators. Apple removed DRM technology from iTunes around 2009. Typical DRM also prevents lending materials out through a library, or accessing works in the public domain.},
+  langid = {english},
+  annotation = {Page Version ID: 1215486134},
+  file = {C:\Users\chris\Zotero\storage\5TNGINKK\Digital_rights_management.html}
 }
 
 @online{DocsMan1Man3,
@@ -284,6 +328,35 @@
   file = {C\:\\Users\\chris\\Zotero\\storage\\W5ZM3Y73\\Maiti et al. - 2010 - A large scale characterization of RO-PUF.pdf;C\:\\Users\\chris\\Zotero\\storage\\ERVWUNM5\\5513108.html}
 }
 
+@inreference{MeltdownSecurityVulnerability2024,
+  title = {Meltdown (Security Vulnerability)},
+  booktitle = {Wikipedia},
+  date = {2024-03-27T14:30:24Z},
+  url = {https://en.wikipedia.org/w/index.php?title=Meltdown_(security_vulnerability)&oldid=1215853086},
+  urldate = {2024-04-15},
+  abstract = {Meltdown is one of the two original transient execution CPU vulnerabilities (the other being Spectre). Meltdown affects Intel x86 microprocessors, IBM POWER processors, and some ARM-based microprocessors. It allows a rogue process to read all memory, even when it is not authorized to do so. Meltdown affects a wide range of systems. At the time of disclosure (2018), this included all devices running any but the most recent and patched versions of iOS, Linux, macOS, or Windows. Accordingly, many servers and cloud services were impacted, as well as a potential majority of smart devices and embedded devices using ARM-based processors (mobile devices, smart TVs, printers and others), including a wide range of networking equipment. A purely software workaround to Meltdown has been assessed as slowing computers between 5 and 30 percent in certain specialized workloads, although companies responsible for software correction of the exploit reported minimal impact from general benchmark testing.Meltdown was issued a Common Vulnerabilities and Exposures ID of CVE-2017-5754, also known as Rogue Data Cache Load (RDCL), in January 2018. It was disclosed in conjunction with another exploit, Spectre, with which it shares some characteristics. The Meltdown and Spectre vulnerabilities are considered "catastrophic" by security analysts. The vulnerabilities are so severe that security researchers initially believed the reports to be false.Several procedures to help protect home computers and related devices from the Meltdown and Spectre security vulnerabilities have been published. Meltdown patches may produce performance loss. Spectre patches have been reported to significantly reduce performance, especially on older computers; on the then-newest (2017) eighth-generation Core platforms, benchmark performance drops of 2–14 percent have been measured. On 18 January 2018, unwanted reboots, even for newer Intel chips, due to Meltdown and Spectre patches, were reported. Nonetheless, according to Dell: "No 'real-world' exploits of these vulnerabilities [i.e., Meltdown and Spectre] have been reported to date [26 January 2018], though researchers have produced proof-of-concepts." Dell further recommended: "promptly adopting software updates, avoiding unrecognized hyperlinks and websites, not downloading files or applications from unknown sources ... following secure password protocols ... [using] security software to help protect against malware (advanced threat prevention software or anti-virus)."On 15 March 2018, Intel reported that it would redesign its CPUs to help protect against the Meltdown and related Spectre vulnerabilities (especially, Meltdown and Spectre-V2, but not Spectre-V1), and expected to release the newly redesigned processors later in 2018. On 8 October 2018, Intel is reported to have added hardware and firmware mitigations regarding Spectre and Meltdown vulnerabilities to its latest processors.},
+  langid = {english},
+  annotation = {Page Version ID: 1215853086},
+  file = {C:\Users\chris\Zotero\storage\4F6SUYTS\Meltdown_(security_vulnerability).html}
+}
+
+@inproceedings{mofradComparisonStudyIntel2018,
+  title = {A Comparison Study of Intel {{SGX}} and {{AMD}} Memory Encryption Technology},
+  booktitle = {Proceedings of the 7th {{International Workshop}} on {{Hardware}} and {{Architectural Support}} for {{Security}} and {{Privacy}}},
+  author = {Mofrad, Saeid and Zhang, Fengwei and Lu, Shiyong and Shi, Weidong},
+  date = {2018-06-02},
+  pages = {1--8},
+  publisher = {ACM},
+  location = {Los Angeles California},
+  doi = {10.1145/3214292.3214301},
+  url = {https://dl.acm.org/doi/10.1145/3214292.3214301},
+  urldate = {2024-04-15},
+  eventtitle = {{{HASP}} '18: {{Hardware}} and {{Architectural Support}} for {{Security}} and {{Privacy}}},
+  isbn = {978-1-4503-6500-0},
+  langid = {english},
+  file = {C:\Users\chris\Zotero\storage\WRWVS8WQ\Mofrad et al. - 2018 - A comparison study of intel SGX and AMD memory enc.pdf}
+}
+
 @inproceedings{moradiVulnerabilityFPGABitstream2011,
   title = {On the Vulnerability of {{FPGA}} Bitstream Encryption against Power Analysis Attacks: Extracting Keys from Xilinx {{Virtex-II FPGAs}}},
   shorttitle = {On the Vulnerability of {{FPGA}} Bitstream Encryption against Power Analysis Attacks},
@@ -322,6 +395,18 @@
   langid = {english}
 }
 
+@inreference{RadiationHardening2024,
+  title = {Radiation Hardening},
+  booktitle = {Wikipedia},
+  date = {2024-02-09T20:19:29Z},
+  url = {https://en.wikipedia.org/w/index.php?title=Radiation_hardening&oldid=1205501084},
+  urldate = {2024-04-15},
+  abstract = {Radiation hardening is the process of making electronic components and circuits resistant to damage or malfunction caused by high levels of ionizing radiation (particle radiation and high-energy electromagnetic radiation), especially for environments in outer space (especially beyond the low Earth orbit), around nuclear reactors and particle accelerators, or during nuclear accidents or nuclear warfare. Most semiconductor electronic components are susceptible to radiation damage, and radiation-hardened (rad-hard) components are based on their non-hardened equivalents, with some design and manufacturing variations that reduce the susceptibility to radiation damage. Due to the extensive development and testing required to produce a radiation-tolerant design of a microelectronic chip, the technology of radiation-hardened chips tends to lag behind the most recent developments. Radiation-hardened products are typically tested to one or more resultant-effects tests, including total ionizing dose (TID), enhanced low dose rate effects (ELDRS), neutron and proton displacement damage, and single event effects (SEEs).},
+  langid = {english},
+  annotation = {Page Version ID: 1205501084},
+  file = {C:\Users\chris\Zotero\storage\GGUFE8VY\Radiation_hardening.html}
+}
+
 @online{RCMNHSwitch,
   title = {{{RCM}} - {{NH Switch Guide}}},
   url = {https://nh-server.github.io/switch-guide/user_guide/rcm/},
@@ -350,6 +435,18 @@
   url = {https://ieeexplore.ieee.org/document/8835233},
   urldate = {2024-04-10},
   file = {C:\Users\chris\Zotero\storage\LF42Z552\8835233.html}
+}
+
+@inreference{SpectreSecurityVulnerability2024,
+  title = {Spectre (Security Vulnerability)},
+  booktitle = {Wikipedia},
+  date = {2024-04-15T00:14:33Z},
+  url = {https://en.wikipedia.org/w/index.php?title=Spectre_(security_vulnerability)&oldid=1218972533},
+  urldate = {2024-04-15},
+  abstract = {Spectre is one of the two original transient execution CPU vulnerabilities (the other being Meltdown), which involve microarchitectural timing side-channel attacks. These affect modern microprocessors that perform branch prediction and other forms of speculation. On most processors, the speculative execution resulting from a branch misprediction may leave observable side effects that may reveal private data to attackers. For example, if the pattern of memory accesses performed by such speculative execution depends on private data, the resulting state of the data cache constitutes a side channel through which an attacker may be able to extract information about the private data using a timing attack.Two Common Vulnerabilities and Exposures IDs related to Spectre, CVE-2017-5753 (bounds check bypass, Spectre-V1, Spectre 1.0) and CVE-2017-5715 (branch target injection, Spectre-V2), have been issued. JIT engines used for JavaScript were found to be vulnerable. A website can read data stored in the browser for another website, or the browser's memory itself.In early 2018, Intel reported that it would redesign its CPUs to help protect against the Spectre and related Meltdown vulnerabilities (especially, Spectre variant 2 and Meltdown, but not Spectre variant 1). On 8 October 2018, Intel was reported to have added hardware and firmware mitigations regarding Spectre and Meltdown vulnerabilities to its latest processors.},
+  langid = {english},
+  annotation = {Page Version ID: 1218972533},
+  file = {C:\Users\chris\Zotero\storage\3C5FJPXS\Spectre_(security_vulnerability).html}
 }
 
 @online{SwitchRCMHardmod,

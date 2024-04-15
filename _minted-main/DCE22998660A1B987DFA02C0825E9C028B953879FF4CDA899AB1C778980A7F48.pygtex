@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{mov}\PYG{+w}{ }\PYG{p}{(}\PYG{n+no}{X}\PYG{p}{),}\PYG{+w}{ }\PYG{n+nv}{\PYGZpc{}eax}\PYG{+w}{       }\PYG{c+c1}{; Move data at memory location X into register \PYGZpc{}eax}
+\PYG{n+nf}{clflush}\PYG{+w}{ }\PYG{p}{(}\PYG{n+no}{X}\PYG{p}{)}\PYG{+w}{         }\PYG{c+c1}{; Flush the cache line containing memory}
+\PYG{n+nf}{location}\PYG{+w}{ }\PYG{n+no}{X}
+\PYG{n+nf}{mfence}\PYG{+w}{              }\PYG{c+c1}{; Memory fence to ensure the ordering of memory operations}
+\PYG{n+nf}{jmp}\PYG{+w}{ }\PYG{n+no}{code1a}\PYG{+w}{          }\PYG{c+c1}{; Jump back to the first instruction}
+\end{Verbatim}

@@ -1,0 +1,1029 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{DocsMan1Man3}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{title}{/Docs/Man1.1.1/Man3/{{CRYPTO}}\_memcmp.Html}
+      \field{urlday}{10}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\Y2T5IT62\CRYPTO_memcmp.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.openssl.org/docs/man1.1.1/man3/CRYPTO_memcmp.html
+      \endverb
+      \verb{url}
+      \verb https://www.openssl.org/docs/man1.1.1/man3/CRYPTO_memcmp.html
+      \endverb
+    \endentry
+    \entry{bittnerForgottenThreatVoltage2021}{online}{}
+      \name{author}{4}{}{%
+        {{hash=a5b3e039a8b9931ad3dcc2d7766587bc}{%
+           family={Bittner},
+           familyi={B\bibinitperiod},
+           given={Otto},
+           giveni={O\bibinitperiod}}}%
+        {{hash=9d8b04f6db6d1ef1da6e8a58cab7bff6}{%
+           family={Krachenfels},
+           familyi={K\bibinitperiod},
+           given={Thilo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c50f1c514bd14e11fdc6da4439b7b891}{%
+           family={Galauner},
+           familyi={G\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ed83c5ceed1edd0dbc3cc610adf79477}{%
+           family={Seifert},
+           familyi={S\bibinitperiod},
+           given={Jean-Pierre},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{819a74e8f212bbd0f4601a9023736b68}
+      \strng{fullhash}{06ba9904df1408f8c8ff6b75af5d4bc1}
+      \strng{bibnamehash}{819a74e8f212bbd0f4601a9023736b68}
+      \strng{authorbibnamehash}{819a74e8f212bbd0f4601a9023736b68}
+      \strng{authornamehash}{819a74e8f212bbd0f4601a9023736b68}
+      \strng{authorfullhash}{06ba9904df1408f8c8ff6b75af5d4bc1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Voltage fault injection (FI) is a well-known attack technique that can be used to force faulty behavior in processors during their operation. Glitching the supply voltage can cause data value corruption, skip security checks, or enable protected code paths. At the same time, modern systems on a chip (SoCs) are used in security-critical applications, such as self-driving cars and autonomous machines. Since these embedded devices are often physically accessible by attackers, vendors must consider device tampering in their threat models. However, while the threat of voltage FI is known since the early 2000s, it seems as if vendors still forget to integrate countermeasures. This work shows how the entire boot security of an Nvidia SoC, used in Tesla's autopilot and Mercedes-Benz's infotainment system, can be circumvented using voltage FI. We uncover a hidden bootloader that is only available to the manufacturer for testing purposes and disabled by fuses in shipped products. We demonstrate how to re-enable this bootloader using FI to gain code execution with the highest privileges, enabling us to extract the bootloader's firmware and decryption keys used in later boot stages. Using a hardware implant, an adversary might misuse the hidden bootloader to bypass trusted code execution even during the system's regular operation.}
+      \field{day}{16}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{month}{8}
+      \field{pubstate}{preprint}
+      \field{shorttitle}{The {{Forgotten Threat}} of {{Voltage Glitching}}}
+      \field{title}{The {{Forgotten Threat}} of {{Voltage Glitching}}: {{A Case Study}} on {{Nvidia Tegra X2 SoCs}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2108.06131
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\chris\\Zotero\\storage\\FASQWYH4\\Bittner et al. - 2021 - The Forgotten Threat of Voltage Glitching A Case .pdf;C\:\\Users\\chris\\Zotero\\storage\\2VGNE92W\\2108.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2108.06131
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2108.06131
+      \endverb
+      \keyw{Computer Science - Cryptography and Security}
+    \endentry
+    \entry{costanIntelSGXExplained2016}{online}{}
+      \name{author}{2}{}{%
+        {{hash=51a352c7306910a4bef62e293e6097ea}{%
+           family={Costan},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=4be4060700fa73556250f6feefb96f46}{%
+           family={Devadas},
+           familyi={D\bibinitperiod},
+           given={Srinivas},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2561c882479f6a08aa24884302f4fef3}
+      \strng{fullhash}{2561c882479f6a08aa24884302f4fef3}
+      \strng{bibnamehash}{2561c882479f6a08aa24884302f4fef3}
+      \strng{authorbibnamehash}{2561c882479f6a08aa24884302f4fef3}
+      \strng{authornamehash}{2561c882479f6a08aa24884302f4fef3}
+      \strng{authorfullhash}{2561c882479f6a08aa24884302f4fef3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Intel's Software Guard Extensions (SGX) is a set of extensions to the Intel architecture that aims to provide integrity and privacy guarantees to security-sensitive computation performed on a computer where all the privileged software (kernel, hypervisor, etc) is potentially malicious. This paper analyzes Intel SGX, based on the 3 papers that introduced it, on the Intel Software Developer's Manual (which supersedes the SGX manuals), on an ISCA 2015 tutorial, and on two patents. We use the papers, reference manuals, and tutorial as primary data sources, and only draw on the patents to fill in missing information. This paper's contributions are a summary of the Intel-specific architectural and micro-architectural details needed to understand SGX, a detailed and structured presentation of the publicly available information on SGX, a series of intelligent guesses about some important but undocumented aspects of SGX, and an analysis of SGX's security properties.}
+      \field{annotation}{Publication info: Preprint.}
+      \field{number}{2016/086}
+      \field{pubstate}{preprint}
+      \field{title}{Intel {{SGX Explained}}}
+      \field{urlday}{10}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\85WE3K2F\Costan and Devadas - 2016 - Intel SGX Explained.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://eprint.iacr.org/2016/086
+      \endverb
+      \verb{url}
+      \verb https://eprint.iacr.org/2016/086
+      \endverb
+    \endentry
+    \entry{DigitalRightsManagement2024}{inreference}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Digital rights management (DRM) is the management of legal access to digital content. Various tools or technological protection measures (TPM), such as access control technologies, can restrict the use of proprietary hardware and copyrighted works. DRM technologies govern the use, modification and distribution of copyrighted works (e.g. software, multimedia content) and of systems that enforce these policies within devices. DRM technologies include licensing agreements and encryption.Laws in many countries criminalize the circumvention of DRM, communication about such circumvention, and the creation and distribution of tools used for such circumvention. Such laws are part of the United States' Digital Millennium Copyright Act (DMCA), and the European Union's Information Society Directive – with the French DADVSI an example of a member state of the European Union implementing that directive.Copyright holders argue that DRM technologies are necessary to protect intellectual property, just as physical locks prevent personal property from theft. For examples, they can help the copyright holders for maintaining artistic controls, and supporting licenses' modalities such as rentals. Industrial users (i.e. industries) have expanded the use of DRM technologies to various hardware products, such as Keurig's coffeemakers, Philips' light bulbs, mobile device power chargers, and John Deere's tractors. For instance, tractor companies try to prevent farmers from making repairs via DRM.DRM is controversial. There is an absence of evidence about the DRM capability in preventing copyright infringement, some complaints by legitimate customers for caused inconveniences, and a suspicion of stifling innovation and competition. Furthermore, works can become permanently inaccessible if the DRM scheme changes or if a required service is discontinued. DRM technologies have been criticized for restricting individuals from copying or using the content legally, such as by fair use or by making backup copies. DRM is in common use by the entertainment industry (e.g., audio and video publishers). Many online stores such as OverDrive use DRM technologies, as do cable and satellite service operators. Apple removed DRM technology from iTunes around 2009. Typical DRM also prevents lending materials out through a library, or accessing works in the public domain.}
+      \field{annotation}{Page Version ID: 1215486134}
+      \field{booktitle}{Wikipedia}
+      \field{day}{25}
+      \field{hour}{12}
+      \field{langid}{english}
+      \field{minute}{40}
+      \field{month}{3}
+      \field{second}{16}
+      \field{timezone}{Z}
+      \field{title}{Digital Rights Management}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\5TNGINKK\Digital_rights_management.html
+      \endverb
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Digital_rights_management&oldid=1215486134
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Digital_rights_management&oldid=1215486134
+      \endverb
+    \endentry
+    \entry{haldermanLestWeRemember2009}{article}{}
+      \name{author}{9}{}{%
+        {{hash=6cba604de51e7ad2b27a90bc7f4ce019}{%
+           family={Halderman},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi Alex},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5d3f156944c56840b0318b38b5836169}{%
+           family={Schoen},
+           familyi={S\bibinitperiod},
+           given={Seth\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=3ad83fecd0fa965b650e3af91800c5bd}{%
+           family={Heninger},
+           familyi={H\bibinitperiod},
+           given={Nadia},
+           giveni={N\bibinitperiod}}}%
+        {{hash=622a70caf17905ede3c3b68935e6889e}{%
+           family={Clarkson},
+           familyi={C\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=88c7f6c0c33dc4d9d14f34d0e2cf1282}{%
+           family={Paul},
+           familyi={P\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=15e13c554094a001f2bc5aef0c6fdb98}{%
+           family={Calandrino},
+           familyi={C\bibinitperiod},
+           given={Joseph\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d5b7fbf06aa04cd980382f3766e04df9}{%
+           family={Feldman},
+           familyi={F\bibinitperiod},
+           given={Ariel\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8a9cbff7a0b253dce6decc51b883540b}{%
+           family={Appelbaum},
+           familyi={A\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1527a830397c4e7dfb4604830ab3ae90}{%
+           family={Felten},
+           familyi={F\bibinitperiod},
+           given={Edward\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{01e77bff812c424a430b8e3130772fd0}
+      \strng{fullhash}{c13e35b6cb520d115637bd8c81c43418}
+      \strng{bibnamehash}{01e77bff812c424a430b8e3130772fd0}
+      \strng{authorbibnamehash}{01e77bff812c424a430b8e3130772fd0}
+      \strng{authornamehash}{01e77bff812c424a430b8e3130772fd0}
+      \strng{authorfullhash}{c13e35b6cb520d115637bd8c81c43418}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Contrary to popular assumption, DRAMs used in most modern computers retain their contents for several seconds after power is lost, even at room temperature and even if removed from a motherboard. Although DRAMs become less reliable when they are not refreshed, they are not immediately erased, and their contents persist sufficiently for malicious (or forensic) acquisition of usable full-system memory images. We show that this phenomenon limits the ability of an operating system to protect cryptographic key material from an attacker with physical access. We use cold reboots to mount successful attacks on popular disk encryption systems using no special devices or materials. We experimentally characterize the extent and predictability of memory remanence and report that remanence times can be increased dramatically with simple cooling techniques. We offer new algorithms for finding cryptographic keys in memory images and for correcting errors caused by bit decay. Though we discuss several strategies for partially mitigating these risks, we know of no simple remedy that would eliminate them.}
+      \field{issn}{0001-0782, 1557-7317}
+      \field{journaltitle}{Communications of the ACM}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shortjournal}{Commun. ACM}
+      \field{shorttitle}{Lest We Remember}
+      \field{title}{Lest We Remember: Cold-Boot Attacks on Encryption Keys}
+      \field{urlday}{10}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{52}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{91\bibrangedash 98}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/1506409.1506429
+      \endverb
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\RHQLX6FQ\Halderman et al. - 2009 - Lest we remember cold-boot attacks on encryption .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/1506409.1506429
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/1506409.1506429
+      \endverb
+    \endentry
+    \entry{kimFlippingBitsMemory2014}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=966fca207a45279253ffe318466a22ec}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Yoongu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=67a626b7b72f85b44fec0df04ae46fbc}{%
+           family={Daly},
+           familyi={D\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a0cc45f995f7986a43080fa9f2963907}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jeremie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d3f717381cc3f1c9e8f6a9056bd5d42}{%
+           family={Fallin},
+           familyi={F\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=29becbbd2929ef8d82d13b07dc911db5}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Ji\bibnamedelima Hye},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4a18172d750fd3cd293dc5ad6d47e26d}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Donghyuk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e0af57e51122fbbea1a603c21d57d117}{%
+           family={Wilkerson},
+           familyi={W\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=074cde51a171cd2c7c326eae20cdbff2}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={Konrad},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5c37647ea7ea3d969c75fa814163e18f}{%
+           family={Mutlu},
+           familyi={M\bibinitperiod},
+           given={Onur},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Minneapolis, MN, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fb74d1d536112a572e59a323a83c6017}
+      \strng{fullhash}{bb0adfac7d5e3d7c19a9deb107304534}
+      \strng{bibnamehash}{fb74d1d536112a572e59a323a83c6017}
+      \strng{authorbibnamehash}{fb74d1d536112a572e59a323a83c6017}
+      \strng{authornamehash}{fb74d1d536112a572e59a323a83c6017}
+      \strng{authorfullhash}{bb0adfac7d5e3d7c19a9deb107304534}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Memory isolation is a key property of a reliable and secure computing system — an access to one memory address should not have unintended side effects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more difficult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row’s wordline, which stresses inter-cell coupling effects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance errors and their behavior using an FPGA-based testing platform. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining various potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors.}
+      \field{booktitle}{2014 {{ACM}}/{{IEEE}} 41st {{International Symposium}} on {{Computer Architecture}} ({{ISCA}})}
+      \field{eventtitle}{2014 {{ACM}}/{{IEEE}} 41st {{International Symposium}} on {{Computer Architecture}} ({{ISCA}})}
+      \field{isbn}{978-1-4799-4394-4 978-1-4799-4396-8}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shorttitle}{Flipping Bits in Memory without Accessing Them}
+      \field{title}{Flipping Bits in Memory without Accessing Them: {{An}} Experimental Study of {{DRAM}} Disturbance Errors}
+      \field{urlday}{10}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{361\bibrangedash 372}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/ISCA.2014.6853210
+      \endverb
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\3DFAG8LF\Kim et al. - 2014 - Flipping bits in memory without accessing them An.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/6853210/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/6853210/
+      \endverb
+    \endentry
+    \entry{kocherDifferentialPowerAnalysis1999}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f0a163cdbf4dbde1c36f8457b3e2278e}{%
+           family={Kocher},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=452e8e6a857cdafce4ff896fe410fbf1}{%
+           family={Jaffe},
+           familyi={J\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=282b66bdaa90f6abf07947e407f1d736}{%
+           family={Jun},
+           familyi={J\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=401da10ec1e32e7e0a96cb7182f66f95}{%
+           family={Wiener},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{722ec14d03dfa9727cc012eea2659567}
+      \strng{fullhash}{722ec14d03dfa9727cc012eea2659567}
+      \strng{bibnamehash}{722ec14d03dfa9727cc012eea2659567}
+      \strng{authorbibnamehash}{722ec14d03dfa9727cc012eea2659567}
+      \strng{authornamehash}{722ec14d03dfa9727cc012eea2659567}
+      \strng{authorfullhash}{722ec14d03dfa9727cc012eea2659567}
+      \strng{editorbibnamehash}{401da10ec1e32e7e0a96cb7182f66f95}
+      \strng{editornamehash}{401da10ec1e32e7e0a96cb7182f66f95}
+      \strng{editorfullhash}{401da10ec1e32e7e0a96cb7182f66f95}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cryptosystem designers frequently assume that secrets will be manipulated in closed, reliable computing environments. Unfortunately, actual computers and microchips leak information about the operations they process. This paper examines specific methods for analyzing power consumption measurements to find secret keys from tamper resistant devices. We also discuss approaches for building cryptosystems that can operate securely in existing hardware that leaks information.}
+      \field{booktitle}{Advances in {{Cryptology}} — {{CRYPTO}}’ 99}
+      \field{isbn}{978-3-540-48405-9}
+      \field{langid}{english}
+      \field{title}{Differential {{Power Analysis}}}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{388\bibrangedash 397}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/3-540-48405-1_25
+      \endverb
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\5HUIBN26\Kocher et al. - 1999 - Differential Power Analysis.pdf
+      \endverb
+      \keyw{cryptanalysis,DES,differential power analysis,DPA,SPA}
+    \endentry
+    \entry{kocherSpectreAttacksExploiting2018}{online}{}
+      \name{author}{10}{}{%
+        {{hash=f0a163cdbf4dbde1c36f8457b3e2278e}{%
+           family={Kocher},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9b8ddec78ab1bf52f758858ca3928a61}{%
+           family={Genkin},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=674bea57e03671a89cb3f84cad730696}{%
+           family={Gruss},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=90745f0bee3dd32447e37472dbab6c41}{%
+           family={Haas},
+           familyi={H\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d9528fb2869236a3c4d978220eded42c}{%
+           family={Hamburg},
+           familyi={H\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=06dadd3dad2de585a3fce14dd5e8f779}{%
+           family={Lipp},
+           familyi={L\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1cdffbc482347edefd718f61814abbc3}{%
+           family={Mangard},
+           familyi={M\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b38d2f646061589c79aab7b15fec7827}{%
+           family={Prescher},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=463f3d270ca422b7f257c887efd3eed8}{%
+           family={Schwarz},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cd7579fd1f745b58396f5395d38e1a5c}{%
+           family={Yarom},
+           familyi={Y\bibinitperiod},
+           given={Yuval},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {arXiv.org}%
+      }
+      \strng{namehash}{3c1b558b10a44e8a4ecc1e0e195af826}
+      \strng{fullhash}{4e8d803e7f58f6ce37d6681b44ae274b}
+      \strng{bibnamehash}{3c1b558b10a44e8a4ecc1e0e195af826}
+      \strng{authorbibnamehash}{3c1b558b10a44e8a4ecc1e0e195af826}
+      \strng{authornamehash}{3c1b558b10a44e8a4ecc1e0e195af826}
+      \strng{authorfullhash}{4e8d803e7f58f6ce37d6681b44ae274b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Modern processors use branch prediction and speculative execution to maximize performance. For example, if the destination of a branch depends on a memory value that is in the process of being read, CPUs will try guess the destination and attempt to execute ahead. When the memory value finally arrives, the CPU either discards or commits the speculative computation. Speculative logic is unfaithful in how it executes, can access to the victim's memory and registers, and can perform operations with measurable side effects. Spectre attacks involve inducing a victim to speculatively perform operations that would not occur during correct program execution and which leak the victim's confidential information via a side channel to the adversary. This paper describes practical attacks that combine methodology from side channel attacks, fault attacks, and return-oriented programming that can read arbitrary memory from the victim's process. More broadly, the paper shows that speculative execution implementations violate the security assumptions underpinning numerous software security mechanisms, including operating system process separation, static analysis, containerization, just-in-time (JIT) compilation, and countermeasures to cache timing/side-channel attacks. These attacks represent a serious threat to actual systems, since vulnerable speculative execution capabilities are found in microprocessors from Intel, AMD, and ARM that are used in billions of devices. While makeshift processor-specific countermeasures are possible in some cases, sound solutions will require fixes to processor designs as well as updates to instruction set architectures (ISAs) to give hardware architects and software developers a common understanding as to what computation state CPU implementations are (and are not) permitted to leak.}
+      \field{day}{3}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{shorttitle}{Spectre {{Attacks}}}
+      \field{title}{Spectre {{Attacks}}: {{Exploiting Speculative Execution}}}
+      \field{urlday}{7}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\8LSQ7BNN\Kocher et al. - 2018 - Spectre Attacks Exploiting Speculative Execution.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1801.01203v1
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1801.01203v1
+      \endverb
+    \endentry
+    \entry{kocherTimingAttacksImplementations1996}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=8f09a31e1d70f24e7b4000739c4f9ee2}{%
+           family={Kocher},
+           familyi={K\bibinitperiod},
+           given={Paul\bibnamedelima C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=57af579700a7f1b95505caa26ac99651}{%
+           family={Koblitz},
+           familyi={K\bibinitperiod},
+           given={Neal},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8f09a31e1d70f24e7b4000739c4f9ee2}
+      \strng{fullhash}{8f09a31e1d70f24e7b4000739c4f9ee2}
+      \strng{bibnamehash}{8f09a31e1d70f24e7b4000739c4f9ee2}
+      \strng{authorbibnamehash}{8f09a31e1d70f24e7b4000739c4f9ee2}
+      \strng{authornamehash}{8f09a31e1d70f24e7b4000739c4f9ee2}
+      \strng{authorfullhash}{8f09a31e1d70f24e7b4000739c4f9ee2}
+      \strng{editorbibnamehash}{57af579700a7f1b95505caa26ac99651}
+      \strng{editornamehash}{57af579700a7f1b95505caa26ac99651}
+      \strng{editorfullhash}{57af579700a7f1b95505caa26ac99651}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{By carefully measuring the amount of time required to perform private key operations, attackers may be able to find fixed Diffie-Hellman exponents, factor RSA keys, and break other cryptosystems. Against a vulnerable system, the attack is computationally inexpensive and often requires only known ciphertext. Actual systems are potentially at risk, including cryptographic tokens, network-based cryptosystems, and other applications where attackers can make reasonably accurate timing measurements. Techniques for preventing the attack for RSA and Diffie-Hellman are presented. Some cryptosystems will need to be revised to protect against the attack, and new protocols and algorithms may need to incorporate measures to prevent timing attacks.}
+      \field{booktitle}{Advances in {{Cryptology}} — {{CRYPTO}} ’96}
+      \field{isbn}{978-3-540-68697-2}
+      \field{langid}{english}
+      \field{title}{Timing {{Attacks}} on {{Implementations}} of {{Diffie-Hellman}}, {{RSA}}, {{DSS}}, and {{Other Systems}}}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{pages}{104\bibrangedash 113}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/3-540-68697-5_9
+      \endverb
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\IPXVL3UF\Kocher - 1996 - Timing Attacks on Implementations of Diffie-Hellma.pdf
+      \endverb
+      \keyw{cryptanalysis,Diffie-Hellman,DSS,RSA,timing attack}
+    \endentry
+    \entry{lippMeltdown2018}{online}{}
+      \name{author}{10}{}{%
+        {{hash=06dadd3dad2de585a3fce14dd5e8f779}{%
+           family={Lipp},
+           familyi={L\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=463f3d270ca422b7f257c887efd3eed8}{%
+           family={Schwarz},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=674bea57e03671a89cb3f84cad730696}{%
+           family={Gruss},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b38d2f646061589c79aab7b15fec7827}{%
+           family={Prescher},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=90745f0bee3dd32447e37472dbab6c41}{%
+           family={Haas},
+           familyi={H\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod}}}%
+        {{hash=1cdffbc482347edefd718f61814abbc3}{%
+           family={Mangard},
+           familyi={M\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f0a163cdbf4dbde1c36f8457b3e2278e}{%
+           family={Kocher},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9b8ddec78ab1bf52f758858ca3928a61}{%
+           family={Genkin},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cd7579fd1f745b58396f5395d38e1a5c}{%
+           family={Yarom},
+           familyi={Y\bibinitperiod},
+           given={Yuval},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d9528fb2869236a3c4d978220eded42c}{%
+           family={Hamburg},
+           familyi={H\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {arXiv.org}%
+      }
+      \strng{namehash}{c5e126d74b4feabda41a322ec7554974}
+      \strng{fullhash}{51cf67ef48aa1afbac4cb2799063a03e}
+      \strng{bibnamehash}{c5e126d74b4feabda41a322ec7554974}
+      \strng{authorbibnamehash}{c5e126d74b4feabda41a322ec7554974}
+      \strng{authornamehash}{c5e126d74b4feabda41a322ec7554974}
+      \strng{authorfullhash}{51cf67ef48aa1afbac4cb2799063a03e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The security of computer systems fundamentally relies on memory isolation, e.g., kernel address ranges are marked as non-accessible and are protected from user access. In this paper, we present Meltdown. Meltdown exploits side effects of out-of-order execution on modern processors to read arbitrary kernel-memory locations including personal data and passwords. Out-of-order execution is an indispensable performance feature and present in a wide range of modern processors. The attack works on different Intel microarchitectures since at least 2010 and potentially other processors are affected. The root cause of Meltdown is the hardware. The attack is independent of the operating system, and it does not rely on any software vulnerabilities. Meltdown breaks all security assumptions given by address space isolation as well as paravirtualized environments and, thus, every security mechanism building upon this foundation. On affected systems, Meltdown enables an adversary to read memory of other processes or virtual machines in the cloud without any permissions or privileges, affecting millions of customers and virtually every user of a personal computer. We show that the KAISER defense mechanism for KASLR has the important (but inadvertent) side effect of impeding Meltdown. We stress that KAISER must be deployed immediately to prevent large-scale exploitation of this severe information leakage.}
+      \field{day}{3}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{Meltdown}
+      \field{urlday}{7}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\4235IMHY\Lipp et al. - 2018 - Meltdown.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1801.01207v1
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1801.01207v1
+      \endverb
+    \endentry
+    \entry{maitiLargeScaleCharacterization2010}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=27427e6ac8aff1faabc4b4b8d88a8abd}{%
+           family={Maiti},
+           familyi={M\bibinitperiod},
+           given={Abhranil},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4843ca8796746defb1eb9c70210dd399}{%
+           family={Casarona},
+           familyi={C\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b049ec381bb92075a0f7d256b27a496d}{%
+           family={McHale},
+           familyi={M\bibinitperiod},
+           given={Luke},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2f66c4523408992f7e78ed07e0f89c12}{%
+           family={Schaumont},
+           familyi={S\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{51f47b163df9a6d0d6bdf28c5c1243c8}
+      \strng{fullhash}{4e8362821e01711190891c79ef6622a3}
+      \strng{bibnamehash}{51f47b163df9a6d0d6bdf28c5c1243c8}
+      \strng{authorbibnamehash}{51f47b163df9a6d0d6bdf28c5c1243c8}
+      \strng{authornamehash}{51f47b163df9a6d0d6bdf28c5c1243c8}
+      \strng{authorfullhash}{4e8362821e01711190891c79ef6622a3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{To validate the effectiveness of a Physical Unclonable Function (PUF), it needs to be characterized over a large population of chips. Though simulation methods can provide approximate results, an on-chip experiment produces more accurate result. In this paper, we characterize a PUF based on ring oscillator (RO) using a significantly large population of 125 FPGAs. We analyze the experimental data using a ring oscillator loop delay model, and quantify the quality factors of a PUF such as uniqueness and reliability. The RO-PUF shows an average inter-die Hamming distance of 47.31\%, and an average intra-die Hamming distance of 0.86\% at normal operating condition. Additionally, we intend to make this large RO frequency dataset available publicly for the research community.}
+      \field{booktitle}{2010 {{IEEE International Symposium}} on {{Hardware-Oriented Security}} and {{Trust}} ({{HOST}})}
+      \field{eventtitle}{2010 {{IEEE International Symposium}} on {{Hardware-Oriented Security}} and {{Trust}} ({{HOST}})}
+      \field{month}{6}
+      \field{title}{A Large Scale Characterization of {{RO-PUF}}}
+      \field{urlday}{10}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{94\bibrangedash 99}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/HST.2010.5513108
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\chris\\Zotero\\storage\\W5ZM3Y73\\Maiti et al. - 2010 - A large scale characterization of RO-PUF.pdf;C\:\\Users\\chris\\Zotero\\storage\\ERVWUNM5\\5513108.html
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/5513108
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/5513108
+      \endverb
+      \keyw{Authentication,Circuits,Data analysis,Delay,Field programmable gate arrays,Frequency,Hamming distance,Large-scale systems,Ring oscillators,Semiconductor device measurement}
+    \endentry
+    \entry{MeltdownSecurityVulnerability2024}{inreference}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Meltdown is one of the two original transient execution CPU vulnerabilities (the other being Spectre). Meltdown affects Intel x86 microprocessors, IBM POWER processors, and some ARM-based microprocessors. It allows a rogue process to read all memory, even when it is not authorized to do so. Meltdown affects a wide range of systems. At the time of disclosure (2018), this included all devices running any but the most recent and patched versions of iOS, Linux, macOS, or Windows. Accordingly, many servers and cloud services were impacted, as well as a potential majority of smart devices and embedded devices using ARM-based processors (mobile devices, smart TVs, printers and others), including a wide range of networking equipment. A purely software workaround to Meltdown has been assessed as slowing computers between 5 and 30 percent in certain specialized workloads, although companies responsible for software correction of the exploit reported minimal impact from general benchmark testing.Meltdown was issued a Common Vulnerabilities and Exposures ID of CVE-2017-5754, also known as Rogue Data Cache Load (RDCL), in January 2018. It was disclosed in conjunction with another exploit, Spectre, with which it shares some characteristics. The Meltdown and Spectre vulnerabilities are considered "catastrophic" by security analysts. The vulnerabilities are so severe that security researchers initially believed the reports to be false.Several procedures to help protect home computers and related devices from the Meltdown and Spectre security vulnerabilities have been published. Meltdown patches may produce performance loss. Spectre patches have been reported to significantly reduce performance, especially on older computers; on the then-newest (2017) eighth-generation Core platforms, benchmark performance drops of 2–14 percent have been measured. On 18 January 2018, unwanted reboots, even for newer Intel chips, due to Meltdown and Spectre patches, were reported. Nonetheless, according to Dell: "No 'real-world' exploits of these vulnerabilities [i.e., Meltdown and Spectre] have been reported to date [26 January 2018], though researchers have produced proof-of-concepts." Dell further recommended: "promptly adopting software updates, avoiding unrecognized hyperlinks and websites, not downloading files or applications from unknown sources ... following secure password protocols ... [using] security software to help protect against malware (advanced threat prevention software or anti-virus)."On 15 March 2018, Intel reported that it would redesign its CPUs to help protect against the Meltdown and related Spectre vulnerabilities (especially, Meltdown and Spectre-V2, but not Spectre-V1), and expected to release the newly redesigned processors later in 2018. On 8 October 2018, Intel is reported to have added hardware and firmware mitigations regarding Spectre and Meltdown vulnerabilities to its latest processors.}
+      \field{annotation}{Page Version ID: 1215853086}
+      \field{booktitle}{Wikipedia}
+      \field{day}{27}
+      \field{hour}{14}
+      \field{langid}{english}
+      \field{minute}{30}
+      \field{month}{3}
+      \field{second}{24}
+      \field{timezone}{Z}
+      \field{title}{Meltdown (Security Vulnerability)}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\4F6SUYTS\Meltdown_(security_vulnerability).html
+      \endverb
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Meltdown_(security_vulnerability)&oldid=1215853086
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Meltdown_(security_vulnerability)&oldid=1215853086
+      \endverb
+    \endentry
+    \entry{mofradComparisonStudyIntel2018}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=9f323a7ba80c9828460111f014a039d4}{%
+           family={Mofrad},
+           familyi={M\bibinitperiod},
+           given={Saeid},
+           giveni={S\bibinitperiod}}}%
+        {{hash=058a9b1ef3c4145911e8c324ccd7cf44}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fengwei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4a09eff83f8f4f95b3cbb262df99388d}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Shiyong},
+           giveni={S\bibinitperiod}}}%
+        {{hash=81d3a3f8e7369726b66fcfeed4589af1}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Los Angeles California}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{79548e75c037b4e786746dbbab9772d1}
+      \strng{fullhash}{d7c0f03fb07754f5be39a75e362a806d}
+      \strng{bibnamehash}{79548e75c037b4e786746dbbab9772d1}
+      \strng{authorbibnamehash}{79548e75c037b4e786746dbbab9772d1}
+      \strng{authornamehash}{79548e75c037b4e786746dbbab9772d1}
+      \strng{authorfullhash}{d7c0f03fb07754f5be39a75e362a806d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 7th {{International Workshop}} on {{Hardware}} and {{Architectural Support}} for {{Security}} and {{Privacy}}}
+      \field{day}{2}
+      \field{eventtitle}{{{HASP}} '18: {{Hardware}} and {{Architectural Support}} for {{Security}} and {{Privacy}}}
+      \field{isbn}{978-1-4503-6500-0}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{A Comparison Study of Intel {{SGX}} and {{AMD}} Memory Encryption Technology}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3214292.3214301
+      \endverb
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\WRWVS8WQ\Mofrad et al. - 2018 - A comparison study of intel SGX and AMD memory enc.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3214292.3214301
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3214292.3214301
+      \endverb
+    \endentry
+    \entry{moradiVulnerabilityFPGABitstream2011}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=ecb99179163100c0796947c8691258ca}{%
+           family={Moradi},
+           familyi={M\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=adbd345822efc044f889f7562624c730}{%
+           family={Barenghi},
+           familyi={B\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2c7ba769a2e0467d9203a9c7e147e743}{%
+           family={Kasper},
+           familyi={K\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cee721c72e08c7c6c3c6a06458a36b9f}{%
+           family={Paar},
+           familyi={P\bibinitperiod},
+           given={Christof},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{8e791c122c528020a9850c51bb2c1dfe}
+      \strng{fullhash}{bcbb25a5326f1a38a4af7d495dd3d7a5}
+      \strng{bibnamehash}{8e791c122c528020a9850c51bb2c1dfe}
+      \strng{authorbibnamehash}{8e791c122c528020a9850c51bb2c1dfe}
+      \strng{authornamehash}{8e791c122c528020a9850c51bb2c1dfe}
+      \strng{authorfullhash}{bcbb25a5326f1a38a4af7d495dd3d7a5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Over the last two decades FPGAs have become central components for many advanced digital systems, e.g., video signal processing, network routers, data acquisition and military systems. In order to protect the intellectual property and to prevent fraud, e.g., by cloning a design embedded into an FPGA or manipulating its content, many current FPGAs employ a bitstream encryption feature. We develop a successful attack on the bitstream encryption engine integrated in the widespread Virtex-II Pro FPGAs from Xilinx, using side-channel analysis. After measuring the power consumption of a single power-up of the device and a modest amount of off-line computation, we are able to recover all three different keys used by its triple DES module. Our method allows extracting secret keys from any real-world device where the bitstream encryption feature of Virtex-II Pro is enabled. As a consequence, the target product can be cloned and manipulated at the will of the attacker since no side-channel protection was included into the design of the decryption module. Also, more advanced attacks such as reverse engineering or the introduction of hardware Trojans become potential threats. While performing the side-channel attack, we were able to deduce a hypothetical architecture of the hardware encryption engine. To our knowledge, this is the first attack against the bitstream encryption of a commercial FPGA reported in the open literature.}
+      \field{booktitle}{Proceedings of the 18th {{ACM}} Conference on {{Computer}} and Communications Security}
+      \field{day}{17}
+      \field{isbn}{978-1-4503-0948-6}
+      \field{month}{10}
+      \field{series}{{{CCS}} '11}
+      \field{shorttitle}{On the Vulnerability of {{FPGA}} Bitstream Encryption against Power Analysis Attacks}
+      \field{title}{On the Vulnerability of {{FPGA}} Bitstream Encryption against Power Analysis Attacks: Extracting Keys from Xilinx {{Virtex-II FPGAs}}}
+      \field{urlday}{10}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{111\bibrangedash 124}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1145/2046707.2046722
+      \endverb
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\TQFHQABS\Moradi et al. - 2011 - On the vulnerability of FPGA bitstream encryption .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/2046707.2046722
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/2046707.2046722
+      \endverb
+      \keyw{bitstream encryption,FPGA,side-channel attacks,triple des}
+    \endentry
+    \entry{RadiationHardening2024}{inreference}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Radiation hardening is the process of making electronic components and circuits resistant to damage or malfunction caused by high levels of ionizing radiation (particle radiation and high-energy electromagnetic radiation), especially for environments in outer space (especially beyond the low Earth orbit), around nuclear reactors and particle accelerators, or during nuclear accidents or nuclear warfare. Most semiconductor electronic components are susceptible to radiation damage, and radiation-hardened (rad-hard) components are based on their non-hardened equivalents, with some design and manufacturing variations that reduce the susceptibility to radiation damage. Due to the extensive development and testing required to produce a radiation-tolerant design of a microelectronic chip, the technology of radiation-hardened chips tends to lag behind the most recent developments. Radiation-hardened products are typically tested to one or more resultant-effects tests, including total ionizing dose (TID), enhanced low dose rate effects (ELDRS), neutron and proton displacement damage, and single event effects (SEEs).}
+      \field{annotation}{Page Version ID: 1205501084}
+      \field{booktitle}{Wikipedia}
+      \field{day}{9}
+      \field{hour}{20}
+      \field{langid}{english}
+      \field{minute}{19}
+      \field{month}{2}
+      \field{second}{29}
+      \field{timezone}{Z}
+      \field{title}{Radiation Hardening}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\GGUFE8VY\Radiation_hardening.html
+      \endverb
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Radiation_hardening&oldid=1205501084
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Radiation_hardening&oldid=1205501084
+      \endverb
+    \endentry
+    \entry{SpectreSecurityVulnerability2024}{inreference}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Spectre is one of the two original transient execution CPU vulnerabilities (the other being Meltdown), which involve microarchitectural timing side-channel attacks. These affect modern microprocessors that perform branch prediction and other forms of speculation. On most processors, the speculative execution resulting from a branch misprediction may leave observable side effects that may reveal private data to attackers. For example, if the pattern of memory accesses performed by such speculative execution depends on private data, the resulting state of the data cache constitutes a side channel through which an attacker may be able to extract information about the private data using a timing attack.Two Common Vulnerabilities and Exposures IDs related to Spectre, CVE-2017-5753 (bounds check bypass, Spectre-V1, Spectre 1.0) and CVE-2017-5715 (branch target injection, Spectre-V2), have been issued. JIT engines used for JavaScript were found to be vulnerable. A website can read data stored in the browser for another website, or the browser's memory itself.In early 2018, Intel reported that it would redesign its CPUs to help protect against the Spectre and related Meltdown vulnerabilities (especially, Spectre variant 2 and Meltdown, but not Spectre variant 1). On 8 October 2018, Intel was reported to have added hardware and firmware mitigations regarding Spectre and Meltdown vulnerabilities to its latest processors.}
+      \field{annotation}{Page Version ID: 1218972533}
+      \field{booktitle}{Wikipedia}
+      \field{day}{15}
+      \field{hour}{0}
+      \field{langid}{english}
+      \field{minute}{14}
+      \field{month}{4}
+      \field{second}{33}
+      \field{timezone}{Z}
+      \field{title}{Spectre (Security Vulnerability)}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\3C5FJPXS\Spectre_(security_vulnerability).html
+      \endverb
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Spectre_(security_vulnerability)&oldid=1218972533
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Spectre_(security_vulnerability)&oldid=1218972533
+      \endverb
+    \endentry
+    \entry{tajikPhysicalCharacterizationArbiter2014}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=5eb4f1812ef971474f0bfd9a96b805b8}{%
+           family={Tajik},
+           familyi={T\bibinitperiod},
+           given={Shahin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6f1f74102c71b882942b9b66bc708bcf}{%
+           family={Dietz},
+           familyi={D\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+        {{hash=75a08dbf77c1d425d42703ff63315416}{%
+           family={Frohmann},
+           familyi={F\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ed83c5ceed1edd0dbc3cc610adf79477}{%
+           family={Seifert},
+           familyi={S\bibinitperiod},
+           given={Jean-Pierre},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=dbc22bafd4c3880d5f24c38175c8a77e}{%
+           family={Nedospasov},
+           familyi={N\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=29714a2628234d2970d015c525dbfaef}{%
+           family={Helfmeier},
+           familyi={H\bibinitperiod},
+           given={Clemens},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9e2703551ccef662676887cbd8183942}{%
+           family={Boit},
+           familyi={B\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=70c60f31ab0a0daf2f1e12f6a5cbddaf}{%
+           family={Dittrich},
+           familyi={D\bibinitperiod},
+           given={Helmar},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=4819c7435b5fdc12cb7e9972b8f7400e}{%
+           family={Batina},
+           familyi={B\bibinitperiod},
+           given={Lejla},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2a8de054790ca19f1bab83c4230f17e6}{%
+           family={Robshaw},
+           familyi={R\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d6162351c25d6eb2c2edc3304d55d931}
+      \strng{fullhash}{16bce79bb01b1fcb38edb337cb59affc}
+      \strng{bibnamehash}{d6162351c25d6eb2c2edc3304d55d931}
+      \strng{authorbibnamehash}{d6162351c25d6eb2c2edc3304d55d931}
+      \strng{authornamehash}{d6162351c25d6eb2c2edc3304d55d931}
+      \strng{authorfullhash}{16bce79bb01b1fcb38edb337cb59affc}
+      \strng{editorbibnamehash}{786126ef977a0a87b13afdde2b21d3dd}
+      \strng{editornamehash}{786126ef977a0a87b13afdde2b21d3dd}
+      \strng{editorfullhash}{786126ef977a0a87b13afdde2b21d3dd}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As intended by its name, Physically Unclonable Functions (PUFs) are considered as an ultimate solution to deal with insecure storage, hardware counterfeiting, and many other security problems. However, many different successful attacks have already revealed vulnerabilities of certain digital intrinsic PUFs. Although settling-state-based PUFs, such as SRAM PUFs, can be physically cloned by semi-invasive and fully-invasive attacks, successful attacks on timing-based PUFs were so far limited to modeling attacks. Such modeling requires a large subset of challenge-response-pairs (CRP) to successfully model the targeted PUF. In order to provide a final security answer, this paper proves that all arbiter-based (i.e. controlled and XOR-enhanced) PUFs can be completely and linearly characterized by means of photonic emission analysis. Our experimental setup is capable of measuring every PUF-internal delay with a resolution of 6 picoseconds. Due to this resolution we indeed require only the theoretical minimum number of linear independent equations (i.e. physical measurements) to directly solve the underlying inhomogeneous linear system. Moreover, we neither require to know the actual PUF challenges nor the corresponding PUF responses for our physical delay extraction. On top of that devastating result, we are also able to further simplify our setup for easier physical measurement handling. We present our practical results for a real arbiter PUF implementation on a Complex Programmable Logic Device (CPLD) from Altera manufactured in a 180 nanometer process.}
+      \field{booktitle}{Cryptographic {{Hardware}} and {{Embedded Systems}} – {{CHES}} 2014}
+      \field{isbn}{978-3-662-44709-3}
+      \field{langid}{english}
+      \field{title}{Physical {{Characterization}} of {{Arbiter PUFs}}}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{493\bibrangedash 509}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-3-662-44709-3_27
+      \endverb
+      \verb{file}
+      \verb C:\Users\chris\Zotero\storage\JFZIHHNR\Tajik et al. - 2014 - Physical Characterization of Arbiter PUFs.pdf
+      \endverb
+      \keyw{Arbiter PUF,backside,photonic emission analysis,physical characterization}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

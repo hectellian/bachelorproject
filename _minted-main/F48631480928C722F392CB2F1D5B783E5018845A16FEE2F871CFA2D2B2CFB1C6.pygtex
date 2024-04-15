@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Pseudocode for a cold boot attack scenario\PYGZcb{}}
+\PYG{k}{def} \PYG{n+nf}{cold\PYGZus{}boot\PYGZus{}attack}\PYG{p}{(}\PYG{n}{ram\PYGZus{}content}\PYG{p}{,} \PYG{n}{search\PYGZus{}patterns}\PYG{p}{):}
+\PYG{c+c1}{\PYGZsh{} Simulate cooling of RAM to preserve data\PYGZcb{}}
+\PYG{n}{cooled\PYGZus{}ram} \PYG{o}{=} \PYG{n}{cool\PYGZus{}ram}\PYG{p}{(}\PYG{n}{ram\PYGZus{}content}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Search for cryptographic keys or sensitive data in the cooled RAM content\PYGZcb{}}
+\PYGZbs{}\PYG{n}{ControlFlowTok}\PYG{p}{\PYGZob{}}\PYG{k}{for} \PYG{n}{pattern} \PYG{p}{\PYGZcb{}}\PYG{o+ow}{in} \PYG{n}{search}\PYGZbs{}\PYG{n}{\PYGZus{}patterns}\PYG{p}{:\PYGZcb{}}
+    \PYGZbs{}\PYG{n}{ControlFlowTok}\PYG{p}{\PYGZob{}}\PYG{k}{if} \PYG{n}{pattern} \PYG{p}{\PYGZcb{}}\PYG{o+ow}{in} \PYG{n}{cooled}\PYGZbs{}\PYG{n}{\PYGZus{}ram}\PYG{p}{:\PYGZcb{}}
+        \PYGZbs{}\PYG{n}{BuiltInTok}\PYG{p}{\PYGZob{}}\PYG{n+nb}{print}\PYG{p}{(\PYGZcb{}}\PYGZbs{}\PYG{n}{StringTok}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}Sensitive data found:\PYGZdq{}}\PYG{p}{,} \PYG{n}{pattern}\PYG{p}{)\PYGZcb{}}
+\end{Verbatim}

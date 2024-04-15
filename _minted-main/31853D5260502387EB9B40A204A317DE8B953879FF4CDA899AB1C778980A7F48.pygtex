@@ -1,0 +1,68 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{      }\PYG{err}{1}\PYG{+w}{ }\PYG{c+c1}{; rcx = kernel address 2 ; rbx = probe array 3 retry: 4 mov al, byte [rcx] 5 shl rax, 0xc 6 jz retry 7 mov rbx, qword [rbx + rax]}
+
+
+\PYG{+w}{    }\PYG{n+nf}{Unlike}\PYG{+w}{ }\PYG{n+no}{Spectre}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{Meltdown}\PYG{+w}{ }\PYG{n+no}{does}\PYG{+w}{ }\PYG{n+no}{not}\PYG{+w}{ }\PYG{n+no}{need}\PYG{+w}{ }\PYG{n+no}{to}\PYG{+w}{ }\PYG{n+no}{be}\PYG{+w}{ }\PYG{n+no}{tailored}\PYG{+w}{ }\PYG{n+no}{to}\PYG{+w}{ }\PYG{n+no}{a}\PYG{+w}{ }\PYG{n+no}{specific}\PYG{+w}{ }\PYG{n+no}{victim}\PYG{err}{\PYGZsq{}}\PYG{n+no}{s}\PYG{+w}{ }\PYG{n+no}{environment}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{nor}\PYG{+w}{ }\PYG{n+no}{does}\PYG{+w}{ }\PYG{n+no}{it}\PYG{+w}{ }\PYG{n+no}{rely}\PYG{+w}{ }\PYG{n+no}{on}\PYG{+w}{ }\PYG{n+no}{any}\PYG{+w}{ }\PYG{n+no}{form}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{software}\PYG{+w}{ }\PYG{n+no}{vulnerability}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{making}\PYG{+w}{ }\PYG{n+no}{it}\PYG{+w}{ }\PYG{n+no}{widely}\PYG{+w}{ }\PYG{n+no}{exploitable}\PYG{+w}{ }\PYG{n+no}{on}\PYG{+w}{ }\PYG{n+no}{affected}\PYG{+w}{ }\PYG{n+no}{systems.}\PYG{+w}{ }\PYG{n+no}{However}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{solutions}\PYG{+w}{ }\PYG{n+no}{such}\PYG{+w}{ }\PYG{n+no}{as}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{n+no}{KAISER}\PYG{+w}{ }\PYG{n+no}{patch}\PYG{+w}{ }\PYG{n+no}{can}\PYG{+w}{ }\PYG{n+no}{mitigate}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{n+no}{effects}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{Meltdown}\PYG{+w}{ }\PYG{n+no}{by}\PYG{+w}{ }\PYG{n+no}{separating}\PYG{+w}{ }\PYG{n+no}{user}\PYG{+w}{ }\PYG{n+no}{space}\PYG{+w}{ }\PYG{n+no}{and}\PYG{+w}{ }\PYG{n+no}{kernel}\PYG{+w}{ }\PYG{n+no}{space}\PYG{+w}{ }\PYG{n+no}{mappings}\PYG{+w}{ }\PYG{n+no}{more}\PYG{+w}{ }\PYG{n+no}{effectively.}
+
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{end}\PYG{p}{\PYGZob{}}\PYG{n+no}{enumerate}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n+no}{milestones}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{err}{\PYGZpc{}}
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{subsection}\PYG{p}{\PYGZob{}}\PYG{n+no}{Milestones}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZbs{}}\PYG{n+no}{label}\PYG{p}{\PYGZob{}}\PYG{n+no}{milestones}\PYG{p}{\PYGZcb{}\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{begin}\PYG{p}{\PYGZob{}}\PYG{n+no}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{item}
+\PYG{+w}{  }\PYG{err}{\PYGZbs{}}\PYG{n+nf}{textbf}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{1980}\PYG{n+no}{s\PYGZhy{}1990s}\PYG{p}{\PYGZcb{}:}\PYG{+w}{ }\PYG{n+no}{Radiation}\PYG{+w}{ }\PYG{n+no}{hardening}\PYG{+w}{ }\PYG{n+no}{techniques}\PYG{+w}{ }\PYG{n+no}{developed}\PYG{+w}{ }\PYG{n+no}{for}
+\PYG{+w}{  }\PYG{n+nf}{space}\PYG{+w}{ }\PYG{n+no}{and}\PYG{+w}{ }\PYG{n+no}{military}\PYG{+w}{ }\PYG{n+no}{use.}
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{item}
+\PYG{+w}{  }\PYG{err}{\PYGZbs{}}\PYG{n+nf}{textbf}\PYG{p}{\PYGZob{}}\PYG{n+no}{Early}\PYG{+w}{ }\PYG{l+m+mi}{2000}\PYG{n+no}{s}\PYG{p}{\PYGZcb{}:}\PYG{+w}{ }\PYG{n+no}{Rise}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{consumer}\PYG{+w}{ }\PYG{n+no}{electronics}\PYG{+w}{ }\PYG{n+no}{security}\PYG{+w}{ }\PYG{n+no}{with}\PYG{+w}{ }\PYG{n+no}{DRM}
+\PYG{+w}{  }\PYG{n+nf}{and}\PYG{+w}{ }\PYG{n+no}{content}\PYG{+w}{ }\PYG{n+no}{protection.}
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{item}
+\PYG{+w}{  }\PYG{err}{\PYGZbs{}}\PYG{n+nf}{textbf}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{2014}\PYG{p}{\PYGZcb{}:}\PYG{+w}{ }\PYG{n+no}{Discovery}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{n+no}{Rowhammer}\PYG{+w}{ }\PYG{n+no}{vulnerability}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{illustrating}
+\PYG{+w}{  }\PYG{n+nf}{a}\PYG{+w}{ }\PYG{n+no}{shift}\PYG{+w}{ }\PYG{n+no}{towards}\PYG{+w}{ }\PYG{n+no}{remote}\PYG{+w}{ }\PYG{n+no}{exploitability}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{hardware.}
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{item}
+\PYG{+w}{  }\PYG{err}{\PYGZbs{}}\PYG{n+nf}{textbf}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{2018}\PYG{p}{\PYGZcb{}:}\PYG{+w}{ }\PYG{n+no}{Spectre}\PYG{+w}{ }\PYG{n+no}{and}\PYG{+w}{ }\PYG{n+no}{Meltdown}\PYG{+w}{ }\PYG{n+no}{vulnerabilities}\PYG{+w}{ }\PYG{n+no}{exposed}\PYG{p}{,}
+\PYG{+w}{  }\PYG{n+nf}{highlighting}\PYG{+w}{ }\PYG{n+no}{deep\PYGZhy{}seated}\PYG{+w}{ }\PYG{n+no}{issues}\PYG{+w}{ }\PYG{n+no}{in}\PYG{+w}{ }\PYG{n+no}{CPU}\PYG{+w}{ }\PYG{n+no}{design.}
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{end}\PYG{p}{\PYGZob{}}\PYG{n+no}{itemize}\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nf}{Diving}\PYG{+w}{ }\PYG{n+no}{deeper}\PYG{+w}{ }\PYG{n+no}{into}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{err}{``}\PYG{n+no}{Types}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{Hardware}\PYG{+w}{ }\PYG{n+no}{Flaws}\PYG{err}{\PYGZsq{}\PYGZsq{}}\PYG{+w}{ }\PYG{n+no}{section}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{we}\PYG{err}{\PYGZsq{}}\PYG{n+no}{ll}
+\PYG{n+nf}{explore}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{n+no}{various}\PYG{+w}{ }\PYG{n+no}{categories}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{hardware}\PYG{+w}{ }\PYG{n+no}{vulnerabilities}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{providing}\PYG{+w}{ }\PYG{n+no}{a}
+\PYG{n+nf}{more}\PYG{+w}{ }\PYG{n+no}{nuanced}\PYG{+w}{ }\PYG{n+no}{understanding}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{these}\PYG{+w}{ }\PYG{n+no}{threats}\PYG{+w}{ }\PYG{n+no}{through}\PYG{+w}{ }\PYG{n+no}{detailed}\PYG{+w}{ }\PYG{n+no}{examples}\PYG{p}{,}
+\PYG{n+nf}{code}\PYG{+w}{ }\PYG{n+no}{snippets}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{and}\PYG{+w}{ }\PYG{n+no}{references}\PYG{+w}{ }\PYG{n+no}{to}\PYG{+w}{ }\PYG{n+no}{academic}\PYG{+w}{ }\PYG{n+no}{and}\PYG{+w}{ }\PYG{n+no}{industry}\PYG{+w}{ }\PYG{n+no}{sources.}
+
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n+no}{types\PYGZhy{}of\PYGZhy{}hardware\PYGZhy{}flaws}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{err}{\PYGZpc{}}
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{section}\PYG{p}{\PYGZob{}}\PYG{n+no}{Types}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{Hardware}\PYG{+w}{ }\PYG{n+no}{Flaws}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZbs{}}\PYG{n+no}{label}\PYG{p}{\PYGZob{}}\PYG{n+no}{types\PYGZhy{}of\PYGZhy{}hardware\PYGZhy{}flaws}\PYG{p}{\PYGZcb{}\PYGZcb{}}
+
+\PYG{n+nf}{Hardware}\PYG{+w}{ }\PYG{n+no}{vulnerabilities}\PYG{+w}{ }\PYG{n+no}{can}\PYG{+w}{ }\PYG{n+no}{manifest}\PYG{+w}{ }\PYG{n+no}{in}\PYG{+w}{ }\PYG{n+no}{numerous}\PYG{+w}{ }\PYG{n+no}{forms}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{each}\PYG{+w}{ }\PYG{n+no}{exploiting}
+\PYG{n+nf}{different}\PYG{+w}{ }\PYG{n+no}{aspects}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{physical}\PYG{+w}{ }\PYG{n+no}{design}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{implementation}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{and}\PYG{+w}{ }\PYG{n+no}{operational}
+\PYG{n+nf}{behavior.}\PYG{+w}{ }\PYG{n+no}{These}\PYG{+w}{ }\PYG{n+no}{vulnerabilities}\PYG{+w}{ }\PYG{n+no}{are}\PYG{+w}{ }\PYG{n+no}{typically}\PYG{+w}{ }\PYG{n+no}{categorized}\PYG{+w}{ }\PYG{n+no}{into}\PYG{+w}{ }\PYG{n+no}{three}
+\PYG{n+nf}{primary}\PYG{+w}{ }\PYG{n+no}{types}\PYG{p}{:}\PYG{+w}{ }\PYG{n+no}{physical}\PYG{+w}{ }\PYG{n+no}{vulnerabilities}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{side\PYGZhy{}channel}\PYG{+w}{ }\PYG{n+no}{attacks}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{and}\PYG{+w}{ }\PYG{n+no}{fault}
+\PYG{n+nf}{injection}\PYG{+w}{ }\PYG{n+no}{attacks.}
+
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n+no}{physical\PYGZhy{}vulnerabilities}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{err}{\PYGZpc{}}
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{subsection}\PYG{p}{\PYGZob{}}\PYG{n+no}{Physical}
+\PYG{n+nf}{Vulnerabilities}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZbs{}}\PYG{n+no}{label}\PYG{p}{\PYGZob{}}\PYG{n+no}{physical\PYGZhy{}vulnerabilities}\PYG{p}{\PYGZcb{}\PYGZcb{}}
+
+\PYG{n+nf}{Physical}\PYG{+w}{ }\PYG{n+no}{vulnerabilities}\PYG{+w}{ }\PYG{n+no}{are}\PYG{+w}{ }\PYG{n+no}{those}\PYG{+w}{ }\PYG{n+no}{that}\PYG{+w}{ }\PYG{n+no}{necessitate}\PYG{+w}{ }\PYG{n+no}{direct}\PYG{+w}{ }\PYG{n+no}{interaction}
+\PYG{n+nf}{with}\PYG{+w}{ }\PYG{n+no}{or}\PYG{+w}{ }\PYG{n+no}{access}\PYG{+w}{ }\PYG{n+no}{to}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{n+no}{hardware}\PYG{+w}{ }\PYG{n+no}{device.}\PYG{+w}{ }\PYG{n+no}{They}\PYG{+w}{ }\PYG{n+no}{can}\PYG{+w}{ }\PYG{n+no}{exploit}\PYG{+w}{ }\PYG{n+no}{inherent}\PYG{+w}{ }\PYG{n+no}{design}
+\PYG{n+nf}{flaws}\PYG{+w}{ }\PYG{n+no}{or}\PYG{+w}{ }\PYG{n+no}{result}\PYG{+w}{ }\PYG{n+no}{from}\PYG{+w}{ }\PYG{n+no}{malicious}\PYG{+w}{ }\PYG{n+no}{physical}\PYG{+w}{ }\PYG{n+no}{modifications.}
+
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{begin}\PYG{p}{\PYGZob{}}\PYG{n+no}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{item}
+\PYG{+w}{  }\PYG{err}{\PYGZbs{}}\PYG{n+nf}{textbf}\PYG{p}{\PYGZob{}}\PYG{n+no}{Cold}\PYG{+w}{ }\PYG{n+no}{Boot}\PYG{+w}{ }\PYG{n+no}{Attacks}\PYG{p}{\PYGZcb{}:}\PYG{+w}{ }\PYG{n+no}{A}\PYG{+w}{ }\PYG{n+no}{striking}\PYG{+w}{ }\PYG{n+no}{example}\PYG{+w}{ }\PYG{n+no}{of}\PYG{+w}{ }\PYG{n+no}{a}\PYG{+w}{ }\PYG{n+no}{physical}
+\PYG{+w}{  }\PYG{n+nf}{vulnerability}\PYG{+w}{ }\PYG{n+no}{is}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{n+no}{cold}\PYG{+w}{ }\PYG{n+no}{boot}\PYG{+w}{ }\PYG{n+no}{attack}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{where}\PYG{+w}{ }\PYG{n+no}{sensitive}\PYG{+w}{ }\PYG{n+no}{data}\PYG{+w}{ }\PYG{n+no}{such}\PYG{+w}{ }\PYG{n+no}{as}
+\PYG{+w}{  }\PYG{n+nf}{cryptographic}\PYG{+w}{ }\PYG{n+no}{keys}\PYG{+w}{ }\PYG{n+no}{are}\PYG{+w}{ }\PYG{n+no}{retrieved}\PYG{+w}{ }\PYG{n+no}{from}\PYG{+w}{ }\PYG{n+no}{RAM}\PYG{+w}{ }\PYG{n+no}{after}\PYG{+w}{ }\PYG{n+no}{a}\PYG{+w}{ }\PYG{n+no}{device}\PYG{+w}{ }\PYG{n+no}{is}\PYG{+w}{ }\PYG{n+no}{powered}
+\PYG{+w}{  }\PYG{n+nf}{off.}\PYG{+w}{ }\PYG{n+no}{Data}\PYG{+w}{ }\PYG{n+no}{remanence}\PYG{+w}{ }\PYG{n+no}{in}\PYG{+w}{ }\PYG{n+no}{DRAM}\PYG{+w}{ }\PYG{n+no}{can}\PYG{+w}{ }\PYG{n+no}{persist}\PYG{+w}{ }\PYG{n+no}{for}\PYG{+w}{ }\PYG{n+no}{seconds}\PYG{+w}{ }\PYG{n+no}{to}\PYG{+w}{ }\PYG{n+no}{minutes}\PYG{+w}{ }\PYG{n+no}{at}\PYG{+w}{ }\PYG{n+no}{room}
+\PYG{+w}{  }\PYG{n+nf}{temperature}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{and}\PYG{+w}{ }\PYG{n+no}{cooling}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{n+no}{chips}\PYG{+w}{ }\PYG{n+no}{can}\PYG{+w}{ }\PYG{n+no}{extend}\PYG{+w}{ }\PYG{n+no}{this}\PYG{+w}{ }\PYG{n+no}{period}
+\PYG{+w}{  }\PYG{n+nf}{significantly}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{allowing}\PYG{+w}{ }\PYG{n+no}{attackers}\PYG{+w}{ }\PYG{n+no}{to}\PYG{+w}{ }\PYG{n+no}{reboot}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{n+no}{system}\PYG{+w}{ }\PYG{n+no}{with}\PYG{+w}{ }\PYG{n+no}{a}\PYG{+w}{ }\PYG{n+no}{custom}
+\PYG{+w}{  }\PYG{n+nf}{loader}\PYG{+w}{ }\PYG{n+no}{and}\PYG{+w}{ }\PYG{n+no}{extract}\PYG{+w}{ }\PYG{n+no}{the}\PYG{+w}{ }\PYG{n+no}{remaining}\PYG{+w}{ }\PYG{n+no}{data.}
+
+\PYG{err}{\PYGZbs{}}\PYG{n+nf}{begin}\PYG{p}{\PYGZob{}}\PYG{n+no}{minted}\PYG{p}{\PYGZcb{}[}\PYG{n+no}{frame}\PYG{err}{=}\PYG{n+no}{single}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{linenos}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{breaklines}\PYG{p}{]\PYGZob{}}\PYG{n+no}{python}\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{\PYGZsh{} Pseudocode for a cold boot attack scenario\PYGZcb{}}
+\PYG{n+nf}{def}\PYG{+w}{ }\PYG{n+no}{cold\PYGZus{}boot\PYGZus{}attack}\PYG{p}{(}\PYG{n+no}{ram\PYGZus{}content}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{search\PYGZus{}patterns}\PYG{p}{):}
+\PYG{c+c1}{\PYGZsh{} Simulate cooling of RAM to preserve data\PYGZcb{}}
+\PYG{n+nf}{cooled\PYGZus{}ram}\PYG{+w}{ }\PYG{err}{=}\PYG{+w}{ }\PYG{n+no}{cool\PYGZus{}ram}\PYG{p}{(}\PYG{n+no}{ram\PYGZus{}content}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Search for cryptographic keys or sensitive data in the cooled RAM content\PYGZcb{}}
+\PYG{n+nf}{for}\PYG{+w}{ }\PYG{n+no}{pattern}\PYG{+w}{ }\PYG{n+no}{in}\PYG{+w}{ }\PYG{n+no}{search\PYGZus{}patterns}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nf}{if}\PYG{+w}{ }\PYG{n+no}{pattern}\PYG{+w}{ }\PYG{n+no}{in}\PYG{+w}{ }\PYG{n+no}{cooled\PYGZus{}ram}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nf}{print}\PYG{p}{(}\PYG{err}{\PYGZdq{}}\PYG{n+no}{Sensitive}\PYG{+w}{ }\PYG{n+no}{data}\PYG{+w}{ }\PYG{n+no}{found}\PYG{p}{:}\PYG{err}{\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{pattern}\PYG{p}{)}
+\end{Verbatim}
