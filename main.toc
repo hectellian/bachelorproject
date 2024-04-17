@@ -14,10 +14,10 @@
 \contentsline {section}{\numberline {2.1}Historical Overview}{7}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Milestones}{11}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}Types of Hardware Flaws}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Physical Vulnerabilities}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Physical Vulnerabilities}{12}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Side-channel Attacks}{12}{subsection.2.2.2}%
 \contentsline {subsubsection}{Timing Attacks}{13}{section*.11}%
-\contentsline {subsubsection}{Power Analysis Attacks}{15}{section*.12}%
+\contentsline {subsubsection}{Power Analysis Attacks}{14}{section*.12}%
 \contentsline {subsubsection}{Fault Injection Attacks}{16}{section*.13}%
 \contentsline {section}{\numberline {2.3}Mitigation Strategies}{18}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Preemptive Measures}{18}{subsection.2.3.1}%
@@ -29,6 +29,7 @@
 \contentsline {paragraph}{Reactive Strategy Limitations}{23}{section*.18}%
 \contentsline {subsection}{\numberline {2.4.1}Future Research Directions}{23}{subsection.2.4.1}%
 \contentsline {paragraph}{Advanced Materials and Fabrication Techniques}{23}{section*.19}%
-\contentsline {paragraph}{AI and Machine Learning for Security}{23}{section*.20}%
-\contentsline {paragraph}{Homomorphic Encryption Hardware}{23}{section*.21}%
+\contentsline {paragraph}{AI and Machine Learning for Security}{24}{section*.20}%
+\contentsline {paragraph}{Homomorphic Encryption Hardware}{24}{section*.21}%
 \contentsline {paragraph}{Secure Hardware Lifecycle Management}{24}{section*.22}%
+\contentsline {section}{\numberline {2.5}Conclusion: Navigating the Landscape of Hardware Security}{24}{section.2.5}%

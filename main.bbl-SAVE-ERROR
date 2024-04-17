@@ -33,57 +33,6 @@
       \verb /home/hectellian/Zotero/storage/Y2T5IT62/CRYPTO_memcmp.html
       \endverb
     \endentry
-    \entry{bar-elSorcererApprenticeGuide2004}{misc}{}
-      \name{author}{5}{}{%
-        {{hash=2d34a283f813fa0521fbaa288bd13e7e}{%
-           family={{Bar-El}},
-           familyi={B\bibinitperiod},
-           given={Hagai},
-           giveni={H\bibinitperiod}}}%
-        {{hash=016f77bf3ed93f8aecdbfc246602b1c9}{%
-           family={Choukri},
-           familyi={C\bibinitperiod},
-           given={Hamid},
-           giveni={H\bibinitperiod}}}%
-        {{hash=f3b449231e5742f32d4374cd29a1cb2e}{%
-           family={Naccache},
-           familyi={N\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=be82900df4d7d1240e25b3d2f1a0b10d}{%
-           family={Tunstall},
-           familyi={T\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=fed0272a4f6834ab950065b4c7fa3b4a}{%
-           family={Whelan},
-           familyi={W\bibinitperiod},
-           given={Claire},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{f96761fe45e28eaf14849e4f0db03c89}
-      \strng{fullhash}{e1103695c0d38947edbe055fdb63a5cf}
-      \strng{bibnamehash}{f96761fe45e28eaf14849e4f0db03c89}
-      \strng{authorbibnamehash}{f96761fe45e28eaf14849e4f0db03c89}
-      \strng{authornamehash}{f96761fe45e28eaf14849e4f0db03c89}
-      \strng{authorfullhash}{e1103695c0d38947edbe055fdb63a5cf}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The effect of faults on electronic systems has been studied since the 1970s when it was noticed that radioactive particles caused errors in chips. This led to further research on the effect of charged particles on silicon, motivated by the aerospace industry who was becoming concerned about the effect of faults in airborn electronic systems. Since then various mechanisms for fault creation and propagation have been discovered and researched. This paper covers the various methods that can be used to induce faults in semiconductors and exploit such errors maliciously. Several examples of attacks stemming from the exploiting of faults are explained. Finally a series of countermeasures to thwart these attacks are described.}
-      \field{annotation}{Publication info: Published elsewhere. Unknown where it was published}
-      \field{number}{2004/100}
-      \field{title}{The {{Sorcerer}}'s {{Apprentice Guide}} to {{Fault Attacks}}}
-      \field{urlday}{17}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2004}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/QYX38U7P/Bar-El et al. - 2004 - The Sorcerer’s Apprentice Guide to Fault Attacks.pdf
-      \endverb
-    \endentry
     \entry{bittnerForgottenThreatVoltage2021}{misc}{}
       \name{author}{4}{}{%
         {{hash=a5b3e039a8b9931ad3dcc2d7766587bc}{%
@@ -140,69 +89,6 @@
       \endverb
       \keyw{Computer Science - Cryptography and Security}
     \endentry
-    \entry{burkeIntelUnleashesComprehensive}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=1649aa5fabba9d42d41ddef2c6593c7c}{%
-           family={Burke},
-           familyi={B\bibinitperiod},
-           given={Steven},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{1649aa5fabba9d42d41ddef2c6593c7c}
-      \strng{fullhash}{1649aa5fabba9d42d41ddef2c6593c7c}
-      \strng{bibnamehash}{1649aa5fabba9d42d41ddef2c6593c7c}
-      \strng{authorbibnamehash}{1649aa5fabba9d42d41ddef2c6593c7c}
-      \strng{authornamehash}{1649aa5fabba9d42d41ddef2c6593c7c}
-      \strng{authorfullhash}{1649aa5fabba9d42d41ddef2c6593c7c}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Intel says it is 'rapidly issuing' updates for all types of Intel-based computer systems -- including personal computers and servers -- that render those systems 'immune' from the Spectre and Meltdown security exploits.}
-      \field{howpublished}{https://www.crn.com/news/security/300097426/intel-unleashes-comprehensive-threat-mitigation-response-to-spectre-and-meltdown-security-vulnerabilities}
-      \field{langid}{english}
-      \field{title}{Intel {{Unleashes}} '{{Comprehensive}}' {{Threat Mitigation Response To Spectre And Meltdown Security Vulnerabilities}} {|} {{CRN}}}
-      \field{urlday}{10}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/K72XJIR3/intel-unleashes-comprehensive-threat-mitigation-response-to-spectre-and-meltdown-security-vulne.html
-      \endverb
-    \endentry
-    \entry{computersecuritydivisionPostQuantumCryptographyCSRC2017}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=708a46dab973085795f02e0ba48e4141}{%
-           family={Computer\bibnamedelimb Security\bibnamedelima Division},
-           familyi={C\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={Information\bibnamedelimb Technology\bibnamedelima Laboratory},
-           giveni={I\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{708a46dab973085795f02e0ba48e4141}
-      \strng{fullhash}{708a46dab973085795f02e0ba48e4141}
-      \strng{bibnamehash}{708a46dab973085795f02e0ba48e4141}
-      \strng{authorbibnamehash}{708a46dab973085795f02e0ba48e4141}
-      \strng{authornamehash}{708a46dab973085795f02e0ba48e4141}
-      \strng{authorfullhash}{708a46dab973085795f02e0ba48e4141}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Public comments are available for~Draft FIPS 203, Draft FIPS 204 and Draft FIPS 205, which specify algorithms derived from CRYSTALS-Dilithium, CRYSTALS-KYBER and SPHINCS+.~ The public comment period closed November 22, 2023. PQC Seminars Next Talk:~ April 23, 2024 4th Round KEMs ~ Additional Digital Signature Schemes -~Round 1 Submissions PQC License Summary \& Excerpts Background NIST initiated a process to solicit, evaluate, and standardize one or more quantum-resistant public-key cryptographic algorithms.~~Full details can be found in the Post-Quantum Cryptography Standardization page.~~ In recent years, there has been a substantial amount of research on quantum computers -- machines that exploit quantum mechanical phenomena to solve mathematical problems that are difficult or intractable for conventional computers. If large-scale quantum computers are ever built, they will be able to break many of the public-key cryptosystems currently in use. This would seriously compromise the confidentiality and...}
-      \field{howpublished}{https://csrc.nist.gov/projects/post-quantum-cryptography}
-      \field{journaltitle}{CSRC {|} NIST}
-      \field{langid}{american}
-      \field{month}{1}
-      \field{title}{Post-{{Quantum Cryptography}} {|} {{CSRC}} {|} {{CSRC}}}
-      \field{urlday}{10}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2017}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/AH8CEIBL/post-quantum-cryptography.html
-      \endverb
-    \endentry
     \entry{costanIntelSGXExplained2016}{misc}{}
       \name{author}{2}{}{%
         {{hash=51a352c7306910a4bef62e293e6097ea}{%
@@ -256,44 +142,6 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /home/hectellian/Zotero/storage/5TNGINKK/Digital_rights_management.html
-      \endverb
-    \endentry
-    \entry{gentryFULLYHOMOMORPHICENCRYPTION}{article}{}
-      \name{author}{1}{}{%
-        {{hash=bd007b2a3d698c39bd758b253f7c2ebf}{%
-           family={Gentry},
-           familyi={G\bibinitperiod},
-           given={Craig},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{bd007b2a3d698c39bd758b253f7c2ebf}
-      \strng{fullhash}{bd007b2a3d698c39bd758b253f7c2ebf}
-      \strng{bibnamehash}{bd007b2a3d698c39bd758b253f7c2ebf}
-      \strng{authorbibnamehash}{bd007b2a3d698c39bd758b253f7c2ebf}
-      \strng{authornamehash}{bd007b2a3d698c39bd758b253f7c2ebf}
-      \strng{authorfullhash}{bd007b2a3d698c39bd758b253f7c2ebf}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{title}{A {{FULLY HOMOMORPHIC ENCRYPTION SCHEME}}}
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/3KDQ9NB8/Gentry - A FULLY HOMOMORPHIC ENCRYPTION SCHEME.pdf
-      \endverb
-    \endentry
-    \entry{GrapheneStrongLightweight}{misc}{}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://ieeexplore.ieee.org/abstract/document/9251863}
-      \field{title}{Graphene: {{Strong}} yet {{Lightweight Row Hammer Protection}} {|} {{IEEE Conference Publication}} {|} {{IEEE Xplore}}}
-      \field{urlday}{17}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/2KCGY57H/9251863.html
       \endverb
     \endentry
     \entry{haldermanLestWeRemember2009}{article}{}
@@ -376,101 +224,6 @@
       \verb{file}
       \verb /home/hectellian/Zotero/storage/RHQLX6FQ/Halderman et al. - 2009 - Lest we remember cold-boot attacks on encryption .pdf
       \endverb
-    \endentry
-    \entry{kavandSecuringHardwareReconfigurable2022}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=2a9840d359dff334bdb91ce59645f871}{%
-           family={Kavand},
-           familyi={K\bibinitperiod},
-           given={Nima},
-           giveni={N\bibinitperiod}}}%
-        {{hash=c01f58aa2ef9ef0d6f39b9f9f63f6e50}{%
-           family={Darjani},
-           familyi={D\bibinitperiod},
-           given={Armin},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d28e14f639d1d820d2b392dba8bb1255}{%
-           family={Rai},
-           familyi={R\bibinitperiod},
-           given={Shubham},
-           giveni={S\bibinitperiod}}}%
-        {{hash=5ce182e577e758d1a27cb7fb6095f1ec}{%
-           family={Kumar},
-           familyi={K\bibinitperiod},
-           given={Akash},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York, NY, USA}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{a134fe215cc438c6f9cfbee0d6aa49b2}
-      \strng{fullhash}{2360e458fbee48c19fdaa4b1d62c95c4}
-      \strng{bibnamehash}{a134fe215cc438c6f9cfbee0d6aa49b2}
-      \strng{authorbibnamehash}{a134fe215cc438c6f9cfbee0d6aa49b2}
-      \strng{authornamehash}{a134fe215cc438c6f9cfbee0d6aa49b2}
-      \strng{authorfullhash}{2360e458fbee48c19fdaa4b1d62c95c4}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Hardware security has been an ever-growing concern of the integrated circuit (IC) designers. Through different stages in the IC design and life cycle, an adversary can extract sensitive design information and private data stored in the circuit using logical, physical, and structural weaknesses. Besides, in recent times, ML-based attacks have become the new de facto standard in hardware security community. Contemporary defense strategies are often facing unforeseen challenges to cope up with these attack schemes. Additionally, the high overhead of the CMOS-based secure addon circuitry and intrinsic limitations of these devices indicate the need for new nano-electronics. Emerging reconfigurable devices like Reconfigurable Field Effect transistors (RFETs) provide unique features to fortify the design against various threats at different stages in the IC design and life cycle. In this manuscript, we investigate the applications of the RFETs for securing the design against traditional and machine learning (ML)-based intellectual property (IP) piracy techniques and side-channel attacks (SCAs).}
-      \field{booktitle}{Proceedings of the 41st {{IEEE}}/{{ACM International Conference}} on {{Computer-Aided Design}}}
-      \field{isbn}{978-1-4503-9217-4}
-      \field{month}{12}
-      \field{series}{{{ICCAD}} '22}
-      \field{title}{Securing {{Hardware}} through {{Reconfigurable Nano-Structures}}}
-      \field{urlday}{17}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \field{pages}{1\bibrangedash 7}
-      \range{pages}{7}
-      \verb{doi}
-      \verb 10.1145/3508352.3561116
-      \endverb
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/3LBRJKFF/Kavand et al. - 2022 - Securing Hardware through Reconfigurable Nano-Stru.pdf
-      \endverb
-      \keyw{HW security,IP protection,reconigurable nano-structures,RFET,side-channel attacks}
-    \endentry
-    \entry{kentEncyclopediaComputerScience1993}{book}{}
-      \name{author}{2}{}{%
-        {{hash=1e53ad98d92c1ecaaacecd7931163c5d}{%
-           family={Kent},
-           familyi={K\bibinitperiod},
-           given={Allen},
-           giveni={A\bibinitperiod}}}%
-        {{hash=b96163b60e610b12c3e00e9412c85e65}{%
-           family={Williams},
-           familyi={W\bibinitperiod},
-           given={James\bibnamedelima G.},
-           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {CRC Press}%
-      }
-      \strng{namehash}{4f8fe84a94cad9af337a58d93e3e0900}
-      \strng{fullhash}{4f8fe84a94cad9af337a58d93e3e0900}
-      \strng{bibnamehash}{4f8fe84a94cad9af337a58d93e3e0900}
-      \strng{authorbibnamehash}{4f8fe84a94cad9af337a58d93e3e0900}
-      \strng{authornamehash}{4f8fe84a94cad9af337a58d93e3e0900}
-      \strng{authorfullhash}{4f8fe84a94cad9af337a58d93e3e0900}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{"This comprehensive reference work provides immediate, fingertip access to state-of-the-art technology in nearly 700 self-contained articles written by over 900 international authorities. Each article in the Encyclopedia features current developments and trends in computers, software, vendors, and applications...extensive bibliographies of leading figures in the field, such as Samuel Alexander, John von Neumann, and Norbert Wiener...and in-depth analysis of future directions."}
-      \field{isbn}{978-0-8247-2281-4}
-      \field{langid}{english}
-      \field{month}{4}
-      \field{shorttitle}{Encyclopedia of {{Computer Science}} and {{Technology}}}
-      \field{title}{Encyclopedia of {{Computer Science}} and {{Technology}}: {{Volume}} 28 - {{Supplement}} 13: {{AerosPate Applications}} of {{Artificial Intelligence}} to {{Tree Structures}}}
-      \field{year}{1993}
-      \keyw{Computers / Computer Science,Computers / General}
     \endentry
     \entry{kimFlippingBitsMemory2014}{inproceedings}{}
       \name{author}{9}{}{%
@@ -745,46 +498,6 @@
       \verb /home/hectellian/Zotero/storage/IPXVL3UF/Kocher - 1996 - Timing Attacks on Implementations of Diffie-Hellma.pdf
       \endverb
       \keyw{cryptanalysis,Diffie-Hellman,DSS,RSA,timing attack}
-    \endentry
-    \entry{kushnerRealStoryStuxnet2013}{article}{}
-      \name{author}{1}{}{%
-        {{hash=e9b331019491f5404b77e275b2f59013}{%
-           family={Kushner},
-           familyi={K\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{e9b331019491f5404b77e275b2f59013}
-      \strng{fullhash}{e9b331019491f5404b77e275b2f59013}
-      \strng{bibnamehash}{e9b331019491f5404b77e275b2f59013}
-      \strng{authorbibnamehash}{e9b331019491f5404b77e275b2f59013}
-      \strng{authornamehash}{e9b331019491f5404b77e275b2f59013}
-      \strng{authorfullhash}{e9b331019491f5404b77e275b2f59013}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The paper discusses how Kaspersky Lab tracked down the malware that stymied Iran's nuclear-fuel enrichment program.}
-      \field{issn}{1939-9340}
-      \field{journaltitle}{IEEE Spectrum}
-      \field{month}{3}
-      \field{number}{3}
-      \field{title}{The Real Story of Stuxnet}
-      \field{urlday}{17}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{50}
-      \field{year}{2013}
-      \field{urldateera}{ce}
-      \field{pages}{48\bibrangedash 53}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/MSPEC.2013.6471059
-      \endverb
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/YZD2ELDT/Kushner - 2013 - The real story of stuxnet.pdf
-      \endverb
-      \keyw{Companies,Computer hacking,Computer security,Computer viruses,Cryptography,Malware}
     \endentry
     \entry{lampsonLazySpeculativeExecution2006}{inproceedings}{}
       \name{author}{1}{}{%
@@ -1100,91 +813,6 @@
       \endverb
       \keyw{bitstream encryption,FPGA,side-channel attacks,triple des}
     \endentry
-    \entry{ngabonzizaTrustZoneExplainedArchitectural2016}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=342c1c8589c463c5b11ee24c5b792bc7}{%
-           family={Ngabonziza},
-           familyi={N\bibinitperiod},
-           given={Bernard},
-           giveni={B\bibinitperiod}}}%
-        {{hash=32aa716a830496e546876cf7f52e4012}{%
-           family={Martin},
-           familyi={M\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=1cc5dea2058d6d9004a1ccec24e0387c}{%
-           family={Bailey},
-           familyi={B\bibinitperiod},
-           given={Anna},
-           giveni={A\bibinitperiod}}}%
-        {{hash=768ec6cdcea772299318874bc6d6715a}{%
-           family={Cho},
-           familyi={C\bibinitperiod},
-           given={Haehyun},
-           giveni={H\bibinitperiod}}}%
-        {{hash=2794292eb779369631b6b0c603b24531}{%
-           family={Martin},
-           familyi={M\bibinitperiod},
-           given={Sarah},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{061322a143a4f7b79c5365b1053d6191}
-      \strng{fullhash}{ac63acd67d0bb2a2489e0930d02ebb78}
-      \strng{bibnamehash}{061322a143a4f7b79c5365b1053d6191}
-      \strng{authorbibnamehash}{061322a143a4f7b79c5365b1053d6191}
-      \strng{authornamehash}{061322a143a4f7b79c5365b1053d6191}
-      \strng{authorfullhash}{ac63acd67d0bb2a2489e0930d02ebb78}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{ARM TrustZone is a hardware security extension technology, which aims to provide secure execution environment by splitting computer resources between two execution worlds, namely normal world and secure world. TrustZone is supported on different flavors of ARM architectures, that include architecture deployed on targets running regular applications, such as mobile devices and architecture for micro-controllers. As ARM is widely deployed on the majority of mobile and micro-controller devices, TrustZone's goal is to provide security for those platforms. In this paper, we will discuss details of different ARM architectures that support TrustZone technology. Then, we will review how TrustZone is implemented in the hardware and software of ARM products. We will also compare TrustZone with other implementations of trusted execution environments on the market.}
-      \field{booktitle}{2016 {{IEEE}} 2nd {{International Conference}} on {{Collaboration}} and {{Internet Computing}} ({{CIC}})}
-      \field{month}{11}
-      \field{shorttitle}{{{TrustZone Explained}}}
-      \field{title}{{{TrustZone Explained}}: {{Architectural Features}} and {{Use Cases}}}
-      \field{urlday}{17}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2016}
-      \field{urldateera}{ce}
-      \field{pages}{445\bibrangedash 451}
-      \range{pages}{7}
-      \verb{doi}
-      \verb 10.1109/CIC.2016.065
-      \endverb
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/S7HKMGMT/Ngabonziza et al. - 2016 - TrustZone Explained Architectural Features and Us.pdf;/home/hectellian/Zotero/storage/244D3E73/7809736.html
-      \endverb
-      \keyw{Computer architecture,Coprocessors,Hardware,Monitoring,Registers,Security,Software}
-    \endentry
-    \entry{nicolasfalliereW32StuxnetDossier}{book}{}
-      \name{author}{1}{}{%
-        {{hash=fa1bbd44f5194900fb5b492ece942192}{%
-           family={Nicolas\bibnamedelima Falliere},
-           familyi={N\bibinitperiod\bibinitdelim F\bibinitperiod},
-           given={Liam\bibnamedelimb O.\bibnamedelimi Murchu},
-           giveni={L\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{fa1bbd44f5194900fb5b492ece942192}
-      \strng{fullhash}{fa1bbd44f5194900fb5b492ece942192}
-      \strng{bibnamehash}{fa1bbd44f5194900fb5b492ece942192}
-      \strng{authorbibnamehash}{fa1bbd44f5194900fb5b492ece942192}
-      \strng{authornamehash}{fa1bbd44f5194900fb5b492ece942192}
-      \strng{authorfullhash}{fa1bbd44f5194900fb5b492ece942192}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{W32.Stuxnet has gained a lot of attention from researchers and me- dia recently. There is good reason for this. Stuxnet is one of the most complex threats we have analyzed. In this paper we take a de- tailed look at Stuxnet and its various components and particularly focus on the final goal of Stuxnet, which is to reprogram industrial control systems. Stuxnet is a large, complex piece of malware with many different components and functionalities.}
-      \field{langid}{english}
-      \field{title}{W32 {{Stuxnet Dossier}}}
-      \field{urlday}{17}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-      \keyw{stuxnet}
-    \endentry
     \entry{RadiationHardening2024}{article}{}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
@@ -1378,55 +1006,6 @@
       \verb /home/hectellian/Zotero/storage/JFZIHHNR/Tajik et al. - 2014 - Physical Characterization of Arbiter PUFs.pdf
       \endverb
       \keyw{Arbiter PUF,backside,photonic emission analysis,physical characterization}
-    \endentry
-    \entry{vinaypamnani-msftWindowsDefenderApplication2024}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=2b65dd695e4276baf400373906be5ae7}{%
-           family={{vinaypamnani-msft}},
-           familyi={v\bibinitperiod}}}%
-      }
-      \strng{namehash}{2b65dd695e4276baf400373906be5ae7}
-      \strng{fullhash}{2b65dd695e4276baf400373906be5ae7}
-      \strng{bibnamehash}{2b65dd695e4276baf400373906be5ae7}
-      \strng{authorbibnamehash}{2b65dd695e4276baf400373906be5ae7}
-      \strng{authornamehash}{2b65dd695e4276baf400373906be5ae7}
-      \strng{authorfullhash}{2b65dd695e4276baf400373906be5ae7}
-      \field{sortinit}{v}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Hardware and software system integrity-hardening capabilities that can be deployed separately or in combination with Windows Defender Application Control (WDAC).}
-      \field{howpublished}{https://learn.microsoft.com/en-us/windows/security/application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control}
-      \field{langid}{american}
-      \field{month}{3}
-      \field{title}{Windows {{Defender Application Control}} and Virtualization-Based Code Integrity - {{Windows Security}}}
-      \field{urlday}{10}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/J8LKWSIW/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-con.html
-      \endverb
-    \endentry
-    \entry{WhatFirmware2013}{misc}{}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Firmware is the basic software embedded in a hardware device. Firmware - essential software routines contained in~ROM~memory ~of a hardware device. Firmware is always responsible for basic operations, such as starting or input / output. We can say, without fail, that any electronic device~ needs~firmware to operate. Firmware range from a reduced set of instructions{\dots}}
-      \field{chapter}{EN}
-      \field{journaltitle}{incepator.pinzaru.ro}
-      \field{langid}{en, sv}
-      \field{month}{1}
-      \field{title}{{What is firmware?}}
-      \field{urlday}{17}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2013}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /home/hectellian/Zotero/storage/RJK79ZFB/what-is-firmware.html
-      \endverb
     \endentry
   \enddatalist
 \endrefsection

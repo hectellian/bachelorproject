@@ -1,7 +1,7 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{index}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n+nx}{simpleByteArray}\PYG{p}{.}\PYG{n+nx}{length}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{        }\PYG{n+nx}{index}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{simpleByteArray}\PYG{p}{[}\PYG{n+nx}{index}\PYG{+w}{ }\PYG{o}{|}\PYG{+w}{ }\PYG{l+m+mf}{0}\PYG{p}{];}
-\PYG{+w}{        }\PYG{n+nx}{index}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(((}\PYG{n+nx}{index}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n+nx}{TABLE1\PYGZus{}STRIDE}\PYG{p}{)}\PYG{o}{|}\PYG{l+m+mf}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{TABLE1\PYGZus{}BYTES}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1}\PYG{p}{))}\PYG{o}{|}\PYG{l+m+mf}{0}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n+nx}{index}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(((}\PYG{n+nx}{index}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{l+m+mf}{4096}\PYG{p}{)}\PYG{o}{|}\PYG{l+m+mf}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{TABLE1\PYGZus{}BYTES}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1}\PYG{p}{))}\PYG{o}{|}\PYG{l+m+mf}{0}\PYG{p}{;}
 \PYG{+w}{        }\PYG{n+nx}{localJunk}\PYG{+w}{ }\PYG{o}{\PYGZca{}=}\PYG{+w}{ }\PYG{n+nx}{probeTable}\PYG{p}{[}\PYG{n+nx}{index}\PYG{o}{|}\PYG{l+m+mf}{0}\PYG{p}{]}\PYG{o}{|}\PYG{l+m+mf}{0}\PYG{p}{;}
 \PYG{+w}{    }\PYG{p}{\PYGZcb{}}
 \end{Verbatim}

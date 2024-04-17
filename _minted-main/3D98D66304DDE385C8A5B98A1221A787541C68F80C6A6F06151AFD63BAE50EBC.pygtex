@@ -1,6 +1,5 @@
 \begin{Verbatim}[commandchars=\\\{\}]
   \PYG{k}{def} \PYG{n+nf}{square\PYGZus{}and\PYGZus{}multiply}\PYG{p}{(}\PYG{n}{base}\PYG{p}{,} \PYG{n}{exponent}\PYG{p}{,} \PYG{n}{modulus}\PYG{p}{):}
-    \PYG{c+c1}{\PYGZsh{} Convert the exponent to its binary representation}
     \PYG{n}{binary\PYGZus{}exponent} \PYG{o}{=} \PYG{n+nb}{bin}\PYG{p}{(}\PYG{n}{exponent}\PYG{p}{)[}\PYG{l+m+mi}{2}\PYG{p}{:]}
     \PYG{n}{result} \PYG{o}{=} \PYG{l+m+mi}{1}
     \PYG{k}{for} \PYG{n}{bit} \PYG{o+ow}{in} \PYG{n}{binary\PYGZus{}exponent}\PYG{p}{:}
