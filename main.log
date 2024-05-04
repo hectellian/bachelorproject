@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.27)  17 APR 2024 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.27)  24 APR 2024 09:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -927,7 +927,7 @@ Package csquotes Info: ... none found.
 
 LaTeX Warning: Label `tab:bit-flips' multiply defined.
 
-))
+) (./sections/fusee_gelee.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -1010,7 +1010,7 @@ Package biblatex Info: Reference segment=0 on input line 73.
 \openout2 = `sections/abstract.aux'.
 
  (./sections/abstract.tex
-<./images/unige-logo.png, id=100, 220.825pt x 237.88875pt>
+<./images/unige-logo.png, id=104, 220.825pt x 237.88875pt>
 File: ./images/unige-logo.png Graphic file (type png)
 <use ./images/unige-logo.png>
 Package pdftex.def Info: ./images/unige-logo.png  used on input line 1.
@@ -1081,12 +1081,12 @@ Chapter 2.
 \openout4 = `main.pyg'.
 
  (./_minted-main/5DFE414B919F2326EBF1A295D4A12CF45F842A30BB0BD35AE98705DFDEA26853.pygtex)
-<images/cellrows.png, id=256, 325.215pt x 241.90375pt>
+<images/cellrows.png, id=261, 325.215pt x 241.90375pt>
 File: images/cellrows.png Graphic file (type png)
 <use images/cellrows.png>
 Package pdftex.def Info: images/cellrows.png  used on input line 82.
 (pdftex.def)             Requested size: 99.01508pt x 73.64949pt.
-<images/singlecell.png, id=257, 230.8625pt x 231.86626pt>
+<images/singlecell.png, id=262, 230.8625pt x 231.86626pt>
 File: images/singlecell.png Graphic file (type png)
 <use images/singlecell.png>
 Package pdftex.def Info: images/singlecell.png  used on input line 86.
@@ -1105,7 +1105,7 @@ See the caption package documentation for explanation.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 139.
 [9]
-<images/intel-cpu.png, id=291, 432.11438pt x 620.3175pt>
+<images/intel-cpu.png, id=296, 432.11438pt x 620.3175pt>
 File: images/intel-cpu.png Graphic file (type png)
 <use images/intel-cpu.png>
 Package pdftex.def Info: images/intel-cpu.png  used on input line 149.
@@ -1162,7 +1162,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--362
 \openout4 = `main.pyg'.
 
 (./_minted-main/AB81C35FDA3BE41CA00D250B45678E03541C68F80C6A6F06151AFD63BAE50EBC.pygtex) [16]
-<images/glitch.png, id=357, 462.97969pt x 201.00093pt>
+<images/glitch.png, id=362, 462.97969pt x 201.00093pt>
 File: images/glitch.png Graphic file (type png)
 <use images/glitch.png>
 Package pdftex.def Info: images/glitch.png  used on input line 382.
@@ -1202,92 +1202,102 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [21] [22] [23] [24]) [25]
-Overfull \hbox (211.67883pt too wide) in paragraph at lines 93--93
-[]\OT1/cmr/m/it/10.95 /Docs/Man1.1.1/Man3/CRYPTO[]memcmp.Html\OT1/cmr/m/n/10.95 . https://www.openssl.org/docs/man1.1.1/man3/CRYPTO[]memcmp.html.
- []
+\openout2 = `sections/fusee_gelee.aux'.
 
+ (./sections/fusee_gelee.tex
+Chapter 3.
+) [26
 
-Underfull \hbox (badness 7256) in paragraph at lines 93--93
-[]\OT1/cmr/m/n/10.95 Steven Burke. \OT1/cmr/m/it/10.95 In-tel Un-leashes 'Com-pre-hen-sive' Threat Mit-i-ga-tion Re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
-\OT1/cmr/m/it/10.95 sponse To Spec-tre And Melt-down Se-cu-rity Vul-ner-a-bil-i-ties | CRN\OT1/cmr/m/n/10.95 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
-\OT1/cmr/m/n/10.95 https://www.crn.com/news/security/300097426/intel-unleashes-comprehensive-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
-\OT1/cmr/m/n/10.95 threat-mitigation-response-to-spectre-and-meltdown-security-vulnerabilities.
- []
-
-
-Underfull \hbox (badness 3907) in paragraph at lines 93--93
-[]\OT1/cmr/m/n/10.95 \  Dig-i-tal Rights Man-age-ment". In: \OT1/cmr/m/it/10.95 Wikipedia \OT1/cmr/m/n/10.95 (Mar. 2024). (Vis-ited on
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
-[]\OT1/cmr/m/it/10.95 Graphene: Strong yet Lightweight Row Ham-mer Pro-tec-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
-\OT1/cmr/m/it/10.95 tion | IEEE Con-fer-ence Pub-li-ca-tion | IEEE Xplore\OT1/cmr/m/n/10.95 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
-\OT1/cmr/m/n/10.95 https://ieeexplore.ieee.org/abstract/document/9251863. (Vis-ited on
- []
-
-
-Underfull \hbox (badness 2435) in paragraph at lines 93--93
-[]\OT1/cmr/m/n/10.95 Nima Ka-vand et al. \  Se-cur-ing Hard-ware through Re-con-fig-urable Nano-
- []
-
-[26
 
 
 
 ]
-Underfull \hbox (badness 6316) in paragraph at lines 93--93
+Overfull \hbox (211.67883pt too wide) in paragraph at lines 94--94
+[]\OT1/cmr/m/it/10.95 /Docs/Man1.1.1/Man3/CRYPTO[]memcmp.Html\OT1/cmr/m/n/10.95 . https://www.openssl.org/docs/man1.1.1/man3/CRYPTO[]memcmp.html.
+ []
+
+
+Underfull \hbox (badness 7256) in paragraph at lines 94--94
+[]\OT1/cmr/m/n/10.95 Steven Burke. \OT1/cmr/m/it/10.95 In-tel Un-leashes 'Com-pre-hen-sive' Threat Mit-i-ga-tion Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+\OT1/cmr/m/it/10.95 sponse To Spec-tre And Melt-down Se-cu-rity Vul-ner-a-bil-i-ties | CRN\OT1/cmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+\OT1/cmr/m/n/10.95 https://www.crn.com/news/security/300097426/intel-unleashes-comprehensive-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+\OT1/cmr/m/n/10.95 threat-mitigation-response-to-spectre-and-meltdown-security-vulnerabilities.
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 94--94
+[]\OT1/cmr/m/n/10.95 \  Dig-i-tal Rights Man-age-ment". In: \OT1/cmr/m/it/10.95 Wikipedia \OT1/cmr/m/n/10.95 (Mar. 2024). (Vis-ited on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+[]\OT1/cmr/m/it/10.95 Graphene: Strong yet Lightweight Row Ham-mer Pro-tec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+\OT1/cmr/m/it/10.95 tion | IEEE Con-fer-ence Pub-li-ca-tion | IEEE Xplore\OT1/cmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+\OT1/cmr/m/n/10.95 https://ieeexplore.ieee.org/abstract/document/9251863. (Vis-ited on
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 94--94
+[]\OT1/cmr/m/n/10.95 Nima Ka-vand et al. \  Se-cur-ing Hard-ware through Re-con-fig-urable Nano-
+ []
+
+[27
+
+
+
+]
+Underfull \hbox (badness 6316) in paragraph at lines 94--94
 []\OT1/cmr/m/n/10.95 Paul Kocher et al. \OT1/cmr/m/it/10.95 Spec-tre At-tacks: Ex-ploit-ing Spec-u-la-tive Ex-e-cu-tion\OT1/cmr/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 93--93
+Underfull \hbox (badness 1158) in paragraph at lines 94--94
 []\OT1/cmr/m/n/10.95 Abhranil Maiti et al. \  A Large Scale Char-ac-ter-i-za-tion of RO-PUF". In:
  []
 
-[27]
-Underfull \hbox (badness 2142) in paragraph at lines 93--93
+[28]
+Underfull \hbox (badness 2142) in paragraph at lines 94--94
 \OT1/cmr/m/it/10.95 Based Code In-tegrity - Win-dows Se-cu-rity\OT1/cmr/m/n/10.95 . https://learn.microsoft.com/en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 \OT1/cmr/m/n/10.95 us/windows/security/application-security/application-control/introduction-to-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 \OT1/cmr/m/n/10.95 device-guard-virtualization-based-security-and-windows-defender-application-
  []
 
-[28] 
+[29] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(./main.aux (./sections/abstract.aux) (./sections/introduction.aux) (./sections/state_of_the_art.aux))
+(./main.aux (./sections/abstract.aux) (./sections/introduction.aux) (./sections/state_of_the_art.aux) (./sections/fusee_gelee.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 77FF5F06F6F5396E89AD0D13437CD883;3973.
+(rerunfilecheck)             Checksum: C4973B492CE3A9C094BB5F7E29113D5B;4273.
 runsystem(rm main.pyg)...executed.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1295,18 +1305,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28132 strings out of 476034
- 512681 string characters out of 5792864
+ 28163 strings out of 476034
+ 513768 string characters out of 5792864
  1865388 words of memory out of 6000000
- 47956 multiletter control sequences out of 15000+600000
+ 47978 multiletter control sequences out of 15000+600000
  524404 words of font info for 78 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  77i,9n,77p,3108b,1831s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (35 pages, 412351 bytes).
+Output written on main.pdf (36 pages, 414076 bytes).
 PDF statistics:
- 593 PDF objects out of 1000 (max. 8388607)
- 501 compressed objects within 6 object streams
- 158 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 509 compressed objects within 6 object streams
+ 160 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
