@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{voltage\PYGZus{}glitching\PYGZus{}attack}\PYG{p}{(}\PYG{n}{target\PYGZus{}operation}\PYG{p}{):}
+  \PYG{n}{successful} \PYG{o}{=} \PYG{k+kc}{False}
+  \PYG{k}{while} \PYG{o+ow}{not} \PYG{n}{successful}\PYG{p}{:}
+    \PYG{n}{apply\PYGZus{}voltage\PYGZus{}drop}\PYG{p}{()}
+    \PYG{n}{result} \PYG{o}{=} \PYG{n}{target\PYGZus{}operation}\PYG{p}{()}
+
+    \PYG{k}{if} \PYG{n}{check\PYGZus{}for\PYGZus{}errors}\PYG{p}{(}\PYG{n}{result}\PYG{p}{):}
+      \PYG{n}{exploit\PYGZus{}errors}\PYG{p}{(}\PYG{n}{result}\PYG{p}{)}
+
+    \PYG{n}{successful} \PYG{o}{=} \PYG{k+kc}{True}
+\end{Verbatim}

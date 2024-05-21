@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -17,6 +20,8 @@
 \@input{sections/abstract.aux}
 \providecommand \oddpage@label [2]{}
 \@input{sections/introduction.aux}
+\abx@aux@cite{0}{orlandUnpatchableExploitThat2018}
+\abx@aux@segm{0}{0}{orlandUnpatchableExploitThat2018}
 \@input{sections/state_of_the_art.aux}
 \abx@aux@cite{0}{RadiationHardening2024}
 \abx@aux@segm{0}{0}{RadiationHardening2024}
@@ -109,23 +114,27 @@
 \abx@aux@cite{0}{gentryFULLYHOMOMORPHICENCRYPTION}
 \abx@aux@segm{0}{0}{gentryFULLYHOMOMORPHICENCRYPTION}
 \@input{sections/fusee_gelee.aux}
+\@input{sections/practical.aux}
+\@input{sections/nintendo.aux}
+\@input{sections/mitigations.aux}
+\@input{sections/conclusion.aux}
+\newlabel{LastPage}{{}{33}{}{page.33}{}}
+\xdef\lastpage@lastpage{33}
+\xdef\lastpage@lastpageHy{33}
 \gdef\minted@oldcachelist{,
   default.pygstyle,
-  E317A2027A4F738C32E97E6467B823CE5F842A30BB0BD35AE98705DFDEA26853.pygtex,
-  5DFE414B919F2326EBF1A295D4A12CF45F842A30BB0BD35AE98705DFDEA26853.pygtex,
-  26BBE195814E48D0CD3F56D955B88E770C125883CE9B41769612C3D07F7BBAC9.pygtex,
-  B69B58E6D2469015B7C63C64337DA7C25F842A30BB0BD35AE98705DFDEA26853.pygtex,
-  4A22CD72AFA2BCFF249568999E00E50F541C68F80C6A6F06151AFD63BAE50EBC.pygtex,
-  3D98D66304DDE385C8A5B98A1221A787541C68F80C6A6F06151AFD63BAE50EBC.pygtex,
-  DFBD5B51B65DCF86BAC0721F78169EAB541C68F80C6A6F06151AFD63BAE50EBC.pygtex,
-  AB81C35FDA3BE41CA00D250B45678E03541C68F80C6A6F06151AFD63BAE50EBC.pygtex,
-  A9A65537DDB7C8CA1751FE425D15660E541C68F80C6A6F06151AFD63BAE50EBC.pygtex,
-  DA1901A2DD2B7DAE35DC13D40253EFD6541C68F80C6A6F06151AFD63BAE50EBC.pygtex,
-  5277549F0A9D1020CE32B84B3125D0398EF27FAE920C65D7B903E741E9673588.pygtex}
-\newlabel{LastPage}{{}{29}{}{page.29}{}}
-\xdef\lastpage@lastpage{29}
-\xdef\lastpage@lastpageHy{29}
-\abx@aux@read@bbl@mdfivesum{7B0B5488AB089CE640494B4715071B21}
+  E317A2027A4F738C32E97E6467B823CE8B953879FF4CDA899AB1C778980A7F48.pygtex,
+  5DFE414B919F2326EBF1A295D4A12CF48B953879FF4CDA899AB1C778980A7F48.pygtex,
+  26BBE195814E48D0CD3F56D955B88E77920C9EBDDD817EE435B930B9CEAE1D57.pygtex,
+  B69B58E6D2469015B7C63C64337DA7C28B953879FF4CDA899AB1C778980A7F48.pygtex,
+  4A22CD72AFA2BCFF249568999E00E50F5018845A16FEE2F871CFA2D2B2CFB1C6.pygtex,
+  3D98D66304DDE385C8A5B98A1221A7875018845A16FEE2F871CFA2D2B2CFB1C6.pygtex,
+  DFBD5B51B65DCF86BAC0721F78169EAB5018845A16FEE2F871CFA2D2B2CFB1C6.pygtex,
+  AB81C35FDA3BE41CA00D250B45678E035018845A16FEE2F871CFA2D2B2CFB1C6.pygtex,
+  A9A65537DDB7C8CA1751FE425D15660E5018845A16FEE2F871CFA2D2B2CFB1C6.pygtex,
+  DA1901A2DD2B7DAE35DC13D40253EFD65018845A16FEE2F871CFA2D2B2CFB1C6.pygtex,
+  5277549F0A9D1020CE32B84B3125D03962FD7D625D48406DBBB4A37322801FAF.pygtex}
+\abx@aux@read@bbl@mdfivesum{1A55138E4DAB3A8015BA7DF5A59D6A00}
 \abx@aux@defaultrefcontext{0}{DocsMan1Man3}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{bar-elSorcererApprenticeGuide2004}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{bittnerForgottenThreatVoltage2021}{nty/global//global/global}
@@ -151,6 +160,7 @@
 \abx@aux@defaultrefcontext{0}{moradiVulnerabilityFPGABitstream2011}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{ngabonzizaTrustZoneExplainedArchitectural2016}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{nicolasfalliereW32StuxnetDossier}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{orlandUnpatchableExploitThat2018}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{RadiationHardening2024}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{raghavanDynamicSchemesSpeculative1998}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{RowHammer2024}{nty/global//global/global}
@@ -158,4 +168,4 @@
 \abx@aux@defaultrefcontext{0}{tajikPhysicalCharacterizationArbiter2014}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{vinaypamnani-msftWindowsDefenderApplication2024}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{WhatFirmware2013}{nty/global//global/global}
-\gdef \@abspage@last{36}
+\gdef \@abspage@last{41}

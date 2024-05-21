@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{def} \PYG{n+nf}{execute\PYGZus{}secure\PYGZus{}operation}\PYG{p}{(}\PYG{n}{operation}\PYG{p}{,} \PYG{n}{redundancy\PYGZus{}level}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{):}
+        \PYG{n}{results} \PYG{o}{=} \PYG{p}{[]}
+        \PYG{k}{for} \PYG{n}{\PYGZus{}} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{redundancy\PYGZus{}level}\PYG{p}{):}
+            \PYG{n}{result} \PYG{o}{=} \PYG{n}{operation}\PYG{p}{()}
+            \PYG{n}{results}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{result}\PYG{p}{)}
+        \PYG{k}{if} \PYG{n}{all\PYGZus{}equal}\PYG{p}{(}\PYG{n}{results}\PYG{p}{):}
+            \PYG{k}{return} \PYG{n}{results}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+        \PYG{k}{else}\PYG{p}{:}
+            \PYG{k}{raise} \PYG{n}{SecurityException}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Discrepancy detected in redundant operations\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

@@ -1185,6 +1185,39 @@
       \field{urldateera}{ce}
       \keyw{stuxnet}
     \endentry
+    \entry{orlandUnpatchableExploitThat2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d1b1d39145c1427dc1aa52431c349877}{%
+           family={Orland},
+           familyi={O\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1b1d39145c1427dc1aa52431c349877}
+      \strng{fullhash}{d1b1d39145c1427dc1aa52431c349877}
+      \strng{bibnamehash}{d1b1d39145c1427dc1aa52431c349877}
+      \strng{authorbibnamehash}{d1b1d39145c1427dc1aa52431c349877}
+      \strng{authornamehash}{d1b1d39145c1427dc1aa52431c349877}
+      \strng{authorfullhash}{d1b1d39145c1427dc1aa52431c349877}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Newly published Tegra bootROM exploit could be a big headache for Nintendo and others.}
+      \field{howpublished}{https://arstechnica.com/gaming/2018/04/the-unpatchable-exploit-that-makes-every-current-nintendo-switch-hackable/}
+      \field{journaltitle}{Ars Technica}
+      \field{langid}{american}
+      \field{month}{4}
+      \field{title}{The ``Unpatchable'' Exploit That Makes Every Current {{Nintendo Switch}} Hackable [{{Updated}}]}
+      \field{urlday}{7}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/hectellian/Zotero/storage/RDT8WQ6L/the-unpatchable-exploit-that-makes-every-current-nintendo-switch-hackable.html
+      \endverb
+    \endentry
     \entry{RadiationHardening2024}{article}{}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}

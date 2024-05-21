@@ -1,17 +1,17 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[1] Config.pm:310> INFO - Logfile is 'main.blg'
-[115] biber:340> INFO - === Wed Apr 24, 2024, 09:44:22
-[134] Biber.pm:419> INFO - Reading 'main.bcf'
-[205] Biber.pm:979> INFO - Found 32 citekeys in bib section 0
-[218] Biber.pm:4419> INFO - Processing section 0
-[229] Biber.pm:4610> INFO - Looking for bibtex file 'library.bib' for section 0
-[236] bibtex.pm:1713> INFO - LaTeX decoding ...
-[316] bibtex.pm:1519> INFO - Found BibTeX data source 'library.bib'
-[597] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[598] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[598] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[598] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[625] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[640] bbl.pm:763> INFO - Output to main.bbl
-[642] Biber.pm:131> WARN - ISBN '978-1-4799-4394-4 978-1-4799-4396-8' in entry 'kimFlippingBitsMemory2014' is invalid - run biber with '--validate_datamodel' for details.
-[642] Biber.pm:133> INFO - WARNINGS: 1
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[47] biber:340> INFO - === Sat May  4, 2024, 14:32:28
+[56] Biber.pm:418> INFO - Reading 'main.bcf'
+[106] Biber.pm:972> INFO - Found 33 citekeys in bib section 0
+[115] Biber.pm:4383> INFO - Processing section 0
+[122] Biber.pm:4574> INFO - Looking for bibtex file 'library.bib' for section 0
+[126] bibtex.pm:1713> INFO - LaTeX decoding ...
+[182] bibtex.pm:1518> INFO - Found BibTeX data source 'library.bib'
+[382] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[383] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[383] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[383] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[404] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[425] bbl.pm:757> INFO - Output to main.bbl
+[425] Biber.pm:130> WARN - ISBN '978-1-4799-4394-4 978-1-4799-4396-8' in entry 'kimFlippingBitsMemory2014' is invalid - run biber with '--validate_datamodel' for details.
+[425] Biber.pm:132> INFO - WARNINGS: 1

@@ -4,7 +4,7 @@
 
 \LoadClass[11pt, a4paper]{report}
 
-\oddsidemargin 14.6truemm \evensidemargin 0truemm
+\oddsidemargin 10truemm \evensidemargin 0truemm
 \marginparwidth 40pt \marginparsep 10pt
 \topmargin 0truemm \headsep 10truemm
 \textheight 224truemm \textwidth 145truemm
