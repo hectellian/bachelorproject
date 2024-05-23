@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  4 MAY 2024 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  23 MAY 2024 13:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -996,7 +996,7 @@ Package biblatex Info: Reference segment=0 on input line 73.
 \openout2 = `sections/abstract.aux'.
 
  (./sections/abstract.tex
-<./images/unige-logo.png, id=120, 220.825pt x 237.88875pt>
+<./images/unige-logo.png, id=156, 220.825pt x 237.88875pt>
 File: ./images/unige-logo.png Graphic file (type png)
 <use ./images/unige-logo.png>
 Package pdftex.def Info: ./images/unige-logo.png  used on input line 1.
@@ -1067,12 +1067,12 @@ Chapter 2.
 \openout4 = `main.pyg'.
 
  (./_minted-main/5DFE414B919F2326EBF1A295D4A12CF48B953879FF4CDA899AB1C778980A7F48.pygtex)
-<images/cellrows.png, id=285, 325.215pt x 241.90375pt>
+<images/cellrows.png, id=331, 325.215pt x 241.90375pt>
 File: images/cellrows.png Graphic file (type png)
 <use images/cellrows.png>
 Package pdftex.def Info: images/cellrows.png  used on input line 82.
 (pdftex.def)             Requested size: 99.01508pt x 73.64949pt.
-<images/singlecell.png, id=286, 230.8625pt x 231.86626pt>
+<images/singlecell.png, id=332, 230.8625pt x 231.86626pt>
 File: images/singlecell.png Graphic file (type png)
 <use images/singlecell.png>
 Package pdftex.def Info: images/singlecell.png  used on input line 86.
@@ -1090,7 +1090,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [9]
-<images/intel-cpu.png, id=321, 432.11438pt x 620.3175pt>
+<images/intel-cpu.png, id=366, 432.11438pt x 620.3175pt>
 File: images/intel-cpu.png Graphic file (type png)
 <use images/intel-cpu.png>
 Package pdftex.def Info: images/intel-cpu.png  used on input line 149.
@@ -1147,7 +1147,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--362
 \openout4 = `main.pyg'.
 
 (./_minted-main/AB81C35FDA3BE41CA00D250B45678E035018845A16FEE2F871CFA2D2B2CFB1C6.pygtex) [16]
-<images/glitch.png, id=386, 462.97969pt x 201.00093pt>
+<images/glitch.png, id=431, 462.97969pt x 201.00093pt>
 File: images/glitch.png Graphic file (type png)
 <use images/glitch.png>
 Package pdftex.def Info: images/glitch.png  used on input line 382.
@@ -1191,17 +1191,17 @@ See the caption package documentation for explanation.
 
  (./sections/fusee_gelee.tex
 Chapter 3.
-) [26
+[26
 
 
 
 
-]
+] [27]) [28]
 \openout2 = `sections/practical.aux'.
 
  (./sections/practical.tex
 Chapter 4.
-) [27
+) [29
 
 
 
@@ -1211,7 +1211,7 @@ Chapter 4.
 
  (./sections/nintendo.tex
 Chapter 5.
-) [28
+) [30
 
 
 
@@ -1221,7 +1221,7 @@ Chapter 5.
 
  (./sections/mitigations.tex
 Chapter 6.
-) [29
+) [31
 
 
 
@@ -1231,7 +1231,7 @@ Chapter 6.
 
  (./sections/conclusion.tex
 Chapter 7.
-) [30
+) [32
 
 
 
@@ -1286,7 +1286,7 @@ Underfull \hbox (badness 2435) in paragraph at lines 98--98
 []\OT1/cmr/m/n/10.95 Nima Ka-vand et al. \  Se-cur-ing Hard-ware through Re-con-fig-urable Nano-
  []
 
-[31
+[33
 
 
 
@@ -1300,7 +1300,7 @@ Underfull \hbox (badness 1158) in paragraph at lines 98--98
 []\OT1/cmr/m/n/10.95 Abhranil Maiti et al. \  A Large Scale Char-ac-ter-i-za-tion of RO-PUF". In:
  []
 
-[32]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 98--98
 \OT1/cmr/m/it/10.95 Switch Hack-able [Up-dated]\OT1/cmr/m/n/10.95 . https://arstechnica.com/gaming/2018/04/the-
  []
@@ -1327,12 +1327,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--98
 
 
 AED: lastpage setting LastPage
-[33] (./main.aux (./sections/abstract.aux) (./sections/introduction.aux) (./sections/state_of_the_art.aux) (./sections/fusee_gelee.aux) (./sections/practical.aux) (./sections/nintendo.aux) (./sections/mitigations.aux) (./sections/conclusion.aux))
+[35] (./main.aux (./sections/abstract.aux) (./sections/introduction.aux) (./sections/state_of_the_art.aux) (./sections/fusee_gelee.aux) (./sections/practical.aux) (./sections/nintendo.aux) (./sections/mitigations.aux) (./sections/conclusion.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C68A3908804A8DDA6A39ED7147BE94EB;5117.
+(rerunfilecheck)             Checksum: 20D076618BD436FF1FA2778FD3C2029E;7490.
 runsystem(rm main.pyg)...executed.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1340,18 +1340,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27938 strings out of 478287
- 509349 string characters out of 5849289
- 1285881 words of memory out of 5000000
- 45470 multiletter control sequences out of 15000+600000
+ 27958 strings out of 478287
+ 509639 string characters out of 5849289
+ 1284893 words of memory out of 5000000
+ 45479 multiletter control sequences out of 15000+600000
  481376 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,9n,77p,3108b,1785s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (41 pages, 416136 bytes).
+Output written on main.pdf (43 pages, 423788 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 168 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 703 PDF objects out of 1000 (max. 8388607)
+ 602 compressed objects within 7 object streams
+ 179 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 

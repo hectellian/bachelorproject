@@ -34,7 +34,16 @@
 \contentsline {paragraph}{Secure Hardware Lifecycle Management}{24}{section*.22}%
 \contentsline {section}{\numberline {2.5}Conclusion: Navigating the Landscape of Hardware Security}{24}{section.2.5}%
 \contentsline {chapter}{\numberline {3}The Nintendo Switch and the Fusee Gelee Exploit}{26}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Practical Analysis of the Fusee Gelee Exploit}{27}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Nintendo's Response and Industry Implications}{28}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Alternative Mitigation Strategies}{29}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{30}{chapter.7}%
+\contentsline {section}{\numberline {3.1}Nintendo Switch Security Overview}{26}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Security Architecture of the Nintendo Switch}{26}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}The Role of Boot ROM and Secure Boot Process}{26}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Discovery of Fusee Gelee Exploit}{27}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Technical Specifics of the Vulnerability}{27}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Exploitation Mechanism}{27}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Implications of the Exploit}{27}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Broader Implications within Hardware Security}{27}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Challenges in Addressing Embedded Hardware Vulnerabilities}{28}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Practical Analysis of the Fusee Gelee Exploit}{29}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Nintendo's Response and Industry Implications}{30}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Alternative Mitigation Strategies}{31}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion}{32}{chapter.7}%
