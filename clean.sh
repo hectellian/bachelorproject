@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exts="aux bbl blg brf idx ilg ind lof log lol lot nav out snm tdo toc synctex.gz"
+exts=" bbl-SAVE-ERROR bcf fdb_latexmk fls aux bbl blg brf idx ilg ind lof log lol lot nav out snm tdo toc synctex.gz"
 
 for x in "${@:-.}"; do
     arg=$(echo ${x:-.} | perl -pe 's/\.(tex|pdf)$//')
