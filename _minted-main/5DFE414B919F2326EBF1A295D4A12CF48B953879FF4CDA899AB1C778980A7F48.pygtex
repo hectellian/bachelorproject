@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{+w}{  }\PYG{n+nl}{code1b:}
-\PYG{+w}{      }\PYG{n+nf}{mov}\PYG{+w}{ }\PYG{p}{(}\PYG{n+no}{X}\PYG{p}{),}\PYG{+w}{ }\PYG{n+nv}{\PYGZpc{}eax}
-\PYG{+w}{      }\PYG{n+nf}{clflush}\PYG{+w}{ }\PYG{p}{(}\PYG{n+no}{X}\PYG{p}{)}
-
-
-\PYG{+w}{      }\PYG{n+nf}{mfence}
-\PYG{+w}{      }\PYG{n+nf}{jmp}\PYG{+w}{ }\PYG{n+no}{code1b}
-\end{Verbatim}

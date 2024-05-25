@@ -43,7 +43,40 @@
 \contentsline {section}{\numberline {3.3}Implications of the Exploit}{27}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Broader Implications within Hardware Security}{27}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Challenges in Addressing Embedded Hardware Vulnerabilities}{28}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Practical Analysis of the Fusee Gelee Exploit}{29}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Nintendo's Response and Industry Implications}{30}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Alternative Mitigation Strategies}{31}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{32}{chapter.7}%
+\contentsline {chapter}{\numberline {4}Methodology and Practical Analysis of the Fusee Gelee Exploit}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Research Approach}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Technical Analysis}{29}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Experimentation}{29}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Experimental Setup and Execution}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Tools and Materials}{30}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Procedures}{30}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Analysis}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Results Interpretation}{31}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion of Significance}{31}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Nintendo's Response and Industry Implications}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Mitigation Efforts}{33}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Hardware Revisions}{33}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Software Updates}{33}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Effectiveness and Critique}{34}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Evaluation of Hardware Revisions}{34}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Critique of Software Updates}{34}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Overall Impact on Security Posture}{34}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {6}Alternative Mitigation Strategies}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Proposed Solutions}{35}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Hardware-Level Solutions}{35}{subsection.6.1.1}%
+\contentsline {subsubsection}{Secure Enclave Integration}{35}{section*.26}%
+\contentsline {subsubsection}{Advantages}{36}{section*.27}%
+\contentsline {subsubsection}{Drawbacks}{36}{section*.28}%
+\contentsline {subsubsection}{Redundant Security Mechanisms}{36}{section*.29}%
+\contentsline {subsubsection}{Advantages}{36}{section*.30}%
+\contentsline {subsubsection}{Drawbacks}{36}{section*.31}%
+\contentsline {subsection}{\numberline {6.1.2}Software-Level Solutions}{36}{subsection.6.1.2}%
+\contentsline {subsubsection}{Continuous Security Audits}{36}{section*.32}%
+\contentsline {subsubsection}{Advantages}{37}{section*.33}%
+\contentsline {subsubsection}{Drawbacks}{37}{section*.34}%
+\contentsline {subsubsection}{Advanced Cryptographic Techniques}{37}{section*.35}%
+\contentsline {subsubsection}{Advantages}{37}{section*.36}%
+\contentsline {subsubsection}{Drawbacks}{37}{section*.37}%
+\contentsline {section}{\numberline {6.2}Comprehensive Security Strategy}{37}{section.6.2}%
+\contentsline {subsubsection}{Complete Security Solution}{37}{section*.38}%
+\contentsline {subsubsection}{Drawbacks}{38}{section*.39}%

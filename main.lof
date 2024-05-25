@@ -6,6 +6,10 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Voltage glitching attack on a microcontroller\blx@tocontentsinit {0}\cite {bittnerForgottenThreatVoltage2021}\relax }}{17}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces RCM Jig\relax }}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces RCM Jig 3D Model\relax }}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces No RCM Detected\relax }}{31}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces RCM Detected\relax }}{31}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Payload Sent\relax }}{31}{figure.caption.25}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
