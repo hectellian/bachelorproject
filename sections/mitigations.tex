@@ -9,7 +9,14 @@ To further enhance the security of hardware like the Nintendo Switch, additional
 \subsection{Hardware-Level Solutions}
 \subsubsection{Secure Enclave Integration}
 
-One effective method for enhancing hardware security is the integration of secure enclaves. Secure enclaves are isolated execution environments within the processor that perform sensitive operations, such as cryptographic key storage and execution of critical code, in a protected manner.
+One effective method for enhancing hardware security is the integration of secure enclaves. Secure enclaves are isolated execution environments within the processor that perform sensitive operations, such as cryptographic key storage and execution of critical code, in a protected manner.\cite{IntroductionHardwareSecurity}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\linewidth]{images/enclave.png}
+    \caption{Secure Enclave Architecture from\cite{SecureEnclave}}
+    \label{fig:secure_enclave}
+\end{figure}
 
 \subsubsection{Advantages}
 
@@ -24,7 +31,7 @@ One effective method for enhancing hardware security is the integration of secur
     \item \textbf{Complexity}: It adds complexity to the hardware design and development process, potentially leading to longer development cycles and higher production costs
 \end{itemize}
 \subsubsection{Redundant Security Mechanisms}
-Incorporating redundant security mechanisms can provide multiple layers of defense against hardware vulnerabilities. For example, dual verification processes during the boot sequence, where both the Boot ROM and a secondary chip verify each other's integrity, can enhance security.
+Incorporating redundant security mechanisms\cite{RedundancyEngineering2023} can provide multiple layers of defense against hardware vulnerabilities. For example, dual verification processes during the boot sequence, where both the Boot ROM and a secondary chip verify each other's integrity, can enhance security.
 
 \subsubsection{Advantages}
 
@@ -36,49 +43,30 @@ Incorporating redundant security mechanisms can provide multiple layers of defen
     \item \textbf{Design Complexity}: Implementing redundant mechanisms increases the complexity of the hardware design.
     \item \textbf{Cost and Power Consumption}: Additional components and verification processes can increase both the cost and power consumption of the device.
 \end{itemize}
-\subsection{Software-Level Solutions}
-\subsubsection{Continuous Security Audits}
-Implementing continuous security audits is essential for maintaining a robust security posture. These audits involve regular assessments to identify potential vulnerabilities in both the firmware and underlying hardware
 
-\subsubsection{Advantages}
 
-\begin{itemize}
-    \item \textbf{Proactive Identification}: Continuous audits help in the early identification and mitigation of vulnerabilities before they can be exploited.
-    \item \textbf{Improved Security Posture}: Regular assessments ensure that the system remains secure against emerging threats.
-\end{itemize}
-\subsubsection{Drawbacks}
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[
+        box/.style={rectangle, draw, text width=8em, align=center, rounded corners},
+        arrow/.style={-Stealth, thick},
+        level distance=2cm
+      ]
+      
+      % Nodes
+      \node[box] (bootrom) {Boot ROM Initiates Boot};
+      \node[box, below=of bootrom] (verify1) {Verifies Secondary Chip Integrity};
+      \node[box, below=of verify1] (secondary) {Secondary Chip Firmware};
+      \node[box, right=of verify1, xshift=2cm] (verify2) {Verifies Boot ROM Integrity};
+      
+      % Paths
+      \draw[arrow] (bootrom) -- (verify1);
+      \draw[arrow] (verify1) -- (secondary);
+      \draw[arrow] (secondary) -- ++(1.5cm, 0) |- (verify2);
+      \draw[arrow] (verify2) -- ++(-1.5cm, 0) |- (verify1);
+    \end{tikzpicture}
+    \caption{Redundant Security Mechanisms in Boot Sequence}
+    \label{fig:redundant_security}
+\end{figure}
 
-\begin{itemize}
-    \item \textbf{Resource Intensive}: Continuous audits require significant resources, including skilled personnel and sophisticated tools.
-    \item \textbf{Operational Disruption}: Frequent assessments can disrupt regular operations and may require system downtime.
-\end{itemize}
-\subsubsection{Advanced Cryptographic Techniques}
-Employing advanced cryptographic techniques can enhance the security of data and operations within the device. Homomorphic encryption is one promising approaches.
-
-\subsubsection{Advantages}
-
-\textbf{Data Protection}: Homomorphic encryption allows computations on encrypted data, protecting sensitive information even during processing.
-\subsubsection{Drawbacks}
-
-\begin{itemize}
-    \item \textbf{Performance Overhead}: Advanced cryptographic techniques can introduce significant performance overhead, affecting the device's usability and responsiveness.
-    \item \textbf{Implementation Complexity}: These techniques are complex to implement and require substantial expertise and resources.
-\end{itemize}
-\section{Comprehensive Security Strategy}
-Combining these hardware and software solutions could provide a more comprehensive security strategy for devices like the Nintendo Switch. However, achieving complete security is challenging and often involves trade-offs between cost, complexity, and performance.
-
-\subsubsection{Complete Security Solution}
-
-\begin{itemize}
-    \item \textbf{Integration of Secure Enclaves and Redundant Mechanisms}: Ensuring that sensitive operations are isolated and that multiple layers of verification are in place.
-    \item \textbf{Continuous Security Audits and Advanced Cryptography}: Regular assessments combined with state-of-the-art encryption techniques to protect data and operations.
-\end{itemize}
-\subsubsection{Drawbacks}
-
-\begin{itemize}
-    \item \textbf{High Cost}: The combination of advanced hardware and software solutions significantly increases the cost of the device.
-    \item \textbf{Design and Implementation Complexity}: The increased complexity can lead to longer development times, higher production costs, and potential delays in bringing the product to market.
-    \item \textbf{Performance Impac}t: Enhanced security measures can impact the device's performance, potentially reducing usability and user satisfaction.
-\end{itemize}
-
-In conclusion, while Nintendo's response to the Fusee Gelee exploit has been effective to a large extent, further enhancements could be made by adopting advanced hardware and software security measures. These measures, however, come with significant drawbacks, highlighting the inherent challenges in achieving complete security in consumer hardware devices. Future hardware designs must balance these trade-offs to ensure robust security while maintaining cost-effectiveness and performance.
+In conclusion, while Nintendo's response to the Fusee Gelee exploit has been effective to a large extent, further enhancements could be made by adopting advanced hardware. These measures, however, come with significant drawbacks, highlighting the inherent challenges in achieving complete security in consumer hardware devices. Future hardware designs must balance these trade-offs to ensure robust security while maintaining cost-effectiveness and performance.
