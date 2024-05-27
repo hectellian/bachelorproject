@@ -1,6 +1,12 @@
 \beforeabstract
 \prefacesection{Abstract}
 
+This paper provides an in-depth analysis of the Fusee Gelee exploit, a critical vulnerability affecting the Nintendo Switch's hardware security. The study begins with an overview of the Nintendo Switch's multi-layered security architecture, emphasizing the role of the Boot ROM and the secure boot process. It details the discovery and technical specifics of the Fusee Gelee exploit, which leverages an unchecked buffer in the Nvidia Tegra X1 chip's USB recovery mode to execute arbitrary code.
+
+Through a thorough examination of the exploitation mechanism, the paper highlights how the vulnerability allows attackers to bypass the console's security measures and gain full control over the device. The broader implications of such hardware vulnerabilities are discussed, showcasing the challenges in addressing embedded hardware flaws, the necessity for rigorous security testing, and the difficulties in deploying effective fixes post-manufacturing.
+
+Additionally, the paper critiques Nintendo's response to the exploit, which involved hardware revisions and software updates, noting the limitations and residual risks of these approaches. Finally, the study proposes alternative mitigation strategies, such as secure enclave integration and continuous security audits, to enhance future hardware security designs. These solutions, while providing robust protection, also come with trade-offs in terms of cost, complexity, and performance. The Fusee Gelee exploit serves as a crucial case study in understanding and addressing hardware security vulnerabilities in consumer electronics.
+
 \prefacesection{Disclaimer}
 
 The research and discussions presented in this thesis are intended solely for educational purposes. The case studies, including the examination of the "fusee-gelee" vulnerability within the Nintendo Switch console, are explored to contribute to the academic understanding of hardware security and side-channel resistances. Under no circumstances should the content of this thesis be used to engage in unlawful activities, including the hacking or modification of devices such as the Nintendo Switch. The author and academic institution do not condone unauthorized hacking, do not provide guidance for engaging in such activities, and are not liable for any actions taken by individuals who misuse the information provided.
