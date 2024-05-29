@@ -1,0 +1,34 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{c+c1}{// If this is a warmboot (from \PYGZdq{}sleep\PYGZdq{}), restore the saved state from RAM.}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{read\PYGZus{}scratch0\PYGZus{}bit}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{))}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{      }\PYG{n}{restore\PYGZus{}warmboot\PYGZus{}image}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{load\PYGZus{}addr}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{c+c1}{// Otherwise, bootstrap the processor.}
+\PYG{+w}{    }\PYG{k}{else}
+\PYG{+w}{    }\PYG{p}{\PYGZob{}}
+\PYG{+w}{      }\PYG{c+c1}{// Allow recovery mode to be forced by a PMC scratch bit or physical straps.}
+\PYG{+w}{      }\PYG{n}{force\PYGZus{}recovery}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{check\PYGZus{}for\PYGZus{}rcm\PYGZus{}straps}\PYG{p}{()}\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{n}{read\PYGZus{}scratch0\PYGZus{}bit}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{);}
+
+\PYG{+w}{      }\PYG{c+c1}{// Determine whether to use USB2 or USB3 for RCM.}
+\PYG{+w}{      }\PYG{n}{determine\PYGZus{}rcm\PYGZus{}usb\PYGZus{}version}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{usb\PYGZus{}version}\PYG{p}{);}
+\PYG{+w}{      }\PYG{n}{usb\PYGZus{}ops}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{set\PYGZus{}up\PYGZus{}usb\PYGZus{}ops}\PYG{p}{(}\PYG{n}{usb\PYGZus{}version}\PYG{p}{);}
+\PYG{+w}{      }\PYG{n}{usb\PYGZus{}ops}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{initialize}\PYG{p}{();}
+
+\PYG{+w}{      }\PYG{c+c1}{// If we\PYGZsq{}re not forcing recovery, attempt to load an image from boot media.}
+\PYG{+w}{      }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{!}\PYG{n}{force\PYGZus{}recovery}\PYG{p}{)}
+\PYG{+w}{      }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{c+c1}{// If we succeeded, don\PYGZsq{}t fall back into recovery mode.}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{read\PYGZus{}boot\PYGZus{}configuration\PYGZus{}and\PYGZus{}images}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{load\PYGZus{}addr}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{SUCCESS}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{          }\PYG{k}{goto}\PYG{+w}{ }\PYG{n}{boot\PYGZus{}complete}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{      }\PYG{c+c1}{// In all other conditions}
+\PYG{+w}{      }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{read\PYGZus{}boot\PYGZus{}images\PYGZus{}via\PYGZus{}usb\PYGZus{}rcm}\PYG{p}{(}\PYG{o}{\PYGZlt{}}\PYG{n}{snip}\PYG{o}{\PYGZgt{}}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{load\PYGZus{}addr}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{n}{SUCCESS}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{         }\PYG{c+cm}{/* load address is poisoned here */}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{n+nl}{boot\PYGZus{}complete}\PYG{p}{:}
+\PYG{+w}{      }\PYG{c+cm}{/* apply lock\PYGZhy{}outs, and boot the program at address load\PYGZus{}address */}
+\end{Verbatim}

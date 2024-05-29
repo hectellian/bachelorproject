@@ -1,2 +1,30 @@
 \chapter{Conclusion}
-\epigraph{quote}{\textit{author}}
+\epigraph{Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say.}{\textit{Edward Snowden}}
+
+\section{Summary of Findings}
+
+This paper has explored the Fusee Gelee exploit in the Nintendo Switch, a significant hardware vulnerability that underscores the critical importance of hardware security. The study began with an overview of the Switch's security architecture, detailing the role of the Boot ROM and the secure boot process. It then examined the discovery and technical specifics of the Fusee Gelee exploit, which leverages an unchecked buffer in the Nvidia Tegra X1 chip's USB recovery mode to execute arbitrary code.
+
+Through practical experimentation, the study validated the exploit's capability to bypass the secure boot process, allowing for arbitrary code execution. This finding highlights the fundamental vulnerability within the Tegra X1 chip's Boot ROM and demonstrates the severe implications of such hardware flaws.
+
+\section{Contribution to Security}
+
+The Fusee Gelee exploit serves as a critical case study in the field of hardware security, illustrating several key points:
+
+\begin{itemize}
+    \item \textbf{Inherent Vulnerabilities in Hardware}: Unlike software, hardware vulnerabilities cannot be easily patched post-manufacturing. The discovery of such a flaw in a critical component like the Boot ROM underscores the importance of rigorous security testing during the hardware design phase.
+    \item \textbf{Difficulty in Mitigation}: Addressing hardware vulnerabilities often requires physical modifications to the device or complete hardware revisions, as software patches alone are insufficient to alter immutable Boot ROM code.
+    \item \textbf{Wide-Reaching Impact}: The exploit not only affects the Nintendo Switch but also other devices using the same Tegra X1 chip, demonstrating how a single hardware flaw can have widespread consequences across different products and industries.
+\end{itemize}
+
+\section{Mitigation Strategies}
+
+Nintendo's response to the Fusee Gelee exploit involved both hardware revisions and software updates. While these measures were largely effective, they also highlighted certain limitations. The introduction of the Mariko chip addressed the specific buffer overflow issue, but required consumers to purchase new hardware, posing a financial burden for some users. Additionally, older models of the Switch remained vulnerable to the exploit.
+
+In proposing alternative mitigation strategies, this study explored hardware-level solutions such as secure enclave integration and redundant security mechanisms. Secure enclaves, like Intel's SGX, initially offered robust protection but have been challenged by new side-channel attacks, raising doubts about their long-term reliability\cite{nilssonSurveyPublishedAttacks2020}. Redundant security mechanisms, though increasing design complexity and cost, can provide multiple layers of defense against hardware vulnerabilities.
+
+\section{Future Research Directions}
+
+Ensuring hardware security requires a proactive and multifaceted approach. Future hardware designs must incorporate security from the ground up, utilizing principles like secure enclaves and hardware-based roots of trust. Continuous security audits and advanced cryptographic techniques are essential to protect data and operations within the device. Moreover, addressing emerging threats such as side-channel attacks remains a critical area for ongoing research.
+
+The insights gained from this study provide valuable guidance for improving the security of future hardware designs, ensuring that devices are resilient against similar threats. As technology evolves, the field of hardware security must adapt, leveraging innovative solutions to safeguard against both known and unknown vulnerabilities.
